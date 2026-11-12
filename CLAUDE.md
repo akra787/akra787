@@ -11,5 +11,6 @@ salvo que falte algo imprescindible:
 4. Comprueba un fotograma (`ffmpeg -ss 3 -i videos/<nombre>.mp4 -frames:v 1 frame.png` en el scratchpad) y míralo.
 5. Envía el MP4 al usuario con SendUserFile, y haz commit + push de `videos/<nombre>.json` y `.mp4`.
 
-Limitaciones de este entorno: la red solo permite registros de paquetes, así que no hay generadores de imagen
-o voz en la nube; todo se hace en local (Pillow, numpy, espeak-ng, ffmpeg).
+La voz por defecto es Piper (realista, voces en `/opt/piper-voces`, descargadas por `instalar.sh` desde
+huggingface.co, que está permitido en la red del entorno). Si no hay voces Piper, se usa espeak-ng (robótica).
+No hay generadores de imagen en la nube; las imágenes se dibujan en local (Pillow, numpy, ffmpeg).

@@ -82,13 +82,34 @@ def ease(t):
 
 
 # ---------------------------------------------------------------- audio
-def tts(text, lang, voice_speed, out_wav):
-    """Voz sin conexión con espeak-ng. Devuelve duración en segundos."""
-    exe = shutil.which("espeak-ng") or shutil.which("espeak")
-    if not exe or not text.strip():
+PIPER_DIR = os.environ.get("PIPER_VOCES", "/opt/piper-voces")
+DEFAULT_PIPER = "es_ES-davefx-medium"
+
+
+def piper_model(name):
+    if not name or name in ("espeak", "robot"):
+        return None
+    p = name if name.endswith(".onnx") else os.path.join(PIPER_DIR, name + ".onnx")
+    return p if os.path.exists(p) and os.path.exists(p + ".json") else None
+
+
+def tts(text, lang, voice_speed, out_wav, voice=DEFAULT_PIPER):
+    """Voz sin conexión: Piper (realista) si el modelo está instalado, si no espeak-ng.
+    Devuelve duración en segundos."""
+    if not text.strip():
         return 0.0
-    subprocess.run([exe, "-v", lang, "-s", str(voice_speed), "-w", out_wav, text], check=True,
-                   stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    model = piper_model(voice)
+    if model:
+        # length_scale > 1 = más lento; 150 ppm es la velocidad normal
+        scale = max(0.5, min(2.0, 150 / max(voice_speed, 1)))
+        subprocess.run([sys.executable, "-m", "piper", "-m", model, "-f", out_wav, "--length-scale", f"{scale:.2f}"],
+                       input=text.encode("utf-8"), check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    else:
+        exe = shutil.which("espeak-ng") or shutil.which("espeak")
+        if not exe:
+            return 0.0
+        subprocess.run([exe, "-v", lang, "-s", str(voice_speed), "-w", out_wav, text], check=True,
+                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     with wave.open(out_wav) as w:
         return w.getnframes() / w.getframerate()
 
@@ -267,6 +288,7 @@ def build(script_path, out_path=None):
     fps = spec.get("fps", 30)
     lang = spec.get("idioma", "es")
     speed = spec.get("velocidad_voz", 150)
+    voice_model = spec.get("voz_modelo", DEFAULT_PIPER)
     trans = spec.get("transicion", 0.5)
     if not out_path:
         out_path = spec.get("salida") or os.path.splitext(os.path.basename(script_path))[0] + ".mp4"
@@ -284,7 +306,8 @@ def build(script_path, out_path=None):
             vdur = 0.0
             if sc.get("voz"):
                 wav = os.path.join(tmp, f"v{i}.wav")
-                vdur = tts(sc["voz"], sc.get("idioma", lang), sc.get("velocidad_voz", speed), wav)
+                vdur = tts(sc["voz"], sc.get("idioma", lang), sc.get("velocidad_voz", speed), wav,
+                           sc.get("voz_modelo", voice_model))
             dur = sc.get("duracion") or max(3.0, vdur + 0.8)
             sc = {**sc, "_voice_dur": vdur}
             scenes.append(Scene(sc, size, base_dir, defaults))
