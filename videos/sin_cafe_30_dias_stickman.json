@@ -1,0 +1,167 @@
+{
+  "formato": "vertical",
+  "idioma": "es",
+  "voz_audio": false,
+  "velocidad_lectura": 150,
+  "musica": "tranquila",
+  "escenas": [
+    {
+      "titulo": "30 días sin café",
+      "texto": "¿Qué le pasa a tu cuerpo?",
+      "posicion_y": 0.17,
+      "personaje": {
+        "pose": "beber",
+        "objeto": "taza",
+        "contorno": false
+      },
+      "voz": "¿Qué le pasa a tu cuerpo si dejas el café durante 30 días? Quédate hasta el final.",
+      "fondo": [
+        "#3b2314",
+        "#0f0905"
+      ],
+      "zoom": "in"
+    },
+    {
+      "titulo": "¿Cuántos cafés tomas al día?",
+      "posicion_y": 0.15,
+      "tam_titulo": 0.075,
+      "encuesta": {
+        "opciones": [
+          "1 café",
+          "2 o 3 cafés",
+          "4 o más",
+          "Ninguno"
+        ],
+        "y": 0.29,
+        "llamada": "¡Comenta tu letra!"
+      },
+      "voz": "Antes de empezar: ¿cuántos cafés tomas al día? Déjalo en comentarios.",
+      "fondo": [
+        "#6b1f3a",
+        "#1a0610"
+      ],
+      "duracion": 8
+    },
+    {
+      "titulo": "Día 1–2",
+      "texto": "Dolor de cabeza y cansancio",
+      "posicion_y": 0.17,
+      "personaje": {
+        "pose": "dolor",
+        "objeto": "taza_tachada",
+        "contorno": false
+      },
+      "voz": "Los primeros dos días son los más duros: dolor de cabeza, cansancio y poca concentración. Es la abstinencia de la cafeína.",
+      "fondo": [
+        "#5a1e1e",
+        "#1a0808"
+      ]
+    },
+    {
+      "titulo": "Día 3–7",
+      "texto": "Tu cerebro se reajusta",
+      "posicion_y": 0.17,
+      "personaje": {
+        "pose": "pensando",
+        "contorno": false
+      },
+      "voz": "La cafeína bloquea la adenosina, la señal de cansancio. Sin café, tu cerebro reduce los receptores extra que había creado.",
+      "fondo": [
+        "#4a3a12",
+        "#141005"
+      ]
+    },
+    {
+      "titulo": "¿Y tú?",
+      "texto": "Sé sincero…",
+      "posicion_y": 0.15,
+      "pregunta": {
+        "texto": "¿Cuántos días aguantarías sin café? Escribe el número en comentarios",
+        "y": 0.29
+      },
+      "personaje": {
+        "pose": "señalar",
+        "x": 0.42,
+        "y": 0.76,
+        "altura": 0.26,
+        "contorno": false
+      },
+      "voz": "¿Cuántos días aguantarías tú sin café? Escribe el número en comentarios.",
+      "fondo": [
+        "#6b1f3a",
+        "#1a0610"
+      ],
+      "duracion": 7
+    },
+    {
+      "titulo": "Semana 2",
+      "texto": "Duermes mejor",
+      "posicion_y": 0.17,
+      "personaje": {
+        "pose": "dormido",
+        "y": 0.7,
+        "contorno": false
+      },
+      "voz": "En la segunda semana el sueño suele ser más profundo. Te duermes antes y te levantas más descansado.",
+      "fondo": [
+        "#1c2a5a",
+        "#070b1c"
+      ]
+    },
+    {
+      "titulo": "Semana 3",
+      "texto": "Energía más estable",
+      "posicion_y": 0.17,
+      "personaje": {
+        "pose": "energia",
+        "contorno": false
+      },
+      "voz": "Adiós a los bajones de media tarde. Tu energía es más estable y puedes notar menos ansiedad.",
+      "fondo": [
+        "#145a4a",
+        "#051a15"
+      ]
+    },
+    {
+      "titulo": "Día 30",
+      "texto": "Un nuevo equilibrio",
+      "posicion_y": 0.17,
+      "personaje": {
+        "pose": "feliz",
+        "contorno": false
+      },
+      "voz": "Al mes tu tolerancia vuelve a cero: dientes menos manchados, mejor absorción del hierro, y con una sola taza notarás mucho más su efecto.",
+      "fondo": [
+        "#2e5a1c",
+        "#0b1a06"
+      ],
+      "zoom": "out"
+    },
+    {
+      "titulo": "¿Te atreves?",
+      "posicion_y": 0.15,
+      "encuesta": {
+        "opciones": [
+          "SÍ, empiezo hoy",
+          "NO, imposible"
+        ],
+        "y": 0.27,
+        "llamada": "Comenta SÍ o NO y etiqueta a quien no puede vivir sin café"
+      },
+      "personaje": {
+        "pose": "saludo",
+        "objeto": "taza",
+        "y": 0.79,
+        "altura": 0.17,
+        "contorno": false
+      },
+      "voz": "Cada cuerpo es distinto, así que hazlo poco a poco. ¿Te atreves? Comenta SÍ o NO.",
+      "fondo": [
+        "#3b2314",
+        "#0f0905"
+      ],
+      "duracion": 8
+    }
+  ],
+  "salida": "/tmp/claude-0/-home-user-akra787/0a09973c-6615-52ff-989f-62268790e84f/scratchpad/base_stickman.mp4"
+}

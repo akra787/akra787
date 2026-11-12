@@ -12,8 +12,8 @@
     },
     {
       "inicio": 7.85,
-      "fin": 13.2,
-      "texto": "Antes de empezar: ¿cuántos cafés tomas al día? Dímelo en comentarios con tu letra."
+      "fin": 12.85,
+      "texto": "Antes de empezar: ¿cuántos cafés tomas al día? Déjalo en comentarios."
     },
     {
       "inicio": 15.85,
@@ -42,13 +42,13 @@
     },
     {
       "inicio": 56.45,
-      "fin": 65.0,
-      "texto": "Al mes tu tolerancia se reinicia: dientes menos manchados, mejor absorción del hierro, y una sola taza te hará mucho más efecto."
+      "fin": 65.8,
+      "texto": "Al mes tu tolerancia vuelve a cero: dientes menos manchados, mejor absorción del hierro, y con una sola taza notarás mucho más su efecto."
     },
     {
-      "inicio": 66.05,
-      "fin": 72.2,
-      "texto": "Cada cuerpo es distinto, así que hazlo poco a poco. ¿Te atreves? Comenta SÍ o NO."
+      "inicio": 66.85,
+      "fin": 73.4,
+      "texto": "Cada cuerpo es distinto, así que hazlo poco a poco. ¿Te atreves? Comenta: sí, o no."
     }
   ]
 }

@@ -282,14 +282,23 @@ class Scene:
 
         if s.get("subtitulos", True) and s.get("voz"):
             f = font(int(unit * 0.04))
-            words = s["voz"].split()
-            # muestra un bloque de palabras sincronizado aprox. con la locución
+            # bloques de hasta 6 palabras que quepan en una línea; cada uno dura según sus letras
+            if "_bloques" not in self.__dict__:
+                self._bloques, cur = [], []
+                for wd in s["voz"].split():
+                    if cur and (len(cur) >= 6 or d.textlength(" ".join(cur + [wd]), font=f) > w * 0.85):
+                        self._bloques.append(" ".join(cur)); cur = []
+                    cur.append(wd)
+                    if wd[-1] in ".?!:" and len(cur) >= 2:  # corta en final de frase
+                        self._bloques.append(" ".join(cur)); cur = []
+                if cur:
+                    self._bloques.append(" ".join(cur))
+                tot = sum(len(b) + 4 for b in self._bloques)
+                self._cortes = np.cumsum([(len(b) + 4) / tot for b in self._bloques])
             speak = s.get("_voice_dur") or dur
-            chunk = 6
-            nblocks = max(1, math.ceil(len(words) / chunk))
-            bi = min(nblocks - 1, int(t / max(speak, 1e-6) * nblocks))
             if t <= speak + 0.3:
-                text = " ".join(words[bi * chunk:(bi + 1) * chunk])
+                bi = min(len(self._bloques) - 1, int(np.searchsorted(self._cortes, t / max(speak, 1e-6), side="right")))
+                text = self._bloques[bi]
                 lines = wrap(d, text, f, w * 0.85)
                 lh = f.size * 1.25
                 yb = h * 0.82 - lh * len(lines) / 2
