@@ -1,5 +1,5 @@
 {
-  "titulo": "El esqueleto y el café",
+  "titulo": "Qué pasa si dejas el café",
   "formato": "vertical",
   "idioma": "es",
   "voz_modelo": "es_ES-davefx-medium",
@@ -7,29 +7,72 @@
   "musica": "ambiente oscura (generada en render.py)",
   "render": "videos/esqueleto_cafe/render.py",
   "escenas": [
-    {"id": 1, "etiqueta": "DÍA 1", "subetiqueta": "Energía inicial",
-     "voz": "Día uno. Un café por la mañana. Energía, concentración… todo parece bajo control."},
-    {"id": 2, "etiqueta": "DÍA 3", "subetiqueta": "Necesidad de otra taza",
-     "voz": "Día tres. Una taza ya no basta. Llega el cansancio… y con él, la irritabilidad."},
-    {"id": 3, "etiqueta": "SEMANA 1", "subetiqueta": "Sueño de mala calidad",
-     "voz": "Semana uno. La cafeína sigue en tu cuerpo por la noche. Duermes, pero no descansas."},
-    {"id": 4, "etiqueta": "SEMANA 1", "subetiqueta": "Buscar café al despertar",
-     "voz": "Lo primero que haces al despertar ya no es abrir los ojos. Es buscar café."},
-    {"id": 5, "etiqueta": "MES 1", "subetiqueta": "Necesitas más café",
-     "voz": "Mes uno. Cuatro, cinco tazas al día. Tu cuerpo se acostumbra… y te pide más."},
-    {"id": 6, "etiqueta": "MES 1", "subetiqueta": "Concentración inestable",
-     "voz": "Y aun así, la concentración se rompe. Olvidas lo que ibas a hacer."},
-    {"id": 7, "etiqueta": "MESES DESPUÉS", "subetiqueta": "Temblores e inquietud",
-     "voz": "Meses después. Manos que tiemblan. Inquietud. El corazón acelerado sin motivo."},
-    {"id": 8, "etiqueta": "MESES DESPUÉS", "subetiqueta": "El momento extraño",
-     "voz": "Y una noche, algo extraño. Te falta el aire. El pecho se aprieta."},
-    {"id": 9, "etiqueta": "MESES DESPUÉS", "subetiqueta": "La taza cae",
-     "voz": "La taza cae."},
-    {"id": 10, "etiqueta": "FINAL", "subetiqueta": "Un solo latido",
-     "voz": ""},
-    {"id": 11, "cierre": true,
-     "titulo": "El café no es el enemigo.\nEl exceso, sí.",
-     "texto": "Escucha a tu cuerpo.",
-     "voz": "El café no es el enemigo. El exceso, sí. Escucha a tu cuerpo."}
+    {
+      "id": 1,
+      "etiqueta": "DÍA 1",
+      "subetiqueta": "La última taza",
+      "voz": "Día uno. La última taza. A partir de mañana, nada de café."
+    },
+    {
+      "id": 2,
+      "etiqueta": "DÍA 3",
+      "subetiqueta": "El cuerpo la pide",
+      "voz": "Día tres. Tu cuerpo la busca. Dolor de cabeza, cansancio… y mal humor."
+    },
+    {
+      "id": 3,
+      "etiqueta": "SEMANA 1",
+      "subetiqueta": "Sueño de mala calidad",
+      "voz": "Semana uno. Te despiertas agotado, como si no hubieras dormido."
+    },
+    {
+      "id": 4,
+      "etiqueta": "SEMANA 1",
+      "subetiqueta": "El impulso de cada mañana",
+      "voz": "Y cada mañana, sin pensarlo, tus manos van directas a la cafetera."
+    },
+    {
+      "id": 5,
+      "etiqueta": "MES 1",
+      "subetiqueta": "La costumbre sigue ahí",
+      "voz": "Mes uno. Lo peor ya pasó. Pero la costumbre sigue: la taza en la mano, por si acaso."
+    },
+    {
+      "id": 6,
+      "etiqueta": "MES 1",
+      "subetiqueta": "La mente se reajusta",
+      "voz": "Hay días en que te cuesta concentrarte. Tu cerebro aprende a funcionar sin ayuda."
+    },
+    {
+      "id": 7,
+      "etiqueta": "MESES DESPUÉS",
+      "subetiqueta": "La tentación vuelve",
+      "voz": "Meses después, una noche, la tentación vuelve. Inquietud. Solo una taza…"
+    },
+    {
+      "id": 8,
+      "etiqueta": "MESES DESPUÉS",
+      "subetiqueta": "El momento decisivo",
+      "voz": "Te llevas la mano al pecho. Respiras hondo. Y decides."
+    },
+    {
+      "id": 9,
+      "etiqueta": "MESES DESPUÉS",
+      "subetiqueta": "La taza cae",
+      "voz": "La sueltas."
+    },
+    {
+      "id": 10,
+      "etiqueta": "FINAL",
+      "subetiqueta": "Un solo latido",
+      "voz": ""
+    },
+    {
+      "id": 11,
+      "cierre": true,
+      "titulo": "Dejar el café\ncuesta unos días.\nTu cuerpo lo agradece.",
+      "texto": "La abstinencia suele pasar en pocos días.",
+      "voz": "Dejar el café cuesta unos días. Los síntomas pasan. Y tu cuerpo lo agradece."
+    }
   ]
 }

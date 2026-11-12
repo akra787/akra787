@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Renderiza «El esqueleto y el café» (videos/esqueleto_cafe.json) dibujando y animando cada escena en local.
+"""Renderiza «Qué pasa si dejas el café» (videos/esqueleto_cafe.json) dibujando y animando cada escena en local.
 
 Uso:  python3 videos/esqueleto_cafe/render.py [videos/esqueleto_cafe.json] [-o salida.mp4] [--solo N]
 """
@@ -1020,8 +1020,7 @@ class S8(Living):
         p["elR"] = V(722, 906)
         p["wrR"] = V(770, 1082)
         p["handR"] = (82, 0.36 + 0.1 * seg(t, 1.5, 3.0), 1.0)
-        br = abs(math.sin(t * 2 * math.pi * 1.6)) * (0.7 + 0.3 * noise(t, 2, 2.0))
-        p["breath"] = 0.03 * br * seg(t, 0.8, 1.6)
+        p["breath"] = 0.03 * math.sin(t * 2 * math.pi / 3.2) * seg(t, 0.8, 1.6)
         return p
 
     def camera(self, t):
@@ -1092,7 +1091,7 @@ class S10(Living):
         p["pupil"] = 1.4
         p["elL"], p["wrL"], p["handL"] = V(380, 906), V(374, 1112), (92, 0.14, 1.0)
         p["elR"], p["wrR"], p["handR"] = V(716, 908), V(724, 1114), (88, 0.14, 1.0)
-        p["breath"] = 0.014 * math.sin(min(t, 2.6) * 2 * math.pi / 2.6 * 0.5) * (1 - seg(t, 2.4, 2.8))
+        p["breath"] = 0.014 * math.sin(t * 2 * math.pi / 4.0)
         return p
 
     def glass_strength(self, t):
@@ -1120,17 +1119,17 @@ class S11(Scene):
         a = ease((t - 0.4) / 0.9)
         f = mv.font(74)
         lines = self.spec["titulo"].split("\n")
-        y = 760
+        y = 700
         for i, line in enumerate(lines):
             tw = d.textlength(line, font=f)
-            col = (255, 255, 255) if i == 0 else (244, 196, 92)
+            col = (255, 255, 255) if i < len(lines) - 1 else (244, 196, 92)
             d.text(((W - tw) / 2, y + i * 100), line, font=f, fill=col + (int(255 * a),))
         a2 = ease((t - 1.6) / 0.9)
         bw = 90 * a2
-        d.rounded_rectangle([W / 2 - bw, y + 225, W / 2 + bw, y + 230], 2, fill=(244, 196, 92, int(230 * a2)))
-        f2 = mv.font(50, bold=False)
+        d.rounded_rectangle([W / 2 - bw, y + len(lines) * 100 + 25, W / 2 + bw, y + len(lines) * 100 + 30], 2, fill=(244, 196, 92, int(230 * a2)))
+        f2 = mv.font(44, bold=False)
         tw = d.textlength(self.spec["texto"], font=f2)
-        d.text(((W - tw) / 2, y + 265), self.spec["texto"], font=f2, fill=(230, 230, 230, int(255 * a2)))
+        d.text(((W - tw) / 2, y + len(lines) * 100 + 65), self.spec["texto"], font=f2, fill=(230, 230, 230, int(255 * a2)))
 
 
 CLASSES = {1: S1, 2: S2, 3: S3, 4: S4, 5: S5, 6: S6, 7: S7, 8: S8, 9: S9, 10: S10, 11: S11}
