@@ -1,0 +1,13 @@
+{
+  "voz_modelo": "es_ES-davefx-medium",
+  "musica": "tranquila",
+  "volumen_musica": 0.35,
+  "lineas": [
+    {"inicio": 0.45, "fin": 1.8,  "texto": "Este es Pablo."},
+    {"inicio": 2.95, "fin": 6.5,  "texto": "Pablo tiene que estudiar, para un examen."},
+    {"inicio": 7.45, "fin": 11.0, "texto": "Pero primero... mira el móvil un momento."},
+    {"inicio": 11.95, "fin": 15.25, "texto": "Un momento... se convierte en tres horas."},
+    {"inicio": 16.45, "fin": 20.0, "texto": "¿El truco? Empieza solo cinco minutos."},
+    {"inicio": 21.2, "fin": 26.75, "texto": "Empezar es lo más difícil. Lo demás, sale solo."}
+  ]
+}

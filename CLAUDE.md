@@ -14,3 +14,11 @@ salvo que falte algo imprescindible:
 La voz por defecto es Piper (realista, voces en `/opt/piper-voces`, descargadas por `instalar.sh` desde
 huggingface.co, que está permitido en la red del entorno). Si no hay voces Piper, se usa espeak-ng (robótica).
 No hay generadores de imagen en la nube; las imágenes se dibujan en local (Pillow, numpy, ffmpeg).
+
+## Cambiar solo la voz de un vídeo existente (doblaje)
+
+1. Saca el texto y los tiempos: los subtítulos con fotogramas/OCR (`tesseract -l spa`) y los huecos de voz
+   con la envolvente de volumen del audio original (o `faster-whisper`, con `HF_HUB_DISABLE_XET=1`).
+2. Escribe `videos/<nombre>/doblaje.json` (formato en `video/herramientas/doblar.py`).
+3. `python3 video/herramientas/doblar.py original.mp4 doblaje.json salida.mp4`: la imagen se copia sin tocarla,
+   cada frase se ajusta a su hueco y se añade música suave.
