@@ -251,6 +251,16 @@ class Scene:
                 d.text(((w - tw) / 2 + 3, y + i * lh + 3), line, font=f, fill=(0, 0, 0, int(150 * a2)))
                 d.text(((w - tw) / 2, y + i * lh), line, font=f, fill=color + (int(255 * a2),))
 
+        if s.get("personaje") or s.get("encuesta") or s.get("pregunta"):
+            import stickman
+            if s.get("personaje"):
+                stickman.dibujar_personaje(img, s["personaje"], t, w, h)
+            if s.get("encuesta"):
+                stickman.dibujar_encuesta(img, s["encuesta"], t, w, h, font)
+            if s.get("pregunta"):
+                stickman.dibujar_pregunta(img, s["pregunta"], t, w, h, font)
+            d = ImageDraw.Draw(img, "RGBA")
+
         if s.get("subtitulos", True) and s.get("voz"):
             f = font(int(unit * 0.04))
             words = s["voz"].split()
@@ -304,7 +314,10 @@ def build(script_path, out_path=None):
         scenes, durs, voice = [], [], np.zeros(0)
         for i, sc in enumerate(spec["escenas"]):
             vdur = 0.0
-            if sc.get("voz"):
+            if sc.get("voz") and not spec.get("voz_audio", True):
+                # sin locución: la duración es el tiempo de lectura de los subtítulos
+                vdur = len(sc["voz"].split()) / (spec.get("velocidad_lectura", 160) / 60)
+            elif sc.get("voz"):
                 wav = os.path.join(tmp, f"v{i}.wav")
                 vdur = tts(sc["voz"], sc.get("idioma", lang), sc.get("velocidad_voz", speed), wav,
                            sc.get("voz_modelo", voice_model))
@@ -313,7 +326,7 @@ def build(script_path, out_path=None):
             scenes.append(Scene(sc, size, base_dir, defaults))
             durs.append(dur)
             seg = np.zeros(int(dur * SR))
-            if vdur:
+            if vdur and spec.get("voz_audio", True):
                 v = read_wav(os.path.join(tmp, f"v{i}.wav"))[: len(seg) - int(0.2 * SR)]
                 seg[int(0.2 * SR):int(0.2 * SR) + len(v)] = v
             voice = np.concatenate([voice, seg])

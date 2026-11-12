@@ -1,52 +1,158 @@
 {
   "formato": "vertical",
   "idioma": "es",
-  "voz_modelo": "es_ES-davefx-medium",
+  "voz_audio": false,
+  "velocidad_lectura": 150,
   "musica": "tranquila",
   "escenas": [
     {
       "titulo": "30 días sin café",
       "texto": "¿Qué le pasa a tu cuerpo?",
-      "voz": "¿Qué le pasa a tu cuerpo si dejas el café durante treinta días? Quédate hasta el final, porque la última semana te va a sorprender.",
-      "fondo": ["#3b2314", "#0f0905"],
+      "posicion_y": 0.17,
+      "personaje": {
+        "pose": "beber",
+        "objeto": "taza"
+      },
+      "voz": "¿Qué le pasa a tu cuerpo si dejas el café durante 30 días? Quédate hasta el final.",
+      "fondo": [
+        "#3b2314",
+        "#0f0905"
+      ],
       "zoom": "in"
+    },
+    {
+      "titulo": "¿Cuántos cafés tomas al día?",
+      "posicion_y": 0.15,
+      "tam_titulo": 0.075,
+      "encuesta": {
+        "opciones": [
+          "1 café",
+          "2 o 3 cafés",
+          "4 o más",
+          "Ninguno"
+        ],
+        "y": 0.29,
+        "llamada": "¡Comenta tu letra!"
+      },
+      "voz": "Antes de empezar: ¿cuántos cafés tomas al día? Dímelo en comentarios con tu letra.",
+      "fondo": [
+        "#6b1f3a",
+        "#1a0610"
+      ],
+      "duracion": 8
     },
     {
       "titulo": "Día 1–2",
       "texto": "Dolor de cabeza y cansancio",
-      "voz": "Las primeras veinticuatro a cuarenta y ocho horas son las más duras. Aparece el dolor de cabeza, el cansancio y te cuesta concentrarte. Es el síndrome de abstinencia de la cafeína.",
-      "fondo": ["#5a1e1e", "#1a0808"]
+      "posicion_y": 0.17,
+      "personaje": {
+        "pose": "dolor",
+        "objeto": "taza_tachada"
+      },
+      "voz": "Los primeros dos días son los más duros: dolor de cabeza, cansancio y poca concentración. Es la abstinencia de la cafeína.",
+      "fondo": [
+        "#5a1e1e",
+        "#1a0808"
+      ]
     },
     {
       "titulo": "Día 3–7",
       "texto": "Tu cerebro se reajusta",
-      "voz": "La cafeína bloquea la adenosina, la señal de cansancio. Sin ella, tu cerebro empieza a reducir los receptores extra que había creado. Puedes estar algo irritable, pero lo peor ya pasa.",
-      "fondo": ["#4a3a12", "#141005"]
+      "posicion_y": 0.17,
+      "personaje": {
+        "pose": "pensando"
+      },
+      "voz": "La cafeína bloquea la adenosina, la señal de cansancio. Sin café, tu cerebro reduce los receptores extra que había creado.",
+      "fondo": [
+        "#4a3a12",
+        "#141005"
+      ]
+    },
+    {
+      "titulo": "¿Y tú?",
+      "texto": "Sé sincero…",
+      "posicion_y": 0.15,
+      "pregunta": {
+        "texto": "¿Cuántos días aguantarías sin café? Escribe el número en comentarios",
+        "y": 0.29
+      },
+      "personaje": {
+        "pose": "señalar",
+        "x": 0.42,
+        "y": 0.76,
+        "altura": 0.26
+      },
+      "voz": "¿Cuántos días aguantarías tú sin café? Escribe el número en comentarios.",
+      "fondo": [
+        "#6b1f3a",
+        "#1a0610"
+      ],
+      "duracion": 7
     },
     {
       "titulo": "Semana 2",
       "texto": "Duermes mejor",
-      "voz": "En la segunda semana muchas personas notan un sueño más profundo y reparador. Te duermes antes y te despiertas con menos necesidad de un estimulante.",
-      "fondo": ["#1c2a5a", "#070b1c"]
+      "posicion_y": 0.17,
+      "personaje": {
+        "pose": "dormido",
+        "y": 0.7
+      },
+      "voz": "En la segunda semana el sueño suele ser más profundo. Te duermes antes y te levantas más descansado.",
+      "fondo": [
+        "#1c2a5a",
+        "#070b1c"
+      ]
     },
     {
       "titulo": "Semana 3",
       "texto": "Energía más estable",
-      "voz": "Adiós a los bajones de media tarde. Tu energía se vuelve más estable durante el día, y puedes sentir menos ansiedad y nerviosismo.",
-      "fondo": ["#145a4a", "#051a15"]
+      "posicion_y": 0.17,
+      "personaje": {
+        "pose": "energia"
+      },
+      "voz": "Adiós a los bajones de media tarde. Tu energía es más estable y puedes notar menos ansiedad.",
+      "fondo": [
+        "#145a4a",
+        "#051a15"
+      ]
     },
     {
       "titulo": "Día 30",
       "texto": "Un nuevo equilibrio",
-      "voz": "Al mes, tu tolerancia se ha reiniciado. Tus dientes se manchan menos, absorbes mejor el hierro de los alimentos, y si vuelves a tomar café, una sola taza te hará mucho más efecto.",
-      "fondo": ["#2e5a1c", "#0b1a06"],
+      "posicion_y": 0.17,
+      "personaje": {
+        "pose": "feliz"
+      },
+      "voz": "Al mes tu tolerancia se reinicia: dientes menos manchados, mejor absorción del hierro, y una sola taza te hará mucho más efecto.",
+      "fondo": [
+        "#2e5a1c",
+        "#0b1a06"
+      ],
       "zoom": "out"
     },
     {
       "titulo": "¿Te atreves?",
-      "texto": "Cuéntamelo en comentarios",
-      "voz": "Cada cuerpo es distinto, así que si lo intentas, hazlo poco a poco. ¿Te atreverías a pasar treinta días sin café? Te leo en los comentarios.",
-      "fondo": ["#3b2314", "#0f0905"]
+      "posicion_y": 0.15,
+      "encuesta": {
+        "opciones": [
+          "SÍ, empiezo hoy",
+          "NO, imposible"
+        ],
+        "y": 0.27,
+        "llamada": "Comenta SÍ o NO y etiqueta a quien no puede vivir sin café"
+      },
+      "personaje": {
+        "pose": "saludo",
+        "objeto": "taza",
+        "y": 0.79,
+        "altura": 0.17
+      },
+      "voz": "Cada cuerpo es distinto, así que hazlo poco a poco. ¿Te atreves? Comenta SÍ o NO.",
+      "fondo": [
+        "#3b2314",
+        "#0f0905"
+      ],
+      "duracion": 8
     }
   ]
 }
