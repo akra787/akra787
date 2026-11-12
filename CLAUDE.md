@@ -13,7 +13,8 @@ salvo que falte algo imprescindible:
 
 La voz por defecto es Piper (realista, voces en `/opt/piper-voces`, descargadas por `instalar.sh` desde
 huggingface.co, que está permitido en la red del entorno). Si no hay voces Piper, se usa espeak-ng (robótica).
-No hay generadores de imagen en la nube; las imágenes se dibujan en local (Pillow, numpy, ffmpeg).
+No hay generadores de imagen en la nube. Para fotos realistas: `video/herramientas/imagenes_ia.py` (SD-Turbo en local,
+~25 s/imagen; instala torch y diffusers desde PyPI). Si no, las imágenes se dibujan con Pillow/numpy/ffmpeg.
 
 ## Cambiar solo la voz de un vídeo existente (doblaje)
 

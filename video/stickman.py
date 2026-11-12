@@ -72,9 +72,9 @@ def _engranaje(d, x, y, r, ang, color):
     d.ellipse([x - r * 0.3, y - r * 0.3, x + r * 0.3, y + r * 0.3], fill=(40, 40, 40, 255))
 
 
-def _figura(d, cx, base, H, t, pose, color, objeto):
+def _figura(d, cx, base, H, t, pose, color, objeto, grosor=1.0):
     """Dibuja el stickman de pie con los pies en (cx, base) y altura H."""
-    lw = max(6, int(H * 0.035))
+    lw = max(6, int(H * 0.035 * grosor))
     bob = 0.0
     lean = 0.0
     if pose == "energia":
@@ -246,7 +246,12 @@ def dibujar_personaje(img, spec, t, w, h):
         dormido(img, cx, base, H, t, color)
         return
     d = ImageDraw.Draw(img, "RGBA")
-    _figura(d, cx, base + (1 - appear) * H * 0.2, H, t, spec.get("pose", "saludo"), color, spec.get("objeto"))
+    by = base + (1 - appear) * H * 0.2
+    if spec.get("contorno", True):  # contorno oscuro para que se vea sobre fotos
+        capa = Image.new("RGBA", img.size, (0, 0, 0, 0))
+        _figura(ImageDraw.Draw(capa), cx, by, H, t, spec.get("pose", "saludo"), (0, 0, 0, 200), None, grosor=2.2)
+        img.paste(capa, (0, 0), capa)
+    _figura(d, cx, by, H, t, spec.get("pose", "saludo"), color, spec.get("objeto"))
 
 
 def _burbuja(d, x, y, s, color):

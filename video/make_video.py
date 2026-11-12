@@ -93,7 +93,14 @@ def piper_model(name):
     return p if os.path.exists(p) and os.path.exists(p + ".json") else None
 
 
-def tts(text, lang, voice_speed, out_wav, voice=DEFAULT_PIPER):
+# efecto «voz de vídeo IA»: más presencia, compresión y volumen alto
+VOZ_EFECTOS = {
+    "ia": "highpass=f=90,equalizer=f=3500:t=q:w=1:g=4,equalizer=f=200:t=q:w=1:g=2,"
+          "acompressor=threshold=-20dB:ratio=4:attack=5:release=60,loudnorm=I=-14:TP=-1.5",
+}
+
+
+def tts(text, lang, voice_speed, out_wav, voice=DEFAULT_PIPER, speaker=None, effect=None):
     """Voz sin conexión: Piper (realista) si el modelo está instalado, si no espeak-ng.
     Devuelve duración en segundos."""
     if not text.strip():
@@ -102,14 +109,21 @@ def tts(text, lang, voice_speed, out_wav, voice=DEFAULT_PIPER):
     if model:
         # length_scale > 1 = más lento; 150 ppm es la velocidad normal
         scale = max(0.5, min(2.0, 150 / max(voice_speed, 1)))
-        subprocess.run([sys.executable, "-m", "piper", "-m", model, "-f", out_wav, "--length-scale", f"{scale:.2f}"],
-                       input=text.encode("utf-8"), check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        cmd = [sys.executable, "-m", "piper", "-m", model, "-f", out_wav, "--length-scale", f"{scale:.2f}"]
+        if speaker is not None:
+            cmd += ["-s", str(speaker)]
+        subprocess.run(cmd, input=text.encode("utf-8"), check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     else:
         exe = shutil.which("espeak-ng") or shutil.which("espeak")
         if not exe:
             return 0.0
         subprocess.run([exe, "-v", lang, "-s", str(voice_speed), "-w", out_wav, text], check=True,
                        stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    if effect:
+        tmp_fx = out_wav + ".fx.wav"
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", out_wav, "-af", VOZ_EFECTOS.get(effect, effect),
+                        "-ac", "1", "-ar", "22050", tmp_fx], check=True)
+        os.replace(tmp_fx, out_wav)
     with wave.open(out_wav) as w:
         return w.getnframes() / w.getframerate()
 
@@ -195,6 +209,11 @@ class Scene:
             dark = s.get("oscurecer", 0.35)
             if dark:
                 img = Image.blend(img, Image.new("RGB", img.size, (0, 0, 0)), dark)
+            if s.get("vineta", True):  # viñeteado: bordes más oscuros, aspecto de cine
+                yy, xx = np.mgrid[0:img.height, 0:img.width]
+                r = np.sqrt(((xx - img.width / 2) / (img.width / 2)) ** 2 + ((yy - img.height / 2) / (img.height / 2)) ** 2)
+                k = np.clip(1 - 0.55 * np.clip(r - 0.45, 0, None) ** 1.5, 0, 1)[..., None]
+                img = Image.fromarray((np.asarray(img) * k).astype(np.uint8))
             return img
         cols = s.get("fondo", ["#1e3c72", "#2a5298"])
         if isinstance(cols, str):
@@ -308,7 +327,7 @@ def build(script_path, out_path=None):
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     random.seed(spec.get("semilla", 1))
 
-    defaults = {k: spec[k] for k in ("fondo", "acento", "color_texto", "marca", "subtitulos", "particulas") if k in spec}
+    defaults = {k: spec[k] for k in ("fondo", "acento", "color_texto", "marca", "subtitulos", "particulas", "oscurecer", "vineta") if k in spec}
     tmp = tempfile.mkdtemp(prefix="vid_")
     try:
         scenes, durs, voice = [], [], np.zeros(0)
@@ -320,7 +339,8 @@ def build(script_path, out_path=None):
             elif sc.get("voz"):
                 wav = os.path.join(tmp, f"v{i}.wav")
                 vdur = tts(sc["voz"], sc.get("idioma", lang), sc.get("velocidad_voz", speed), wav,
-                           sc.get("voz_modelo", voice_model))
+                           sc.get("voz_modelo", voice_model), sc.get("voz_hablante", spec.get("voz_hablante")),
+                           spec.get("voz_efecto"))
             dur = sc.get("duracion") or max(3.0, vdur + 0.8)
             sc = {**sc, "_voice_dur": vdur}
             scenes.append(Scene(sc, size, base_dir, defaults))

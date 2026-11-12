@@ -1,8 +1,6 @@
 {
   "formato": "vertical",
   "idioma": "es",
-  "voz_audio": false,
-  "velocidad_lectura": 150,
   "musica": "tranquila",
   "escenas": [
     {
@@ -13,12 +11,9 @@
         "pose": "beber",
         "objeto": "taza"
       },
-      "voz": "¿Qué le pasa a tu cuerpo si dejas el café durante 30 días? Quédate hasta el final.",
-      "fondo": [
-        "#3b2314",
-        "#0f0905"
-      ],
-      "zoom": "in"
+      "voz": "¿Qué le pasa a tu cuerpo si dejas el café durante treinta días? Quédate hasta el final.",
+      "zoom": "in",
+      "imagen": "sin_cafe_30_dias/escena1.jpg"
     },
     {
       "titulo": "¿Cuántos cafés tomas al día?",
@@ -35,11 +30,8 @@
         "llamada": "¡Comenta tu letra!"
       },
       "voz": "Antes de empezar: ¿cuántos cafés tomas al día? Dímelo en comentarios con tu letra.",
-      "fondo": [
-        "#6b1f3a",
-        "#1a0610"
-      ],
-      "duracion": 8
+      "imagen": "sin_cafe_30_dias/escena2.jpg",
+      "oscurecer": 0.55
     },
     {
       "titulo": "Día 1–2",
@@ -50,10 +42,7 @@
         "objeto": "taza_tachada"
       },
       "voz": "Los primeros dos días son los más duros: dolor de cabeza, cansancio y poca concentración. Es la abstinencia de la cafeína.",
-      "fondo": [
-        "#5a1e1e",
-        "#1a0808"
-      ]
+      "imagen": "sin_cafe_30_dias/escena3.jpg"
     },
     {
       "titulo": "Día 3–7",
@@ -63,10 +52,7 @@
         "pose": "pensando"
       },
       "voz": "La cafeína bloquea la adenosina, la señal de cansancio. Sin café, tu cerebro reduce los receptores extra que había creado.",
-      "fondo": [
-        "#4a3a12",
-        "#141005"
-      ]
+      "imagen": "sin_cafe_30_dias/escena4.jpg"
     },
     {
       "titulo": "¿Y tú?",
@@ -82,26 +68,15 @@
         "y": 0.76,
         "altura": 0.26
       },
-      "voz": "¿Cuántos días aguantarías tú sin café? Escribe el número en comentarios.",
-      "fondo": [
-        "#6b1f3a",
-        "#1a0610"
-      ],
-      "duracion": 7
+      "voz": "¿Y tú, cuántos días aguantarías sin café? Escribe el número en comentarios.",
+      "imagen": "sin_cafe_30_dias/escena5.jpg"
     },
     {
       "titulo": "Semana 2",
       "texto": "Duermes mejor",
       "posicion_y": 0.17,
-      "personaje": {
-        "pose": "dormido",
-        "y": 0.7
-      },
       "voz": "En la segunda semana el sueño suele ser más profundo. Te duermes antes y te levantas más descansado.",
-      "fondo": [
-        "#1c2a5a",
-        "#070b1c"
-      ]
+      "imagen": "sin_cafe_30_dias/escena6.jpg"
     },
     {
       "titulo": "Semana 3",
@@ -111,10 +86,7 @@
         "pose": "energia"
       },
       "voz": "Adiós a los bajones de media tarde. Tu energía es más estable y puedes notar menos ansiedad.",
-      "fondo": [
-        "#145a4a",
-        "#051a15"
-      ]
+      "imagen": "sin_cafe_30_dias/escena7.jpg"
     },
     {
       "titulo": "Día 30",
@@ -124,11 +96,8 @@
         "pose": "feliz"
       },
       "voz": "Al mes tu tolerancia se reinicia: dientes menos manchados, mejor absorción del hierro, y una sola taza te hará mucho más efecto.",
-      "fondo": [
-        "#2e5a1c",
-        "#0b1a06"
-      ],
-      "zoom": "out"
+      "zoom": "out",
+      "imagen": "sin_cafe_30_dias/escena8.jpg"
     },
     {
       "titulo": "¿Te atreves?",
@@ -148,11 +117,15 @@
         "altura": 0.17
       },
       "voz": "Cada cuerpo es distinto, así que hazlo poco a poco. ¿Te atreves? Comenta SÍ o NO.",
-      "fondo": [
-        "#3b2314",
-        "#0f0905"
-      ],
-      "duracion": 8
+      "imagen": "sin_cafe_30_dias/escena9.jpg",
+      "oscurecer": 0.55
     }
-  ]
+  ],
+  "voz_modelo": "es_ES-sharvard-medium",
+  "voz_hablante": 0,
+  "voz_efecto": "ia",
+  "velocidad_voz": 170,
+  "particulas": false,
+  "oscurecer": 0.4,
+  "volumen_musica": 0.6
 }
