@@ -1,6 +1,6 @@
 import subprocess, numpy as np, os, sys, wave
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
-S=os.environ.get("TRABAJO", os.path.dirname(os.path.abspath(__file__))); F=sys.argv[1]; OUT=sys.argv[2]
+S=os.path.dirname(os.path.abspath(__file__)); F=sys.argv[1]; OUT=sys.argv[2]
 W,H,FPS=1080,1920,30; DUR=4.3; N=int(DUR*FPS)
 GOLD=(241,194,90); B="/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 # fondo: clip dramático del propio vídeo (meses después)
@@ -9,7 +9,7 @@ fr=np.frombuffer(raw,np.uint8).reshape(-1,H,W,3)
 # viñeta
 yy,xx=np.mgrid[0:H,0:W]; d=np.sqrt(((xx-W/2)/(W/2))**2+((yy-H*0.45)/(H/2))**2)
 vig=np.clip(1-0.55*d**1.6,0.15,1)[...,None]
-subs=[(0.20,1.55,"¿Qué le pasaría a tu cuerpo"),(1.55,2.75,"si tomas café todos los días,"),(2.75,3.95,"durante treinta días?")]
+import json; subs=json.load(open(os.environ["SUBS"])) if os.environ.get("SUBS") else [(0.20,1.55,"¿Qué le pasaría a tu cuerpo"),(1.55,2.75,"si tomas café todos los días,"),(2.75,3.95,"durante treinta días?")]
 def font(s): return ImageFont.truetype(B,s)
 def ease(t): t=min(max(t,0),1); return 1-(1-t)**3
 def pop(t):  # escala con rebote
