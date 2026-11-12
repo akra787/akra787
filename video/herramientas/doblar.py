@@ -3,22 +3,24 @@
 
 Uso: python3 video/herramientas/doblar.py entrada.mp4 lineas.json salida.mp4
 
-lineas.json: {"voz_modelo": "es_ES-davefx-medium", "musica": "tranquila", "volumen_musica": 0.35,
+lineas.json: {"voz_modelo": "es_ES-davefx-medium", "voz_hablante": 0, "voz_efecto": "ia", "musica": "tranquila", "volumen_musica": 0.35,
               "lineas": [{"inicio": 0.5, "fin": 1.75, "texto": "Este es Pablo."}, ...]}
 Cada frase se ajusta (velocidad) para que ocupe su hueco [inicio, fin] del vídeo original.
 """
 import json, os, re, subprocess, sys, tempfile, wave
 import numpy as np
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
-from make_video import SR, music, piper_model, read_wav, write_wav, DEFAULT_PIPER
+from make_video import SR, VOZ_EFECTOS, music, piper_model, read_wav, write_wav, DEFAULT_PIPER
 
 
 MAX_SCALE = 1.4  # como mucho un 40 % más lento que lo normal
 
 
-def piper(text, model, scale, out):
-    subprocess.run([sys.executable, "-m", "piper", "-m", model, "-f", out, "--length-scale", f"{scale:.3f}",
-                    "--sentence-silence", "0"], input=text.encode(), check=True,
+def piper(text, model, scale, out, speaker=None):
+    cmd = [sys.executable, "-m", "piper", "-m", model, "-f", out, "--length-scale", f"{scale:.3f}", "--sentence-silence", "0"]
+    if speaker is not None:
+        cmd += ["-s", str(speaker)]
+    subprocess.run(cmd, input=text.encode(), check=True,
                    stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     a = read_wav(out)
     nz = np.where(np.abs(a) > 0.01)[0]  # recorta silencios al principio y al final
@@ -40,7 +42,7 @@ def main(src, spec_path, dst):
         chunks = [c.strip() for c in re.split(r"(?<=[,.;:?!…])\s+", l["texto"]) if c.strip()]
         scale = 1.0
         for _ in range(4):
-            parts = [piper(c, model, scale, os.path.join(tmp, f"{i}_{k}.wav")) for k, c in enumerate(chunks)]
+            parts = [piper(c, model, scale, os.path.join(tmp, f"{i}_{k}.wav"), spec.get("voz_hablante")) for k, c in enumerate(chunks)]
             speech = sum(len(a) for a in parts) / SR
             gaps = len(parts) - 1
             target = slot - min(0.45, 0.6 * gaps) * gaps  # tiempo de habla deseado
@@ -57,6 +59,13 @@ def main(src, spec_path, dst):
         out[s0:s0 + len(a)] += a[: len(out) - s0]
         print(f"  {l['inicio']:5.2f}s  vel x{1/scale:.2f}  {len(a)/SR:.2f}s/{slot:.2f}s  {l['texto']}")
     out = out[: int(dur * SR)]
+    if spec.get("voz_efecto"):  # p. ej. "ia": más presencia y volumen, estilo vídeos de IA
+        vin, vout = os.path.join(tmp, "voz.wav"), os.path.join(tmp, "voz_fx.wav")
+        write_wav(vin, out / max(1.0, np.abs(out).max()))
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", vin, "-af",
+                        VOZ_EFECTOS.get(spec["voz_efecto"], spec["voz_efecto"]), "-ac", "1", "-ar", str(SR), vout], check=True)
+        v = read_wav(vout)
+        out = np.zeros(len(out)); out[: min(len(v), len(out))] = v[: len(out)]
     if spec.get("musica", "tranquila") not in (None, False, "no"):
         m = music(dur, spec.get("musica", "tranquila"))
         out[: len(m)] += m[: len(out)] * spec.get("volumen_musica", 0.35)
