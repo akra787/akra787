@@ -1,0 +1,28 @@
+{
+  "formato": "vertical",
+  "idioma": "es",
+  "musica": "alegre",
+  "salida": "../../videos/demo.mp4",
+  "marca": "@akra787",
+  "escenas": [
+    {
+      "titulo": "Vídeos con IA",
+      "texto": "Pídelo y aparece en tu carpeta",
+      "voz": "Hola. Este vídeo lo ha hecho Claude automáticamente.",
+      "fondo": ["#0f2027", "#2c5364"]
+    },
+    {
+      "titulo": "¿Cómo funciona?",
+      "texto": "Guion, voz, música y montaje en un solo paso",
+      "voz": "Tú me dices de qué trata el vídeo, y yo escribo el guion, pongo la voz y la música, y lo monto.",
+      "fondo": ["#42275a", "#734b6d"],
+      "zoom": "out"
+    },
+    {
+      "titulo": "Listo",
+      "texto": "Lo encontrarás en la carpeta videos",
+      "voz": "Y el resultado queda guardado en la carpeta videos. Así de fácil.",
+      "fondo": ["#11998e", "#38ef7d"]
+    }
+  ]
+}
