@@ -1,0 +1,159 @@
+{
+ "voz_elevenlabs": "Dan",
+ "idioma": "es",
+ "modelo": "eleven_multilingual_v2",
+ "musica": "tranquila",
+ "volumen_musica": 0.3,
+ "conservar_original": [
+  [
+   3.9,
+   4.35
+  ],
+  [
+   62.9,
+   72.65
+  ]
+ ],
+ "lineas": [
+  {
+   "inicio": 0.2,
+   "fin": 4.0,
+   "texto": "¿Qué le pasaría a tu cuerpo si tomas café todos los días, durante treinta días?"
+  },
+  {
+   "inicio": 5.1,
+   "fin": 6.2,
+   "texto": "Día uno."
+  },
+  {
+   "inicio": 6.25,
+   "fin": 7.8,
+   "texto": "Un café por la mañana."
+  },
+  {
+   "inicio": 7.9,
+   "fin": 11.3,
+   "texto": "Energía, concentración... todo parece bajo control."
+  },
+  {
+   "inicio": 12.7,
+   "fin": 13.9,
+   "texto": "Día tres."
+  },
+  {
+   "inicio": 14.0,
+   "fin": 15.6,
+   "texto": "Una taza ya no basta."
+  },
+  {
+   "inicio": 15.75,
+   "fin": 18.8,
+   "texto": "Llega el cansancio... y con él, la irritabilidad."
+  },
+  {
+   "inicio": 20.2,
+   "fin": 21.4,
+   "texto": "Semana uno."
+  },
+  {
+   "inicio": 21.5,
+   "fin": 23.9,
+   "texto": "La cafeína sigue en tu cuerpo por la noche."
+  },
+  {
+   "inicio": 24.0,
+   "fin": 26.6,
+   "texto": "Duermes, pero no descansas."
+  },
+  {
+   "inicio": 27.3,
+   "fin": 30.9,
+   "texto": "Lo primero que haces al despertar ya no es abrir los ojos."
+  },
+  {
+   "inicio": 31.1,
+   "fin": 32.9,
+   "texto": "Es buscar café."
+  },
+  {
+   "inicio": 34.2,
+   "fin": 35.2,
+   "texto": "Mes uno."
+  },
+  {
+   "inicio": 35.25,
+   "fin": 37.1,
+   "texto": "Cuatro, cinco tazas al día."
+  },
+  {
+   "inicio": 37.2,
+   "fin": 39.8,
+   "texto": "Tu cuerpo se acostumbra... y te pide más."
+  },
+  {
+   "inicio": 41.2,
+   "fin": 43.6,
+   "texto": "Y aun así, la concentración se rompe."
+  },
+  {
+   "inicio": 43.7,
+   "fin": 46.3,
+   "texto": "Olvidas lo que ibas a hacer."
+  },
+  {
+   "inicio": 47.3,
+   "fin": 48.6,
+   "texto": "Meses después."
+  },
+  {
+   "inicio": 48.75,
+   "fin": 50.1,
+   "texto": "Manos que tiemblan."
+  },
+  {
+   "inicio": 50.25,
+   "fin": 51.2,
+   "texto": "Inquietud."
+  },
+  {
+   "inicio": 51.4,
+   "fin": 54.3,
+   "texto": "El corazón acelerado sin motivo."
+  },
+  {
+   "inicio": 55.4,
+   "fin": 57.3,
+   "texto": "Y una noche, algo extraño."
+  },
+  {
+   "inicio": 57.4,
+   "fin": 58.9,
+   "texto": "Te falta el aire."
+  },
+  {
+   "inicio": 58.95,
+   "fin": 61.3,
+   "texto": "El pecho se aprieta."
+  },
+  {
+   "inicio": 62.05,
+   "fin": 63.3,
+   "texto": "La taza cae."
+  },
+  {
+   "inicio": 72.7,
+   "fin": 74.8,
+   "texto": "El café no es el enemigo."
+  },
+  {
+   "inicio": 74.9,
+   "fin": 76.5,
+   "texto": "El exceso, sí."
+  },
+  {
+   "inicio": 76.55,
+   "fin": 78.9,
+   "texto": "Escucha a tu cuerpo."
+  }
+ ]
+}
