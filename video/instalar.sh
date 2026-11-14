@@ -10,6 +10,8 @@ if [ -n "$need_apt" ]; then
 fi
 python3 -c "import PIL, numpy" 2>/dev/null || pip install -q pillow numpy
 python3 -c "import piper" 2>/dev/null || pip install -q piper-tts
+# pycairo: dibujo vectorial con antialiasing para vídeos animados a medida (videos/*/animar.py)
+python3 -c "import cairo" 2>/dev/null || { apt-get install -y libcairo2-dev pkg-config >/dev/null 2>&1; pip install -q pycairo; }
 
 # Voces realistas de Piper (necesita acceso a huggingface.co; si falla se usa espeak-ng)
 DIR="${PIPER_VOCES:-/opt/piper-voces}"
