@@ -1,0 +1,7191 @@
+[
+{
+"w": "El",
+"s": 0.0,
+"e": 0.26,
+"escena": 0,
+"nl": true
+},
+{
+"w": "último",
+"s": 0.26,
+"e": 0.64,
+"escena": 0,
+"nl": false
+},
+{
+"w": "tren",
+"s": 0.64,
+"e": 1.02,
+"escena": 0,
+"nl": false
+},
+{
+"w": "de",
+"s": 1.02,
+"e": 1.24,
+"escena": 0,
+"nl": false
+},
+{
+"w": "la",
+"s": 1.24,
+"e": 1.36,
+"escena": 0,
+"nl": false
+},
+{
+"w": "noche.",
+"s": 1.36,
+"e": 1.64,
+"escena": 0,
+"nl": false
+},
+{
+"w": "Nunca",
+"s": 2.87,
+"e": 3.43,
+"escena": 1,
+"nl": true
+},
+{
+"w": "debí",
+"s": 3.43,
+"e": 3.73,
+"escena": 1,
+"nl": false
+},
+{
+"w": "subir",
+"s": 3.73,
+"e": 3.99,
+"escena": 1,
+"nl": false
+},
+{
+"w": "a",
+"s": 3.99,
+"e": 4.11,
+"escena": 1,
+"nl": false
+},
+{
+"w": "aquel",
+"s": 3.99,
+"e": 4.51,
+"escena": 1,
+"nl": false
+},
+{
+"w": "tren.",
+"s": 4.51,
+"e": 4.73,
+"escena": 1,
+"nl": false
+},
+{
+"w": "Eran",
+"s": 5.83,
+"e": 6.07,
+"escena": 1,
+"nl": true
+},
+{
+"w": "las",
+"s": 6.07,
+"e": 6.25,
+"escena": 1,
+"nl": false
+},
+{
+"w": "3:17",
+"s": 6.25,
+"e": 7.11,
+"escena": 1,
+"nl": false
+},
+{
+"w": "de",
+"s": 7.11,
+"e": 7.29,
+"escena": 1,
+"nl": false
+},
+{
+"w": "la",
+"s": 7.29,
+"e": 7.37,
+"escena": 1,
+"nl": false
+},
+{
+"w": "madrugada",
+"s": 7.37,
+"e": 7.89,
+"escena": 1,
+"nl": false
+},
+{
+"w": "cuando",
+"s": 7.89,
+"e": 8.37,
+"escena": 1,
+"nl": false
+},
+{
+"w": "llegué",
+"s": 8.37,
+"e": 8.77,
+"escena": 1,
+"nl": false
+},
+{
+"w": "a",
+"s": 8.77,
+"e": 8.89,
+"escena": 1,
+"nl": false
+},
+{
+"w": "la",
+"s": 8.89,
+"e": 8.99,
+"escena": 1,
+"nl": false
+},
+{
+"w": "estación.",
+"s": 8.99,
+"e": 9.35,
+"escena": 1,
+"nl": false
+},
+{
+"w": "Estaba",
+"s": 10.29,
+"e": 10.65,
+"escena": 1,
+"nl": true
+},
+{
+"w": "completamente",
+"s": 10.65,
+"e": 11.31,
+"escena": 1,
+"nl": false
+},
+{
+"w": "solo.",
+"s": 11.31,
+"e": 11.91,
+"escena": 1,
+"nl": false
+},
+{
+"w": "Las",
+"s": 12.83,
+"e": 12.97,
+"escena": 1,
+"nl": true
+},
+{
+"w": "luces",
+"s": 12.97,
+"e": 13.27,
+"escena": 1,
+"nl": false
+},
+{
+"w": "parpadeaban",
+"s": 13.27,
+"e": 14.03,
+"escena": 1,
+"nl": false
+},
+{
+"w": "y",
+"s": 14.03,
+"e": 14.47,
+"escena": 1,
+"nl": false
+},
+{
+"w": "apenas",
+"s": 14.47,
+"e": 14.79,
+"escena": 1,
+"nl": false
+},
+{
+"w": "se",
+"s": 14.79,
+"e": 15.05,
+"escena": 1,
+"nl": false
+},
+{
+"w": "escuchaba",
+"s": 15.05,
+"e": 15.53,
+"escena": 1,
+"nl": false
+},
+{
+"w": "el",
+"s": 15.53,
+"e": 15.73,
+"escena": 1,
+"nl": false
+},
+{
+"w": "zumbido",
+"s": 15.73,
+"e": 16.21,
+"escena": 1,
+"nl": false
+},
+{
+"w": "de",
+"s": 16.21,
+"e": 16.37,
+"escena": 1,
+"nl": false
+},
+{
+"w": "las",
+"s": 16.37,
+"e": 16.53,
+"escena": 1,
+"nl": false
+},
+{
+"w": "máquinas",
+"s": 16.53,
+"e": 16.97,
+"escena": 1,
+"nl": false
+},
+{
+"w": "expendedoras.",
+"s": 16.97,
+"e": 17.71,
+"escena": 1,
+"nl": false
+},
+{
+"w": "Había",
+"s": 18.41,
+"e": 19.09,
+"escena": 1,
+"nl": true
+},
+{
+"w": "perdido",
+"s": 19.09,
+"e": 19.57,
+"escena": 1,
+"nl": false
+},
+{
+"w": "el",
+"s": 19.57,
+"e": 19.73,
+"escena": 1,
+"nl": false
+},
+{
+"w": "último",
+"s": 19.73,
+"e": 20.05,
+"escena": 1,
+"nl": false
+},
+{
+"w": "tren",
+"s": 20.05,
+"e": 20.41,
+"escena": 1,
+"nl": false
+},
+{
+"w": "de",
+"s": 20.41,
+"e": 20.59,
+"escena": 1,
+"nl": false
+},
+{
+"w": "mi",
+"s": 20.59,
+"e": 20.69,
+"escena": 1,
+"nl": false
+},
+{
+"w": "línea",
+"s": 20.69,
+"e": 21.03,
+"escena": 1,
+"nl": false
+},
+{
+"w": "y",
+"s": 21.03,
+"e": 21.61,
+"escena": 1,
+"nl": false
+},
+{
+"w": "pensaba",
+"s": 21.61,
+"e": 22.03,
+"escena": 1,
+"nl": false
+},
+{
+"w": "que",
+"s": 22.03,
+"e": 22.17,
+"escena": 1,
+"nl": false
+},
+{
+"w": "tendría",
+"s": 22.17,
+"e": 22.57,
+"escena": 1,
+"nl": false
+},
+{
+"w": "que",
+"s": 22.57,
+"e": 22.73,
+"escena": 1,
+"nl": false
+},
+{
+"w": "esperar",
+"s": 22.73,
+"e": 23.05,
+"escena": 1,
+"nl": false
+},
+{
+"w": "hasta",
+"s": 23.05,
+"e": 23.37,
+"escena": 1,
+"nl": false
+},
+{
+"w": "la",
+"s": 23.37,
+"e": 23.49,
+"escena": 1,
+"nl": false
+},
+{
+"w": "mañana.",
+"s": 23.49,
+"e": 23.77,
+"escena": 1,
+"nl": false
+},
+{
+"w": "Pero",
+"s": 24.59,
+"e": 25.03,
+"escena": 1,
+"nl": true
+},
+{
+"w": "entonces",
+"s": 25.03,
+"e": 25.45,
+"escena": 1,
+"nl": false
+},
+{
+"w": "ocurrió",
+"s": 25.45,
+"e": 26.51,
+"escena": 1,
+"nl": false
+},
+{
+"w": "algo",
+"s": 26.51,
+"e": 26.83,
+"escena": 1,
+"nl": false
+},
+{
+"w": "extraño.",
+"s": 26.83,
+"e": 27.41,
+"escena": 1,
+"nl": false
+},
+{
+"w": "En",
+"s": 28.39,
+"e": 28.61,
+"escena": 1,
+"nl": true
+},
+{
+"w": "la",
+"s": 28.61,
+"e": 28.69,
+"escena": 1,
+"nl": false
+},
+{
+"w": "pantalla",
+"s": 28.69,
+"e": 29.09,
+"escena": 1,
+"nl": false
+},
+{
+"w": "apareció",
+"s": 29.09,
+"e": 29.99,
+"escena": 1,
+"nl": false
+},
+{
+"w": "un",
+"s": 29.99,
+"e": 30.17,
+"escena": 1,
+"nl": false
+},
+{
+"w": "tren",
+"s": 30.17,
+"e": 30.39,
+"escena": 1,
+"nl": false
+},
+{
+"w": "que",
+"s": 30.39,
+"e": 30.65,
+"escena": 1,
+"nl": false
+},
+{
+"w": "no",
+"s": 30.65,
+"e": 30.91,
+"escena": 1,
+"nl": false
+},
+{
+"w": "figuraba",
+"s": 30.91,
+"e": 31.49,
+"escena": 1,
+"nl": false
+},
+{
+"w": "en",
+"s": 31.49,
+"e": 31.61,
+"escena": 1,
+"nl": false
+},
+{
+"w": "los",
+"s": 31.61,
+"e": 31.71,
+"escena": 1,
+"nl": false
+},
+{
+"w": "horarios.",
+"s": 31.71,
+"e": 32.11,
+"escena": 1,
+"nl": false
+},
+{
+"w": "Destino:",
+"s": 33.41,
+"e": 34.09,
+"escena": 1,
+"nl": true
+},
+{
+"w": "desconocido.",
+"s": 34.09,
+"e": 34.77,
+"escena": 1,
+"nl": false
+},
+{
+"w": "Y",
+"s": 35.57,
+"e": 35.91,
+"escena": 1,
+"nl": true
+},
+{
+"w": "lo",
+"s": 35.91,
+"e": 36.03,
+"escena": 1,
+"nl": false
+},
+{
+"w": "más",
+"s": 36.03,
+"e": 36.19,
+"escena": 1,
+"nl": false
+},
+{
+"w": "inquietante…",
+"s": 36.19,
+"e": 36.83,
+"escena": 1,
+"nl": false
+},
+{
+"w": "es",
+"s": 36.83,
+"e": 37.67,
+"escena": 1,
+"nl": false
+},
+{
+"w": "que",
+"s": 37.67,
+"e": 37.81,
+"escena": 1,
+"nl": false
+},
+{
+"w": "la",
+"s": 37.81,
+"e": 37.93,
+"escena": 1,
+"nl": false
+},
+{
+"w": "hora",
+"s": 37.93,
+"e": 38.19,
+"escena": 1,
+"nl": false
+},
+{
+"w": "de",
+"s": 38.19,
+"e": 38.35,
+"escena": 1,
+"nl": false
+},
+{
+"w": "llegada",
+"s": 38.35,
+"e": 38.75,
+"escena": 1,
+"nl": false
+},
+{
+"w": "marcaba",
+"s": 38.75,
+"e": 39.55,
+"escena": 1,
+"nl": false
+},
+{
+"w": "las",
+"s": 39.55,
+"e": 39.73,
+"escena": 1,
+"nl": false
+},
+{
+"w": "3:17.",
+"s": 39.73,
+"e": 40.89,
+"escena": 1,
+"nl": false
+},
+{
+"w": "Justo",
+"s": 41.69,
+"e": 42.37,
+"escena": 1,
+"nl": true
+},
+{
+"w": "en",
+"s": 42.37,
+"e": 42.47,
+"escena": 1,
+"nl": false
+},
+{
+"w": "ese",
+"s": 42.47,
+"e": 42.63,
+"escena": 1,
+"nl": false
+},
+{
+"w": "momento,",
+"s": 42.63,
+"e": 43.01,
+"escena": 1,
+"nl": false
+},
+{
+"w": "las",
+"s": 43.01,
+"e": 43.61,
+"escena": 1,
+"nl": false
+},
+{
+"w": "puertas",
+"s": 43.61,
+"e": 44.01,
+"escena": 1,
+"nl": false
+},
+{
+"w": "del",
+"s": 44.01,
+"e": 44.21,
+"escena": 1,
+"nl": false
+},
+{
+"w": "tren",
+"s": 44.21,
+"e": 44.45,
+"escena": 1,
+"nl": false
+},
+{
+"w": "se",
+"s": 44.45,
+"e": 44.69,
+"escena": 1,
+"nl": false
+},
+{
+"w": "abrieron",
+"s": 44.69,
+"e": 45.13,
+"escena": 1,
+"nl": false
+},
+{
+"w": "frente",
+"s": 45.13,
+"e": 45.33,
+"escena": 1,
+"nl": false
+},
+{
+"w": "a",
+"s": 45.33,
+"e": 45.55,
+"escena": 1,
+"nl": false
+},
+{
+"w": "mí.",
+"s": 45.55,
+"e": 45.67,
+"escena": 1,
+"nl": false
+},
+{
+"w": "No",
+"s": 46.33,
+"e": 46.87,
+"escena": 1,
+"nl": true
+},
+{
+"w": "sé",
+"s": 46.87,
+"e": 47.07,
+"escena": 1,
+"nl": false
+},
+{
+"w": "por",
+"s": 47.07,
+"e": 47.27,
+"escena": 1,
+"nl": false
+},
+{
+"w": "qué",
+"s": 47.27,
+"e": 47.41,
+"escena": 1,
+"nl": false
+},
+{
+"w": "subí.",
+"s": 47.41,
+"e": 47.77,
+"escena": 1,
+"nl": false
+},
+{
+"w": "Quizá",
+"s": 48.41,
+"e": 48.83,
+"escena": 1,
+"nl": true
+},
+{
+"w": "porque",
+"s": 48.83,
+"e": 49.05,
+"escena": 1,
+"nl": false
+},
+{
+"w": "estaba",
+"s": 49.05,
+"e": 49.39,
+"escena": 1,
+"nl": false
+},
+{
+"w": "cansado.",
+"s": 49.39,
+"e": 49.95,
+"escena": 1,
+"nl": false
+},
+{
+"w": "O",
+"s": 50.57,
+"e": 50.83,
+"escena": 1,
+"nl": true
+},
+{
+"w": "quizá",
+"s": 50.83,
+"e": 51.19,
+"escena": 1,
+"nl": false
+},
+{
+"w": "porque",
+"s": 51.19,
+"e": 51.81,
+"escena": 1,
+"nl": false
+},
+{
+"w": "aquel",
+"s": 51.81,
+"e": 52.17,
+"escena": 1,
+"nl": false
+},
+{
+"w": "tren",
+"s": 52.17,
+"e": 52.45,
+"escena": 1,
+"nl": false
+},
+{
+"w": "ya",
+"s": 52.45,
+"e": 53.19,
+"escena": 1,
+"nl": false
+},
+{
+"w": "me",
+"s": 53.19,
+"e": 53.43,
+"escena": 1,
+"nl": false
+},
+{
+"w": "estaba",
+"s": 53.43,
+"e": 53.77,
+"escena": 1,
+"nl": false
+},
+{
+"w": "esperando.",
+"s": 53.77,
+"e": 54.15,
+"escena": 1,
+"nl": false
+},
+{
+"w": "Cuando",
+"s": 56.01,
+"e": 56.27,
+"escena": 2,
+"nl": true
+},
+{
+"w": "entré,",
+"s": 56.27,
+"e": 56.73,
+"escena": 2,
+"nl": false
+},
+{
+"w": "me",
+"s": 56.73,
+"e": 57.31,
+"escena": 2,
+"nl": false
+},
+{
+"w": "sorprendió",
+"s": 57.31,
+"e": 57.83,
+"escena": 2,
+"nl": false
+},
+{
+"w": "que",
+"s": 57.83,
+"e": 58.01,
+"escena": 2,
+"nl": false
+},
+{
+"w": "no",
+"s": 58.01,
+"e": 58.25,
+"escena": 2,
+"nl": false
+},
+{
+"w": "hubiera",
+"s": 58.25,
+"e": 58.61,
+"escena": 2,
+"nl": false
+},
+{
+"w": "nadie.",
+"s": 58.61,
+"e": 58.91,
+"escena": 2,
+"nl": false
+},
+{
+"w": "Ni",
+"s": 59.65,
+"e": 59.81,
+"escena": 2,
+"nl": true
+},
+{
+"w": "pasajeros,",
+"s": 59.81,
+"e": 60.41,
+"escena": 2,
+"nl": false
+},
+{
+"w": "ni",
+"s": 60.81,
+"e": 60.93,
+"escena": 2,
+"nl": false
+},
+{
+"w": "conductor,",
+"s": 60.93,
+"e": 61.33,
+"escena": 2,
+"nl": false
+},
+{
+"w": "ni",
+"s": 62.05,
+"e": 62.13,
+"escena": 2,
+"nl": false
+},
+{
+"w": "siquiera",
+"s": 62.13,
+"e": 62.47,
+"escena": 2,
+"nl": false
+},
+{
+"w": "personal",
+"s": 62.47,
+"e": 62.97,
+"escena": 2,
+"nl": false
+},
+{
+"w": "de",
+"s": 62.97,
+"e": 63.21,
+"escena": 2,
+"nl": false
+},
+{
+"w": "seguridad.",
+"s": 63.21,
+"e": 63.55,
+"escena": 2,
+"nl": false
+},
+{
+"w": "El",
+"s": 64.39,
+"e": 64.81,
+"escena": 2,
+"nl": true
+},
+{
+"w": "vagón",
+"s": 64.81,
+"e": 65.15,
+"escena": 2,
+"nl": false
+},
+{
+"w": "estaba",
+"s": 65.15,
+"e": 65.47,
+"escena": 2,
+"nl": false
+},
+{
+"w": "iluminado",
+"s": 65.47,
+"e": 66.09,
+"escena": 2,
+"nl": false
+},
+{
+"w": "por",
+"s": 66.09,
+"e": 66.31,
+"escena": 2,
+"nl": false
+},
+{
+"w": "unas",
+"s": 66.31,
+"e": 66.51,
+"escena": 2,
+"nl": false
+},
+{
+"w": "luces",
+"s": 66.51,
+"e": 66.91,
+"escena": 2,
+"nl": false
+},
+{
+"w": "blancas",
+"s": 66.91,
+"e": 67.45,
+"escena": 2,
+"nl": false
+},
+{
+"w": "que",
+"s": 67.45,
+"e": 67.79,
+"escena": 2,
+"nl": false
+},
+{
+"w": "parpadeaban",
+"s": 67.79,
+"e": 68.53,
+"escena": 2,
+"nl": false
+},
+{
+"w": "de",
+"s": 68.53,
+"e": 68.73,
+"escena": 2,
+"nl": false
+},
+{
+"w": "vez",
+"s": 68.73,
+"e": 68.91,
+"escena": 2,
+"nl": false
+},
+{
+"w": "en",
+"s": 68.91,
+"e": 69.07,
+"escena": 2,
+"nl": false
+},
+{
+"w": "cuando.",
+"s": 69.07,
+"e": 69.37,
+"escena": 2,
+"nl": false
+},
+{
+"w": "Me",
+"s": 70.15,
+"e": 70.55,
+"escena": 2,
+"nl": true
+},
+{
+"w": "senté",
+"s": 70.55,
+"e": 70.85,
+"escena": 2,
+"nl": false
+},
+{
+"w": "junto",
+"s": 70.85,
+"e": 71.05,
+"escena": 2,
+"nl": false
+},
+{
+"w": "a",
+"s": 71.05,
+"e": 71.29,
+"escena": 2,
+"nl": false
+},
+{
+"w": "una",
+"s": 71.29,
+"e": 71.43,
+"escena": 2,
+"nl": false
+},
+{
+"w": "ventana",
+"s": 71.43,
+"e": 71.91,
+"escena": 2,
+"nl": false
+},
+{
+"w": "y",
+"s": 71.91,
+"e": 72.35,
+"escena": 2,
+"nl": false
+},
+{
+"w": "saqué",
+"s": 72.35,
+"e": 72.61,
+"escena": 2,
+"nl": false
+},
+{
+"w": "el",
+"s": 72.61,
+"e": 72.83,
+"escena": 2,
+"nl": false
+},
+{
+"w": "móvil",
+"s": 72.83,
+"e": 73.19,
+"escena": 2,
+"nl": false
+},
+{
+"w": "para",
+"s": 73.19,
+"e": 73.41,
+"escena": 2,
+"nl": false
+},
+{
+"w": "avisar",
+"s": 73.41,
+"e": 73.83,
+"escena": 2,
+"nl": false
+},
+{
+"w": "de",
+"s": 73.83,
+"e": 73.97,
+"escena": 2,
+"nl": false
+},
+{
+"w": "que",
+"s": 73.97,
+"e": 74.07,
+"escena": 2,
+"nl": false
+},
+{
+"w": "llegaría",
+"s": 74.07,
+"e": 74.47,
+"escena": 2,
+"nl": false
+},
+{
+"w": "tarde.",
+"s": 74.47,
+"e": 74.83,
+"escena": 2,
+"nl": false
+},
+{
+"w": "Sin",
+"s": 75.77,
+"e": 76.09,
+"escena": 2,
+"nl": true
+},
+{
+"w": "cobertura.",
+"s": 76.09,
+"e": 76.59,
+"escena": 2,
+"nl": false
+},
+{
+"w": "Entonces,",
+"s": 77.41,
+"e": 78.01,
+"escena": 2,
+"nl": true
+},
+{
+"w": "las",
+"s": 78.01,
+"e": 78.77,
+"escena": 2,
+"nl": false
+},
+{
+"w": "puertas",
+"s": 78.77,
+"e": 79.19,
+"escena": 2,
+"nl": false
+},
+{
+"w": "comenzaron",
+"s": 79.19,
+"e": 79.93,
+"escena": 2,
+"nl": false
+},
+{
+"w": "a",
+"s": 79.93,
+"e": 80.09,
+"escena": 2,
+"nl": false
+},
+{
+"w": "cerrarse.",
+"s": 80.09,
+"e": 80.59,
+"escena": 2,
+"nl": false
+},
+{
+"w": "Y",
+"s": 81.29,
+"e": 81.47,
+"escena": 2,
+"nl": true
+},
+{
+"w": "justo",
+"s": 81.47,
+"e": 81.83,
+"escena": 2,
+"nl": false
+},
+{
+"w": "antes",
+"s": 81.83,
+"e": 82.21,
+"escena": 2,
+"nl": false
+},
+{
+"w": "de",
+"s": 82.21,
+"e": 82.39,
+"escena": 2,
+"nl": false
+},
+{
+"w": "que",
+"s": 82.39,
+"e": 82.49,
+"escena": 2,
+"nl": false
+},
+{
+"w": "el",
+"s": 82.49,
+"e": 82.67,
+"escena": 2,
+"nl": false
+},
+{
+"w": "tren",
+"s": 82.67,
+"e": 82.89,
+"escena": 2,
+"nl": false
+},
+{
+"w": "arrancara,",
+"s": 82.89,
+"e": 83.51,
+"escena": 2,
+"nl": false
+},
+{
+"w": "escuché",
+"s": 83.51,
+"e": 84.55,
+"escena": 2,
+"nl": false
+},
+{
+"w": "una",
+"s": 84.55,
+"e": 84.77,
+"escena": 2,
+"nl": false
+},
+{
+"w": "voz",
+"s": 84.77,
+"e": 85.09,
+"escena": 2,
+"nl": false
+},
+{
+"w": "detrás",
+"s": 85.09,
+"e": 85.47,
+"escena": 2,
+"nl": false
+},
+{
+"w": "de",
+"s": 85.47,
+"e": 85.61,
+"escena": 2,
+"nl": false
+},
+{
+"w": "mí.",
+"s": 85.61,
+"e": 85.77,
+"escena": 2,
+"nl": false
+},
+{
+"w": "—No",
+"s": 85.77,
+"e": 86.71,
+"escena": 2,
+"nl": true
+},
+{
+"w": "deberías",
+"s": 87.017,
+"e": 87.323,
+"escena": 2,
+"nl": false
+},
+{
+"w": "haber",
+"s": 87.323,
+"e": 87.63,
+"escena": 2,
+"nl": false
+},
+{
+"w": "subido.",
+"s": 87.63,
+"e": 88.23,
+"escena": 2,
+"nl": false
+},
+{
+"w": "Me",
+"s": 88.91,
+"e": 89.17,
+"escena": 2,
+"nl": true
+},
+{
+"w": "giré",
+"s": 89.17,
+"e": 89.47,
+"escena": 2,
+"nl": false
+},
+{
+"w": "rápidamente.",
+"s": 89.47,
+"e": 90.23,
+"escena": 2,
+"nl": false
+},
+{
+"w": "Era",
+"s": 91.07,
+"e": 91.33,
+"escena": 2,
+"nl": true
+},
+{
+"w": "una",
+"s": 91.33,
+"e": 91.53,
+"escena": 2,
+"nl": false
+},
+{
+"w": "anciana",
+"s": 91.53,
+"e": 91.97,
+"escena": 2,
+"nl": false
+},
+{
+"w": "sentada",
+"s": 91.97,
+"e": 92.57,
+"escena": 2,
+"nl": false
+},
+{
+"w": "en",
+"s": 92.57,
+"e": 92.71,
+"escena": 2,
+"nl": false
+},
+{
+"w": "el",
+"s": 92.71,
+"e": 92.83,
+"escena": 2,
+"nl": false
+},
+{
+"w": "último",
+"s": 92.83,
+"e": 93.17,
+"escena": 2,
+"nl": false
+},
+{
+"w": "asiento",
+"s": 93.17,
+"e": 93.63,
+"escena": 2,
+"nl": false
+},
+{
+"w": "del",
+"s": 93.63,
+"e": 93.85,
+"escena": 2,
+"nl": false
+},
+{
+"w": "vagón.",
+"s": 93.85,
+"e": 94.19,
+"escena": 2,
+"nl": false
+},
+{
+"w": "No",
+"s": 94.87,
+"e": 95.25,
+"escena": 2,
+"nl": true
+},
+{
+"w": "la",
+"s": 95.25,
+"e": 95.39,
+"escena": 2,
+"nl": false
+},
+{
+"w": "había",
+"s": 95.39,
+"e": 95.57,
+"escena": 2,
+"nl": false
+},
+{
+"w": "visto",
+"s": 95.57,
+"e": 95.91,
+"escena": 2,
+"nl": false
+},
+{
+"w": "al",
+"s": 95.91,
+"e": 96.05,
+"escena": 2,
+"nl": false
+},
+{
+"w": "entrar.",
+"s": 96.05,
+"e": 96.31,
+"escena": 2,
+"nl": false
+},
+{
+"w": "Tenía",
+"s": 97.09,
+"e": 97.51,
+"escena": 2,
+"nl": true
+},
+{
+"w": "la",
+"s": 97.51,
+"e": 97.65,
+"escena": 2,
+"nl": false
+},
+{
+"w": "piel",
+"s": 97.65,
+"e": 97.91,
+"escena": 2,
+"nl": false
+},
+{
+"w": "muy",
+"s": 97.91,
+"e": 98.25,
+"escena": 2,
+"nl": false
+},
+{
+"w": "pálida,",
+"s": 98.25,
+"e": 98.75,
+"escena": 2,
+"nl": false
+},
+{
+"w": "el",
+"s": 99.31,
+"e": 99.47,
+"escena": 2,
+"nl": false
+},
+{
+"w": "pelo",
+"s": 99.47,
+"e": 99.75,
+"escena": 2,
+"nl": false
+},
+{
+"w": "completamente",
+"s": 99.75,
+"e": 100.61,
+"escena": 2,
+"nl": false
+},
+{
+"w": "blanco",
+"s": 100.61,
+"e": 101.25,
+"escena": 2,
+"nl": false
+},
+{
+"w": "y",
+"s": 101.25,
+"e": 101.91,
+"escena": 2,
+"nl": false
+},
+{
+"w": "una",
+"s": 101.91,
+"e": 102.09,
+"escena": 2,
+"nl": false
+},
+{
+"w": "mirada",
+"s": 102.09,
+"e": 102.47,
+"escena": 2,
+"nl": false
+},
+{
+"w": "que",
+"s": 102.47,
+"e": 102.63,
+"escena": 2,
+"nl": false
+},
+{
+"w": "parecía",
+"s": 102.63,
+"e": 103.17,
+"escena": 2,
+"nl": false
+},
+{
+"w": "atravesarme.",
+"s": 103.17,
+"e": 103.87,
+"escena": 2,
+"nl": false
+},
+{
+"w": "Intenté",
+"s": 104.77,
+"e": 105.29,
+"escena": 2,
+"nl": true
+},
+{
+"w": "sonreír.",
+"s": 105.29,
+"e": 105.83,
+"escena": 2,
+"nl": false
+},
+{
+"w": "—¿Perdone?",
+"s": 106.77,
+"e": 107.17,
+"escena": 2,
+"nl": true
+},
+{
+"w": "La",
+"s": 108.03,
+"e": 108.33,
+"escena": 2,
+"nl": true
+},
+{
+"w": "mujer",
+"s": 108.33,
+"e": 108.55,
+"escena": 2,
+"nl": false
+},
+{
+"w": "se",
+"s": 108.55,
+"e": 108.87,
+"escena": 2,
+"nl": false
+},
+{
+"w": "inclinó",
+"s": 108.87,
+"e": 109.35,
+"escena": 2,
+"nl": false
+},
+{
+"w": "lentamente",
+"s": 109.35,
+"e": 110.25,
+"escena": 2,
+"nl": false
+},
+{
+"w": "hacia",
+"s": 110.25,
+"e": 110.43,
+"escena": 2,
+"nl": false
+},
+{
+"w": "mí.",
+"s": 110.43,
+"e": 110.67,
+"escena": 2,
+"nl": false
+},
+{
+"w": "—Si",
+"s": 111.23,
+"e": 111.57,
+"escena": 2,
+"nl": true
+},
+{
+"w": "ves",
+"s": 111.57,
+"e": 111.83,
+"escena": 2,
+"nl": false
+},
+{
+"w": "a",
+"s": 111.83,
+"e": 112.11,
+"escena": 2,
+"nl": false
+},
+{
+"w": "alguien",
+"s": 112.11,
+"e": 112.51,
+"escena": 2,
+"nl": false
+},
+{
+"w": "fuera",
+"s": 112.51,
+"e": 112.91,
+"escena": 2,
+"nl": false
+},
+{
+"w": "del",
+"s": 112.91,
+"e": 113.27,
+"escena": 2,
+"nl": false
+},
+{
+"w": "tren…",
+"s": 113.27,
+"e": 113.55,
+"escena": 2,
+"nl": false
+},
+{
+"w": "no",
+"s": 114.43,
+"e": 114.75,
+"escena": 2,
+"nl": false
+},
+{
+"w": "lo",
+"s": 114.75,
+"e": 115.03,
+"escena": 2,
+"nl": false
+},
+{
+"w": "mires",
+"s": 115.03,
+"e": 115.49,
+"escena": 2,
+"nl": false
+},
+{
+"w": "a",
+"s": 115.49,
+"e": 115.67,
+"escena": 2,
+"nl": false
+},
+{
+"w": "los",
+"s": 115.67,
+"e": 115.81,
+"escena": 2,
+"nl": false
+},
+{
+"w": "ojos.",
+"s": 115.81,
+"e": 116.13,
+"escena": 2,
+"nl": false
+},
+{
+"w": "Después",
+"s": 117.49,
+"e": 118.15,
+"escena": 2,
+"nl": true
+},
+{
+"w": "volvió",
+"s": 118.15,
+"e": 118.81,
+"escena": 2,
+"nl": false
+},
+{
+"w": "a",
+"s": 118.81,
+"e": 118.95,
+"escena": 2,
+"nl": false
+},
+{
+"w": "quedarse",
+"s": 118.95,
+"e": 119.39,
+"escena": 2,
+"nl": false
+},
+{
+"w": "en",
+"s": 119.39,
+"e": 119.55,
+"escena": 2,
+"nl": false
+},
+{
+"w": "silencio.",
+"s": 119.55,
+"e": 120.01,
+"escena": 2,
+"nl": false
+},
+{
+"w": "El",
+"s": 121.7,
+"e": 121.94,
+"escena": 3,
+"nl": true
+},
+{
+"w": "tren",
+"s": 121.94,
+"e": 122.16,
+"escena": 3,
+"nl": false
+},
+{
+"w": "comenzó",
+"s": 122.16,
+"e": 122.8,
+"escena": 3,
+"nl": false
+},
+{
+"w": "a",
+"s": 122.8,
+"e": 122.94,
+"escena": 3,
+"nl": false
+},
+{
+"w": "avanzar.",
+"s": 122.94,
+"e": 123.44,
+"escena": 3,
+"nl": false
+},
+{
+"w": "Al",
+"s": 124.14,
+"e": 124.26,
+"escena": 3,
+"nl": true
+},
+{
+"w": "principio",
+"s": 124.26,
+"e": 124.6,
+"escena": 3,
+"nl": false
+},
+{
+"w": "todo",
+"s": 124.6,
+"e": 125.14,
+"escena": 3,
+"nl": false
+},
+{
+"w": "parecía",
+"s": 125.14,
+"e": 125.72,
+"escena": 3,
+"nl": false
+},
+{
+"w": "normal.",
+"s": 125.72,
+"e": 126.08,
+"escena": 3,
+"nl": false
+},
+{
+"w": "Pero",
+"s": 126.74,
+"e": 127.1,
+"escena": 3,
+"nl": true
+},
+{
+"w": "después",
+"s": 127.1,
+"e": 127.5,
+"escena": 3,
+"nl": false
+},
+{
+"w": "de",
+"s": 127.5,
+"e": 127.68,
+"escena": 3,
+"nl": false
+},
+{
+"w": "unos",
+"s": 127.68,
+"e": 127.9,
+"escena": 3,
+"nl": false
+},
+{
+"w": "minutos,",
+"s": 127.9,
+"e": 128.38,
+"escena": 3,
+"nl": false
+},
+{
+"w": "miré",
+"s": 128.9,
+"e": 129.2,
+"escena": 3,
+"nl": false
+},
+{
+"w": "por",
+"s": 129.2,
+"e": 129.38,
+"escena": 3,
+"nl": false
+},
+{
+"w": "la",
+"s": 129.38,
+"e": 129.5,
+"escena": 3,
+"nl": false
+},
+{
+"w": "ventana",
+"s": 129.5,
+"e": 129.96,
+"escena": 3,
+"nl": false
+},
+{
+"w": "y",
+"s": 129.96,
+"e": 130.52,
+"escena": 3,
+"nl": false
+},
+{
+"w": "me",
+"s": 130.52,
+"e": 130.62,
+"escena": 3,
+"nl": false
+},
+{
+"w": "di",
+"s": 130.62,
+"e": 130.76,
+"escena": 3,
+"nl": false
+},
+{
+"w": "cuenta",
+"s": 130.76,
+"e": 131.06,
+"escena": 3,
+"nl": false
+},
+{
+"w": "de",
+"s": 131.06,
+"e": 131.28,
+"escena": 3,
+"nl": false
+},
+{
+"w": "que",
+"s": 131.28,
+"e": 131.38,
+"escena": 3,
+"nl": false
+},
+{
+"w": "no",
+"s": 131.38,
+"e": 131.66,
+"escena": 3,
+"nl": false
+},
+{
+"w": "estábamos",
+"s": 131.66,
+"e": 132.22,
+"escena": 3,
+"nl": false
+},
+{
+"w": "pasando",
+"s": 132.22,
+"e": 132.7,
+"escena": 3,
+"nl": false
+},
+{
+"w": "por",
+"s": 132.7,
+"e": 133.02,
+"escena": 3,
+"nl": false
+},
+{
+"w": "ninguna",
+"s": 133.02,
+"e": 133.52,
+"escena": 3,
+"nl": false
+},
+{
+"w": "estación",
+"s": 133.52,
+"e": 134.0,
+"escena": 3,
+"nl": false
+},
+{
+"w": "conocida.",
+"s": 134.0,
+"e": 134.6,
+"escena": 3,
+"nl": false
+},
+{
+"w": "Las",
+"s": 135.46,
+"e": 135.72,
+"escena": 3,
+"nl": true
+},
+{
+"w": "paredes",
+"s": 135.72,
+"e": 136.14,
+"escena": 3,
+"nl": false
+},
+{
+"w": "del",
+"s": 136.14,
+"e": 136.3,
+"escena": 3,
+"nl": false
+},
+{
+"w": "túnel",
+"s": 136.3,
+"e": 136.66,
+"escena": 3,
+"nl": false
+},
+{
+"w": "estaban",
+"s": 136.66,
+"e": 137.28,
+"escena": 3,
+"nl": false
+},
+{
+"w": "cubiertas",
+"s": 137.28,
+"e": 138.06,
+"escena": 3,
+"nl": false
+},
+{
+"w": "de",
+"s": 138.06,
+"e": 138.18,
+"escena": 3,
+"nl": false
+},
+{
+"w": "humedad.",
+"s": 138.18,
+"e": 138.5,
+"escena": 3,
+"nl": false
+},
+{
+"w": "Había",
+"s": 139.1,
+"e": 139.56,
+"escena": 3,
+"nl": true
+},
+{
+"w": "luces",
+"s": 139.56,
+"e": 139.94,
+"escena": 3,
+"nl": false
+},
+{
+"w": "rojas",
+"s": 139.94,
+"e": 140.38,
+"escena": 3,
+"nl": false
+},
+{
+"w": "en",
+"s": 140.38,
+"e": 140.56,
+"escena": 3,
+"nl": false
+},
+{
+"w": "el",
+"s": 140.56,
+"e": 140.68,
+"escena": 3,
+"nl": false
+},
+{
+"w": "techo",
+"s": 140.68,
+"e": 141.06,
+"escena": 3,
+"nl": false
+},
+{
+"w": "y,",
+"s": 141.06,
+"e": 141.58,
+"escena": 3,
+"nl": false
+},
+{
+"w": "de",
+"s": 141.58,
+"e": 141.68,
+"escena": 3,
+"nl": false
+},
+{
+"w": "vez",
+"s": 141.66,
+"e": 141.84,
+"escena": 3,
+"nl": false
+},
+{
+"w": "en",
+"s": 141.84,
+"e": 141.98,
+"escena": 3,
+"nl": false
+},
+{
+"w": "cuando,",
+"s": 141.98,
+"e": 142.36,
+"escena": 3,
+"nl": false
+},
+{
+"w": "veía",
+"s": 142.36,
+"e": 143.22,
+"escena": 3,
+"nl": false
+},
+{
+"w": "siluetas",
+"s": 143.22,
+"e": 143.9,
+"escena": 3,
+"nl": false
+},
+{
+"w": "inmóviles",
+"s": 143.9,
+"e": 144.54,
+"escena": 3,
+"nl": false
+},
+{
+"w": "al",
+"s": 144.54,
+"e": 145.0,
+"escena": 3,
+"nl": false
+},
+{
+"w": "otro",
+"s": 145.0,
+"e": 145.3,
+"escena": 3,
+"nl": false
+},
+{
+"w": "lado",
+"s": 145.3,
+"e": 145.64,
+"escena": 3,
+"nl": false
+},
+{
+"w": "de",
+"s": 145.64,
+"e": 145.82,
+"escena": 3,
+"nl": false
+},
+{
+"w": "las",
+"s": 145.82,
+"e": 145.98,
+"escena": 3,
+"nl": false
+},
+{
+"w": "vías.",
+"s": 145.98,
+"e": 146.34,
+"escena": 3,
+"nl": false
+},
+{
+"w": "Entonces",
+"s": 147.22,
+"e": 147.82,
+"escena": 3,
+"nl": true
+},
+{
+"w": "el",
+"s": 147.82,
+"e": 148.42,
+"escena": 3,
+"nl": false
+},
+{
+"w": "tren",
+"s": 148.42,
+"e": 148.66,
+"escena": 3,
+"nl": false
+},
+{
+"w": "se",
+"s": 148.66,
+"e": 148.88,
+"escena": 3,
+"nl": false
+},
+{
+"w": "detuvo.",
+"s": 148.88,
+"e": 149.24,
+"escena": 3,
+"nl": false
+},
+{
+"w": "Las",
+"s": 150.14,
+"e": 150.28,
+"escena": 3,
+"nl": true
+},
+{
+"w": "puertas",
+"s": 150.28,
+"e": 150.72,
+"escena": 3,
+"nl": false
+},
+{
+"w": "se",
+"s": 150.72,
+"e": 150.9,
+"escena": 3,
+"nl": false
+},
+{
+"w": "abrieron.",
+"s": 150.9,
+"e": 151.38,
+"escena": 3,
+"nl": false
+},
+{
+"w": "En",
+"s": 152.16,
+"e": 152.26,
+"escena": 3,
+"nl": true
+},
+{
+"w": "el",
+"s": 152.26,
+"e": 152.36,
+"escena": 3,
+"nl": false
+},
+{
+"w": "cartel",
+"s": 152.36,
+"e": 152.78,
+"escena": 3,
+"nl": false
+},
+{
+"w": "de",
+"s": 152.78,
+"e": 152.88,
+"escena": 3,
+"nl": false
+},
+{
+"w": "la",
+"s": 152.88,
+"e": 152.98,
+"escena": 3,
+"nl": false
+},
+{
+"w": "estación",
+"s": 152.98,
+"e": 153.36,
+"escena": 3,
+"nl": false
+},
+{
+"w": "aparecía",
+"s": 153.36,
+"e": 154.28,
+"escena": 3,
+"nl": false
+},
+{
+"w": "un",
+"s": 154.28,
+"e": 154.5,
+"escena": 3,
+"nl": false
+},
+{
+"w": "nombre",
+"s": 154.5,
+"e": 154.86,
+"escena": 3,
+"nl": false
+},
+{
+"w": "que",
+"s": 154.86,
+"e": 155.08,
+"escena": 3,
+"nl": false
+},
+{
+"w": "nunca",
+"s": 155.08,
+"e": 155.44,
+"escena": 3,
+"nl": false
+},
+{
+"w": "había",
+"s": 155.44,
+"e": 155.92,
+"escena": 3,
+"nl": false
+},
+{
+"w": "escuchado:",
+"s": 155.92,
+"e": 156.54,
+"escena": 3,
+"nl": false
+},
+{
+"w": "SAN",
+"s": 157.38,
+"e": 157.64,
+"escena": 3,
+"nl": true
+},
+{
+"w": "MIGUEL",
+"s": 157.64,
+"e": 158.04,
+"escena": 3,
+"nl": false
+},
+{
+"w": "–",
+"s": 158.04,
+"e": 158.16,
+"escena": 3,
+"nl": false
+},
+{
+"w": "1986.",
+"s": 158.04,
+"e": 159.84,
+"escena": 3,
+"nl": false
+},
+{
+"w": "Me",
+"s": 161.42,
+"e": 161.58,
+"escena": 3,
+"nl": true
+},
+{
+"w": "levanté",
+"s": 161.58,
+"e": 162.04,
+"escena": 3,
+"nl": false
+},
+{
+"w": "para",
+"s": 162.04,
+"e": 162.22,
+"escena": 3,
+"nl": false
+},
+{
+"w": "mirar",
+"s": 162.22,
+"e": 162.56,
+"escena": 3,
+"nl": false
+},
+{
+"w": "mejor.",
+"s": 162.56,
+"e": 162.82,
+"escena": 3,
+"nl": false
+},
+{
+"w": "En",
+"s": 163.42,
+"e": 163.86,
+"escena": 3,
+"nl": true
+},
+{
+"w": "el",
+"s": 163.86,
+"e": 163.98,
+"escena": 3,
+"nl": false
+},
+{
+"w": "andén",
+"s": 163.98,
+"e": 164.36,
+"escena": 3,
+"nl": false
+},
+{
+"w": "había",
+"s": 164.36,
+"e": 164.86,
+"escena": 3,
+"nl": false
+},
+{
+"w": "varias",
+"s": 164.86,
+"e": 165.38,
+"escena": 3,
+"nl": false
+},
+{
+"w": "personas",
+"s": 165.38,
+"e": 165.56,
+"escena": 3,
+"nl": false
+},
+{
+"w": "completamente",
+"s": 165.86,
+"e": 166.68,
+"escena": 3,
+"nl": false
+},
+{
+"w": "quietas.",
+"s": 166.68,
+"e": 167.58,
+"escena": 3,
+"nl": false
+},
+{
+"w": "Todas",
+"s": 167.94,
+"e": 168.62,
+"escena": 3,
+"nl": true
+},
+{
+"w": "estaban",
+"s": 168.62,
+"e": 169.08,
+"escena": 3,
+"nl": false
+},
+{
+"w": "mirando",
+"s": 169.08,
+"e": 169.62,
+"escena": 3,
+"nl": false
+},
+{
+"w": "hacia",
+"s": 169.62,
+"e": 169.78,
+"escena": 3,
+"nl": false
+},
+{
+"w": "el",
+"s": 169.78,
+"e": 169.94,
+"escena": 3,
+"nl": false
+},
+{
+"w": "tren.",
+"s": 169.94,
+"e": 170.12,
+"escena": 3,
+"nl": false
+},
+{
+"w": "Una",
+"s": 171.04,
+"e": 171.4,
+"escena": 3,
+"nl": true
+},
+{
+"w": "niña",
+"s": 171.4,
+"e": 171.76,
+"escena": 3,
+"nl": false
+},
+{
+"w": "comenzó",
+"s": 171.76,
+"e": 172.32,
+"escena": 3,
+"nl": false
+},
+{
+"w": "a",
+"s": 172.32,
+"e": 172.44,
+"escena": 3,
+"nl": false
+},
+{
+"w": "caminar",
+"s": 172.44,
+"e": 172.78,
+"escena": 3,
+"nl": false
+},
+{
+"w": "lentamente",
+"s": 172.78,
+"e": 173.72,
+"escena": 3,
+"nl": false
+},
+{
+"w": "hacia",
+"s": 173.72,
+"e": 173.92,
+"escena": 3,
+"nl": false
+},
+{
+"w": "mí.",
+"s": 173.92,
+"e": 174.18,
+"escena": 3,
+"nl": false
+},
+{
+"w": "Tenía",
+"s": 174.84,
+"e": 175.32,
+"escena": 3,
+"nl": true
+},
+{
+"w": "un",
+"s": 175.32,
+"e": 175.5,
+"escena": 3,
+"nl": false
+},
+{
+"w": "vestido",
+"s": 175.5,
+"e": 175.94,
+"escena": 3,
+"nl": false
+},
+{
+"w": "blanco",
+"s": 175.94,
+"e": 176.38,
+"escena": 3,
+"nl": false
+},
+{
+"w": "y",
+"s": 176.38,
+"e": 176.9,
+"escena": 3,
+"nl": false
+},
+{
+"w": "llevaba",
+"s": 176.9,
+"e": 177.22,
+"escena": 3,
+"nl": false
+},
+{
+"w": "un",
+"s": 177.22,
+"e": 177.44,
+"escena": 3,
+"nl": false
+},
+{
+"w": "pequeño",
+"s": 177.44,
+"e": 177.84,
+"escena": 3,
+"nl": false
+},
+{
+"w": "peluche",
+"s": 177.84,
+"e": 178.44,
+"escena": 3,
+"nl": false
+},
+{
+"w": "entre",
+"s": 178.44,
+"e": 178.68,
+"escena": 3,
+"nl": false
+},
+{
+"w": "las",
+"s": 178.68,
+"e": 178.86,
+"escena": 3,
+"nl": false
+},
+{
+"w": "manos.",
+"s": 178.86,
+"e": 179.18,
+"escena": 3,
+"nl": false
+},
+{
+"w": "Cuando",
+"s": 179.5,
+"e": 179.74,
+"escena": 3,
+"nl": true
+},
+{
+"w": "estuvo",
+"s": 179.74,
+"e": 180.1,
+"escena": 3,
+"nl": false
+},
+{
+"w": "a",
+"s": 180.1,
+"e": 180.26,
+"escena": 3,
+"nl": false
+},
+{
+"w": "pocos",
+"s": 180.26,
+"e": 180.52,
+"escena": 3,
+"nl": false
+},
+{
+"w": "metros,",
+"s": 180.52,
+"e": 180.84,
+"escena": 3,
+"nl": false
+},
+{
+"w": "levantó",
+"s": 181.16,
+"e": 181.72,
+"escena": 3,
+"nl": false
+},
+{
+"w": "la",
+"s": 181.72,
+"e": 181.84,
+"escena": 3,
+"nl": false
+},
+{
+"w": "cabeza.",
+"s": 181.84,
+"e": 182.2,
+"escena": 3,
+"nl": false
+},
+{
+"w": "Y",
+"s": 182.2,
+"e": 183.1,
+"escena": 3,
+"nl": true
+},
+{
+"w": "dijo",
+"s": 183.1,
+"e": 183.48,
+"escena": 3,
+"nl": false
+},
+{
+"w": "mi",
+"s": 183.48,
+"e": 183.64,
+"escena": 3,
+"nl": false
+},
+{
+"w": "nombre.",
+"s": 183.64,
+"e": 183.94,
+"escena": 3,
+"nl": false
+},
+{
+"w": "Me",
+"s": 184.74,
+"e": 184.98,
+"escena": 3,
+"nl": true
+},
+{
+"w": "quedé",
+"s": 184.98,
+"e": 185.36,
+"escena": 3,
+"nl": false
+},
+{
+"w": "helado.",
+"s": 185.36,
+"e": 185.96,
+"escena": 3,
+"nl": false
+},
+{
+"w": "La",
+"s": 186.6,
+"e": 186.84,
+"escena": 3,
+"nl": true
+},
+{
+"w": "anciana",
+"s": 186.84,
+"e": 187.22,
+"escena": 3,
+"nl": false
+},
+{
+"w": "me",
+"s": 187.22,
+"e": 187.42,
+"escena": 3,
+"nl": false
+},
+{
+"w": "agarró",
+"s": 187.42,
+"e": 187.78,
+"escena": 3,
+"nl": false
+},
+{
+"w": "del",
+"s": 187.78,
+"e": 187.92,
+"escena": 3,
+"nl": false
+},
+{
+"w": "brazo.",
+"s": 187.92,
+"e": 188.3,
+"escena": 3,
+"nl": false
+},
+{
+"w": "—¡No",
+"s": 188.76,
+"e": 188.98,
+"escena": 3,
+"nl": true
+},
+{
+"w": "respondas!",
+"s": 188.98,
+"e": 189.66,
+"escena": 3,
+"nl": false
+},
+{
+"w": "Las",
+"s": 190.28,
+"e": 190.46,
+"escena": 3,
+"nl": true
+},
+{
+"w": "puertas",
+"s": 190.46,
+"e": 190.92,
+"escena": 3,
+"nl": false
+},
+{
+"w": "se",
+"s": 190.92,
+"e": 191.16,
+"escena": 3,
+"nl": false
+},
+{
+"w": "cerraron",
+"s": 191.16,
+"e": 191.64,
+"escena": 3,
+"nl": false
+},
+{
+"w": "de",
+"s": 191.64,
+"e": 191.78,
+"escena": 3,
+"nl": false
+},
+{
+"w": "golpe.",
+"s": 191.78,
+"e": 192.02,
+"escena": 3,
+"nl": false
+},
+{
+"w": "Y",
+"s": 192.02,
+"e": 192.86,
+"escena": 3,
+"nl": true
+},
+{
+"w": "el",
+"s": 192.86,
+"e": 193.0,
+"escena": 3,
+"nl": false
+},
+{
+"w": "tren",
+"s": 193.0,
+"e": 193.26,
+"escena": 3,
+"nl": false
+},
+{
+"w": "volvió",
+"s": 193.26,
+"e": 194.14,
+"escena": 3,
+"nl": false
+},
+{
+"w": "a",
+"s": 194.14,
+"e": 194.3,
+"escena": 3,
+"nl": false
+},
+{
+"w": "arrancar.",
+"s": 194.3,
+"e": 194.7,
+"escena": 3,
+"nl": false
+},
+{
+"w": "Me",
+"s": 196.41,
+"e": 196.57,
+"escena": 4,
+"nl": true
+},
+{
+"w": "aparté",
+"s": 196.57,
+"e": 196.95,
+"escena": 4,
+"nl": false
+},
+{
+"w": "de",
+"s": 196.95,
+"e": 197.09,
+"escena": 4,
+"nl": false
+},
+{
+"w": "la",
+"s": 197.09,
+"e": 197.19,
+"escena": 4,
+"nl": false
+},
+{
+"w": "anciana.",
+"s": 197.19,
+"e": 197.57,
+"escena": 4,
+"nl": false
+},
+{
+"w": "—¿Qué",
+"s": 198.23,
+"e": 198.33,
+"escena": 4,
+"nl": true
+},
+{
+"w": "demonios",
+"s": 198.33,
+"e": 198.85,
+"escena": 4,
+"nl": false
+},
+{
+"w": "está",
+"s": 198.85,
+"e": 199.11,
+"escena": 4,
+"nl": false
+},
+{
+"w": "pasando",
+"s": 199.11,
+"e": 199.39,
+"escena": 4,
+"nl": false
+},
+{
+"w": "aquí?",
+"s": 199.39,
+"e": 199.73,
+"escena": 4,
+"nl": false
+},
+{
+"w": "Ella",
+"s": 200.43,
+"e": 200.71,
+"escena": 4,
+"nl": true
+},
+{
+"w": "me",
+"s": 200.71,
+"e": 200.91,
+"escena": 4,
+"nl": false
+},
+{
+"w": "miró",
+"s": 200.91,
+"e": 201.21,
+"escena": 4,
+"nl": false
+},
+{
+"w": "durante",
+"s": 201.21,
+"e": 201.47,
+"escena": 4,
+"nl": false
+},
+{
+"w": "varios",
+"s": 201.47,
+"e": 201.99,
+"escena": 4,
+"nl": false
+},
+{
+"w": "segundos.",
+"s": 201.99,
+"e": 202.45,
+"escena": 4,
+"nl": false
+},
+{
+"w": "Después",
+"s": 203.19,
+"e": 203.61,
+"escena": 4,
+"nl": true
+},
+{
+"w": "comenzó",
+"s": 203.61,
+"e": 204.59,
+"escena": 4,
+"nl": false
+},
+{
+"w": "a",
+"s": 204.59,
+"e": 204.77,
+"escena": 4,
+"nl": false
+},
+{
+"w": "hablar.",
+"s": 204.77,
+"e": 204.99,
+"escena": 4,
+"nl": false
+},
+{
+"w": "—Este",
+"s": 205.61,
+"e": 205.85,
+"escena": 4,
+"nl": true
+},
+{
+"w": "tren",
+"s": 205.85,
+"e": 206.17,
+"escena": 4,
+"nl": false
+},
+{
+"w": "no",
+"s": 206.17,
+"e": 206.41,
+"escena": 4,
+"nl": false
+},
+{
+"w": "aparece",
+"s": 206.41,
+"e": 206.73,
+"escena": 4,
+"nl": false
+},
+{
+"w": "en",
+"s": 206.73,
+"e": 207.01,
+"escena": 4,
+"nl": false
+},
+{
+"w": "los",
+"s": 207.01,
+"e": 207.13,
+"escena": 4,
+"nl": false
+},
+{
+"w": "horarios",
+"s": 207.13,
+"e": 207.61,
+"escena": 4,
+"nl": false
+},
+{
+"w": "porque",
+"s": 207.61,
+"e": 208.25,
+"escena": 4,
+"nl": false
+},
+{
+"w": "no",
+"s": 208.25,
+"e": 208.55,
+"escena": 4,
+"nl": false
+},
+{
+"w": "pertenece",
+"s": 208.55,
+"e": 209.27,
+"escena": 4,
+"nl": false
+},
+{
+"w": "a",
+"s": 209.27,
+"e": 209.37,
+"escena": 4,
+"nl": false
+},
+{
+"w": "nuestro",
+"s": 209.37,
+"e": 209.53,
+"escena": 4,
+"nl": false
+},
+{
+"w": "mundo.",
+"s": 209.53,
+"e": 209.97,
+"escena": 4,
+"nl": false
+},
+{
+"w": "Me",
+"s": 210.59,
+"e": 210.83,
+"escena": 4,
+"nl": true
+},
+{
+"w": "reí",
+"s": 210.83,
+"e": 211.15,
+"escena": 4,
+"nl": false
+},
+{
+"w": "nerviosamente.",
+"s": 211.15,
+"e": 211.97,
+"escena": 4,
+"nl": false
+},
+{
+"w": "Pensé",
+"s": 212.71,
+"e": 213.11,
+"escena": 4,
+"nl": true
+},
+{
+"w": "que",
+"s": 213.11,
+"e": 213.25,
+"escena": 4,
+"nl": false
+},
+{
+"w": "estaba",
+"s": 213.25,
+"e": 213.55,
+"escena": 4,
+"nl": false
+},
+{
+"w": "loca.",
+"s": 213.55,
+"e": 213.85,
+"escena": 4,
+"nl": false
+},
+{
+"w": "Pero",
+"s": 214.53,
+"e": 214.77,
+"escena": 4,
+"nl": true
+},
+{
+"w": "entonces",
+"s": 214.77,
+"e": 215.23,
+"escena": 4,
+"nl": false
+},
+{
+"w": "continuó.",
+"s": 215.23,
+"e": 215.83,
+"escena": 4,
+"nl": false
+},
+{
+"w": "—Hace",
+"s": 216.39,
+"e": 216.63,
+"escena": 4,
+"nl": true
+},
+{
+"w": "treinta",
+"s": 216.63,
+"e": 217.11,
+"escena": 4,
+"nl": false
+},
+{
+"w": "años,",
+"s": 217.11,
+"e": 217.55,
+"escena": 4,
+"nl": false
+},
+{
+"w": "un",
+"s": 217.55,
+"e": 218.19,
+"escena": 4,
+"nl": false
+},
+{
+"w": "tren",
+"s": 218.19,
+"e": 218.43,
+"escena": 4,
+"nl": false
+},
+{
+"w": "desapareció",
+"s": 218.43,
+"e": 219.21,
+"escena": 4,
+"nl": false
+},
+{
+"w": "en",
+"s": 219.21,
+"e": 219.45,
+"escena": 4,
+"nl": false
+},
+{
+"w": "esta",
+"s": 219.45,
+"e": 219.77,
+"escena": 4,
+"nl": false
+},
+{
+"w": "misma",
+"s": 219.77,
+"e": 220.11,
+"escena": 4,
+"nl": false
+},
+{
+"w": "línea.",
+"s": 220.11,
+"e": 220.51,
+"escena": 4,
+"nl": false
+},
+{
+"w": "Nunca",
+"s": 221.27,
+"e": 221.73,
+"escena": 4,
+"nl": true
+},
+{
+"w": "encontraron",
+"s": 221.73,
+"e": 222.39,
+"escena": 4,
+"nl": false
+},
+{
+"w": "los",
+"s": 222.39,
+"e": 222.57,
+"escena": 4,
+"nl": false
+},
+{
+"w": "cuerpos.",
+"s": 222.57,
+"e": 222.97,
+"escena": 4,
+"nl": false
+},
+{
+"w": "Nunca",
+"s": 223.59,
+"e": 224.01,
+"escena": 4,
+"nl": true
+},
+{
+"w": "encontraron",
+"s": 224.01,
+"e": 224.75,
+"escena": 4,
+"nl": false
+},
+{
+"w": "al",
+"s": 224.75,
+"e": 224.87,
+"escena": 4,
+"nl": false
+},
+{
+"w": "conductor.",
+"s": 224.87,
+"e": 225.25,
+"escena": 4,
+"nl": false
+},
+{
+"w": "Solo",
+"s": 226.09,
+"e": 226.39,
+"escena": 4,
+"nl": true
+},
+{
+"w": "encontraron",
+"s": 226.39,
+"e": 227.15,
+"escena": 4,
+"nl": false
+},
+{
+"w": "los",
+"s": 227.15,
+"e": 227.31,
+"escena": 4,
+"nl": false
+},
+{
+"w": "billetes",
+"s": 227.31,
+"e": 227.83,
+"escena": 4,
+"nl": false
+},
+{
+"w": "de",
+"s": 227.83,
+"e": 228.01,
+"escena": 4,
+"nl": false
+},
+{
+"w": "los",
+"s": 228.01,
+"e": 228.13,
+"escena": 4,
+"nl": false
+},
+{
+"w": "pasajeros.",
+"s": 228.13,
+"e": 228.67,
+"escena": 4,
+"nl": false
+},
+{
+"w": "Sentí",
+"s": 229.27,
+"e": 229.85,
+"escena": 4,
+"nl": true
+},
+{
+"w": "un",
+"s": 229.85,
+"e": 230.15,
+"escena": 4,
+"nl": false
+},
+{
+"w": "escalofrío.",
+"s": 230.15,
+"e": 230.77,
+"escena": 4,
+"nl": false
+},
+{
+"w": "—¿Y",
+"s": 231.51,
+"e": 231.65,
+"escena": 4,
+"nl": true
+},
+{
+"w": "qué",
+"s": 231.65,
+"e": 231.87,
+"escena": 4,
+"nl": false
+},
+{
+"w": "tiene",
+"s": 231.87,
+"e": 232.19,
+"escena": 4,
+"nl": false
+},
+{
+"w": "que",
+"s": 232.19,
+"e": 232.29,
+"escena": 4,
+"nl": false
+},
+{
+"w": "ver",
+"s": 232.29,
+"e": 232.49,
+"escena": 4,
+"nl": false
+},
+{
+"w": "eso",
+"s": 232.49,
+"e": 232.73,
+"escena": 4,
+"nl": false
+},
+{
+"w": "conmigo?",
+"s": 232.73,
+"e": 233.19,
+"escena": 4,
+"nl": false
+},
+{
+"w": "La",
+"s": 233.77,
+"e": 233.99,
+"escena": 4,
+"nl": true
+},
+{
+"w": "anciana",
+"s": 233.99,
+"e": 234.41,
+"escena": 4,
+"nl": false
+},
+{
+"w": "bajó",
+"s": 234.41,
+"e": 234.85,
+"escena": 4,
+"nl": false
+},
+{
+"w": "la",
+"s": 234.85,
+"e": 234.99,
+"escena": 4,
+"nl": false
+},
+{
+"w": "mirada.",
+"s": 234.99,
+"e": 235.37,
+"escena": 4,
+"nl": false
+},
+{
+"w": "—Porque",
+"s": 235.95,
+"e": 236.27,
+"escena": 4,
+"nl": true
+},
+{
+"w": "todos",
+"s": 236.27,
+"e": 236.65,
+"escena": 4,
+"nl": false
+},
+{
+"w": "los",
+"s": 236.65,
+"e": 236.91,
+"escena": 4,
+"nl": false
+},
+{
+"w": "que",
+"s": 236.91,
+"e": 237.07,
+"escena": 4,
+"nl": false
+},
+{
+"w": "suben",
+"s": 237.07,
+"e": 237.55,
+"escena": 4,
+"nl": false
+},
+{
+"w": "a",
+"s": 237.55,
+"e": 237.65,
+"escena": 4,
+"nl": false
+},
+{
+"w": "este",
+"s": 237.65,
+"e": 237.89,
+"escena": 4,
+"nl": false
+},
+{
+"w": "tren",
+"s": 237.89,
+"e": 238.23,
+"escena": 4,
+"nl": false
+},
+{
+"w": "tienen",
+"s": 238.23,
+"e": 238.95,
+"escena": 4,
+"nl": false
+},
+{
+"w": "algo",
+"s": 238.95,
+"e": 239.39,
+"escena": 4,
+"nl": false
+},
+{
+"w": "en",
+"s": 239.39,
+"e": 239.55,
+"escena": 4,
+"nl": false
+},
+{
+"w": "común.",
+"s": 239.55,
+"e": 239.85,
+"escena": 4,
+"nl": false
+},
+{
+"w": "Todos",
+"s": 240.65,
+"e": 241.03,
+"escena": 4,
+"nl": true
+},
+{
+"w": "creen",
+"s": 241.03,
+"e": 241.55,
+"escena": 4,
+"nl": false
+},
+{
+"w": "que",
+"s": 241.55,
+"e": 241.89,
+"escena": 4,
+"nl": false
+},
+{
+"w": "todavía",
+"s": 241.89,
+"e": 242.33,
+"escena": 4,
+"nl": false
+},
+{
+"w": "están",
+"s": 242.33,
+"e": 242.83,
+"escena": 4,
+"nl": false
+},
+{
+"w": "vivos.",
+"s": 242.83,
+"e": 243.37,
+"escena": 4,
+"nl": false
+},
+{
+"w": "No",
+"s": 243.87,
+"e": 244.23,
+"escena": 4,
+"nl": true
+},
+{
+"w": "pude",
+"s": 244.23,
+"e": 244.63,
+"escena": 4,
+"nl": false
+},
+{
+"w": "responder.",
+"s": 244.63,
+"e": 245.07,
+"escena": 4,
+"nl": false
+},
+{
+"w": "Entonces",
+"s": 245.85,
+"e": 246.47,
+"escena": 4,
+"nl": true
+},
+{
+"w": "miré",
+"s": 246.47,
+"e": 247.11,
+"escena": 4,
+"nl": false
+},
+{
+"w": "mis",
+"s": 247.11,
+"e": 247.29,
+"escena": 4,
+"nl": false
+},
+{
+"w": "manos.",
+"s": 247.29,
+"e": 247.61,
+"escena": 4,
+"nl": false
+},
+{
+"w": "Tenía",
+"s": 248.39,
+"e": 248.83,
+"escena": 4,
+"nl": true
+},
+{
+"w": "un",
+"s": 248.83,
+"e": 249.05,
+"escena": 4,
+"nl": false
+},
+{
+"w": "pequeño",
+"s": 249.05,
+"e": 249.31,
+"escena": 4,
+"nl": false
+},
+{
+"w": "corte",
+"s": 249.31,
+"e": 249.99,
+"escena": 4,
+"nl": false
+},
+{
+"w": "en",
+"s": 249.99,
+"e": 250.09,
+"escena": 4,
+"nl": false
+},
+{
+"w": "un",
+"s": 250.09,
+"e": 250.23,
+"escena": 4,
+"nl": false
+},
+{
+"w": "dedo.",
+"s": 250.23,
+"e": 250.65,
+"escena": 4,
+"nl": false
+},
+{
+"w": "Pero",
+"s": 251.05,
+"e": 251.41,
+"escena": 4,
+"nl": true
+},
+{
+"w": "no",
+"s": 251.41,
+"e": 251.59,
+"escena": 4,
+"nl": false
+},
+{
+"w": "había",
+"s": 251.59,
+"e": 251.93,
+"escena": 4,
+"nl": false
+},
+{
+"w": "sangre.",
+"s": 251.93,
+"e": 252.31,
+"escena": 4,
+"nl": false
+},
+{
+"w": "Intenté",
+"s": 253.15,
+"e": 253.69,
+"escena": 4,
+"nl": true
+},
+{
+"w": "recordar",
+"s": 253.69,
+"e": 254.27,
+"escena": 4,
+"nl": false
+},
+{
+"w": "cómo",
+"s": 254.27,
+"e": 254.73,
+"escena": 4,
+"nl": false
+},
+{
+"w": "había",
+"s": 254.73,
+"e": 255.11,
+"escena": 4,
+"nl": false
+},
+{
+"w": "llegado",
+"s": 255.11,
+"e": 255.57,
+"escena": 4,
+"nl": false
+},
+{
+"w": "a",
+"s": 255.57,
+"e": 255.67,
+"escena": 4,
+"nl": false
+},
+{
+"w": "la",
+"s": 255.67,
+"e": 255.73,
+"escena": 4,
+"nl": false
+},
+{
+"w": "estación.",
+"s": 255.73,
+"e": 256.11,
+"escena": 4,
+"nl": false
+},
+{
+"w": "Y",
+"s": 256.69,
+"e": 256.89,
+"escena": 4,
+"nl": true
+},
+{
+"w": "de",
+"s": 256.89,
+"e": 256.99,
+"escena": 4,
+"nl": false
+},
+{
+"w": "repente",
+"s": 256.99,
+"e": 257.39,
+"escena": 4,
+"nl": false
+},
+{
+"w": "me",
+"s": 257.39,
+"e": 258.15,
+"escena": 4,
+"nl": false
+},
+{
+"w": "di",
+"s": 258.15,
+"e": 258.27,
+"escena": 4,
+"nl": false
+},
+{
+"w": "cuenta",
+"s": 258.27,
+"e": 258.67,
+"escena": 4,
+"nl": false
+},
+{
+"w": "de",
+"s": 258.67,
+"e": 258.93,
+"escena": 4,
+"nl": false
+},
+{
+"w": "algo",
+"s": 258.93,
+"e": 259.23,
+"escena": 4,
+"nl": false
+},
+{
+"w": "terrible.",
+"s": 259.23,
+"e": 259.71,
+"escena": 4,
+"nl": false
+},
+{
+"w": "No",
+"s": 260.59,
+"e": 260.93,
+"escena": 4,
+"nl": true
+},
+{
+"w": "recordaba",
+"s": 260.93,
+"e": 261.67,
+"escena": 4,
+"nl": false
+},
+{
+"w": "absolutamente",
+"s": 261.67,
+"e": 262.57,
+"escena": 4,
+"nl": false
+},
+{
+"w": "nada",
+"s": 262.57,
+"e": 263.73,
+"escena": 4,
+"nl": false
+},
+{
+"w": "de",
+"s": 263.73,
+"e": 264.19,
+"escena": 4,
+"nl": false
+},
+{
+"w": "aquella",
+"s": 264.19,
+"e": 264.53,
+"escena": 4,
+"nl": false
+},
+{
+"w": "noche.",
+"s": 264.53,
+"e": 264.83,
+"escena": 4,
+"nl": false
+},
+{
+"w": "El",
+"s": 266.52,
+"e": 266.76,
+"escena": 5,
+"nl": true
+},
+{
+"w": "tren",
+"s": 266.76,
+"e": 266.96,
+"escena": 5,
+"nl": false
+},
+{
+"w": "comenzó",
+"s": 266.96,
+"e": 267.62,
+"escena": 5,
+"nl": false
+},
+{
+"w": "a",
+"s": 267.62,
+"e": 267.74,
+"escena": 5,
+"nl": false
+},
+{
+"w": "perder",
+"s": 267.74,
+"e": 268.08,
+"escena": 5,
+"nl": false
+},
+{
+"w": "velocidad.",
+"s": 268.08,
+"e": 268.62,
+"escena": 5,
+"nl": false
+},
+{
+"w": "Las",
+"s": 269.4,
+"e": 269.56,
+"escena": 5,
+"nl": true
+},
+{
+"w": "luces",
+"s": 269.56,
+"e": 269.92,
+"escena": 5,
+"nl": false
+},
+{
+"w": "se",
+"s": 269.92,
+"e": 270.16,
+"escena": 5,
+"nl": false
+},
+{
+"w": "apagaron",
+"s": 270.16,
+"e": 270.56,
+"escena": 5,
+"nl": false
+},
+{
+"w": "durante",
+"s": 270.56,
+"e": 270.8,
+"escena": 5,
+"nl": false
+},
+{
+"w": "unos",
+"s": 270.8,
+"e": 271.28,
+"escena": 5,
+"nl": false
+},
+{
+"w": "segundos.",
+"s": 271.28,
+"e": 271.86,
+"escena": 5,
+"nl": false
+},
+{
+"w": "Cuando",
+"s": 272.7,
+"e": 272.92,
+"escena": 5,
+"nl": true
+},
+{
+"w": "volvieron,",
+"s": 272.92,
+"e": 273.42,
+"escena": 5,
+"nl": false
+},
+{
+"w": "la",
+"s": 274.02,
+"e": 274.12,
+"escena": 5,
+"nl": false
+},
+{
+"w": "anciana",
+"s": 274.12,
+"e": 274.62,
+"escena": 5,
+"nl": false
+},
+{
+"w": "ya",
+"s": 274.62,
+"e": 274.88,
+"escena": 5,
+"nl": false
+},
+{
+"w": "no",
+"s": 274.88,
+"e": 275.04,
+"escena": 5,
+"nl": false
+},
+{
+"w": "estaba.",
+"s": 275.04,
+"e": 275.34,
+"escena": 5,
+"nl": false
+},
+{
+"w": "Su",
+"s": 276.12,
+"e": 276.28,
+"escena": 5,
+"nl": true
+},
+{
+"w": "asiento",
+"s": 276.28,
+"e": 276.72,
+"escena": 5,
+"nl": false
+},
+{
+"w": "estaba",
+"s": 276.72,
+"e": 277.42,
+"escena": 5,
+"nl": false
+},
+{
+"w": "vacío.",
+"s": 277.42,
+"e": 277.96,
+"escena": 5,
+"nl": false
+},
+{
+"w": "Me",
+"s": 278.78,
+"e": 278.98,
+"escena": 5,
+"nl": true
+},
+{
+"w": "levanté",
+"s": 278.98,
+"e": 279.5,
+"escena": 5,
+"nl": false
+},
+{
+"w": "y",
+"s": 279.5,
+"e": 279.88,
+"escena": 5,
+"nl": false
+},
+{
+"w": "caminé",
+"s": 279.88,
+"e": 280.34,
+"escena": 5,
+"nl": false
+},
+{
+"w": "hacia",
+"s": 280.34,
+"e": 280.56,
+"escena": 5,
+"nl": false
+},
+{
+"w": "la",
+"s": 280.56,
+"e": 280.7,
+"escena": 5,
+"nl": false
+},
+{
+"w": "puerta",
+"s": 280.7,
+"e": 280.98,
+"escena": 5,
+"nl": false
+},
+{
+"w": "que",
+"s": 280.98,
+"e": 281.22,
+"escena": 5,
+"nl": false
+},
+{
+"w": "conectaba",
+"s": 281.22,
+"e": 281.78,
+"escena": 5,
+"nl": false
+},
+{
+"w": "con",
+"s": 281.78,
+"e": 281.98,
+"escena": 5,
+"nl": false
+},
+{
+"w": "el",
+"s": 281.98,
+"e": 282.12,
+"escena": 5,
+"nl": false
+},
+{
+"w": "siguiente",
+"s": 282.12,
+"e": 282.42,
+"escena": 5,
+"nl": false
+},
+{
+"w": "vagón.",
+"s": 282.42,
+"e": 283.0,
+"escena": 5,
+"nl": false
+},
+{
+"w": "Entonces",
+"s": 283.62,
+"e": 284.2,
+"escena": 5,
+"nl": true
+},
+{
+"w": "escuché",
+"s": 284.2,
+"e": 285.2,
+"escena": 5,
+"nl": false
+},
+{
+"w": "tres",
+"s": 285.2,
+"e": 285.6,
+"escena": 5,
+"nl": false
+},
+{
+"w": "golpes",
+"s": 285.6,
+"e": 286.14,
+"escena": 5,
+"nl": false
+},
+{
+"w": "en",
+"s": 286.14,
+"e": 286.34,
+"escena": 5,
+"nl": false
+},
+{
+"w": "la",
+"s": 286.34,
+"e": 286.42,
+"escena": 5,
+"nl": false
+},
+{
+"w": "ventana.",
+"s": 286.42,
+"e": 286.86,
+"escena": 5,
+"nl": false
+},
+{
+"w": "Toc.",
+"s": 287.54,
+"e": 287.9,
+"escena": 5,
+"nl": true
+},
+{
+"w": "Toc.",
+"s": 288.5,
+"e": 288.76,
+"escena": 5,
+"nl": true
+},
+{
+"w": "Toc.",
+"s": 289.64,
+"e": 289.8,
+"escena": 5,
+"nl": true
+},
+{
+"w": "Miré",
+"s": 290.38,
+"e": 290.96,
+"escena": 5,
+"nl": true
+},
+{
+"w": "hacia",
+"s": 290.96,
+"e": 291.12,
+"escena": 5,
+"nl": false
+},
+{
+"w": "fuera.",
+"s": 291.64,
+"e": 292.16,
+"escena": 5,
+"nl": false
+},
+{
+"w": "Había",
+"s": 292.16,
+"e": 292.48,
+"escena": 5,
+"nl": true
+},
+{
+"w": "un",
+"s": 292.48,
+"e": 292.68,
+"escena": 5,
+"nl": false
+},
+{
+"w": "hombre",
+"s": 292.68,
+"e": 292.94,
+"escena": 5,
+"nl": false
+},
+{
+"w": "corriendo",
+"s": 292.94,
+"e": 293.52,
+"escena": 5,
+"nl": false
+},
+{
+"w": "junto",
+"s": 293.52,
+"e": 293.76,
+"escena": 5,
+"nl": false
+},
+{
+"w": "al",
+"s": 293.76,
+"e": 294.02,
+"escena": 5,
+"nl": false
+},
+{
+"w": "tren.",
+"s": 294.02,
+"e": 294.18,
+"escena": 5,
+"nl": false
+},
+{
+"w": "Llevaba",
+"s": 295.0,
+"e": 295.32,
+"escena": 5,
+"nl": true
+},
+{
+"w": "la",
+"s": 295.32,
+"e": 295.54,
+"escena": 5,
+"nl": false
+},
+{
+"w": "misma",
+"s": 295.54,
+"e": 295.88,
+"escena": 5,
+"nl": false
+},
+{
+"w": "ropa",
+"s": 295.88,
+"e": 296.4,
+"escena": 5,
+"nl": false
+},
+{
+"w": "que",
+"s": 296.4,
+"e": 296.56,
+"escena": 5,
+"nl": false
+},
+{
+"w": "yo.",
+"s": 296.56,
+"e": 296.78,
+"escena": 5,
+"nl": false
+},
+{
+"w": "Tenía",
+"s": 297.48,
+"e": 297.84,
+"escena": 5,
+"nl": true
+},
+{
+"w": "mi",
+"s": 297.84,
+"e": 298.02,
+"escena": 5,
+"nl": false
+},
+{
+"w": "cara.",
+"s": 298.02,
+"e": 298.28,
+"escena": 5,
+"nl": false
+},
+{
+"w": "Mi",
+"s": 298.88,
+"e": 299.02,
+"escena": 5,
+"nl": true
+},
+{
+"w": "pelo.",
+"s": 299.02,
+"e": 299.32,
+"escena": 5,
+"nl": false
+},
+{
+"w": "Mis",
+"s": 299.96,
+"e": 300.06,
+"escena": 5,
+"nl": true
+},
+{
+"w": "ojos.",
+"s": 300.06,
+"e": 300.38,
+"escena": 5,
+"nl": false
+},
+{
+"w": "Pero",
+"s": 301.1,
+"e": 301.34,
+"escena": 5,
+"nl": true
+},
+{
+"w": "su",
+"s": 301.34,
+"e": 301.5,
+"escena": 5,
+"nl": false
+},
+{
+"w": "expresión",
+"s": 301.5,
+"e": 302.1,
+"escena": 5,
+"nl": false
+},
+{
+"w": "era",
+"s": 302.1,
+"e": 302.7,
+"escena": 5,
+"nl": false
+},
+{
+"w": "de",
+"s": 302.7,
+"e": 302.86,
+"escena": 5,
+"nl": false
+},
+{
+"w": "auténtico",
+"s": 302.86,
+"e": 303.6,
+"escena": 5,
+"nl": false
+},
+{
+"w": "terror.",
+"s": 303.6,
+"e": 303.88,
+"escena": 5,
+"nl": false
+},
+{
+"w": "Golpeaba",
+"s": 304.58,
+"e": 305.28,
+"escena": 5,
+"nl": true
+},
+{
+"w": "el",
+"s": 305.28,
+"e": 305.44,
+"escena": 5,
+"nl": false
+},
+{
+"w": "cristal",
+"s": 305.44,
+"e": 305.92,
+"escena": 5,
+"nl": false
+},
+{
+"w": "mientras",
+"s": 305.92,
+"e": 306.34,
+"escena": 5,
+"nl": false
+},
+{
+"w": "gritaba",
+"s": 306.34,
+"e": 307.0,
+"escena": 5,
+"nl": false
+},
+{
+"w": "algo",
+"s": 307.0,
+"e": 307.32,
+"escena": 5,
+"nl": false
+},
+{
+"w": "que",
+"s": 307.32,
+"e": 307.56,
+"escena": 5,
+"nl": false
+},
+{
+"w": "no",
+"s": 307.56,
+"e": 307.84,
+"escena": 5,
+"nl": false
+},
+{
+"w": "conseguía",
+"s": 307.84,
+"e": 308.48,
+"escena": 5,
+"nl": false
+},
+{
+"w": "escuchar.",
+"s": 308.48,
+"e": 309.04,
+"escena": 5,
+"nl": false
+},
+{
+"w": "Me",
+"s": 309.8,
+"e": 309.94,
+"escena": 5,
+"nl": true
+},
+{
+"w": "acerqué",
+"s": 309.94,
+"e": 310.34,
+"escena": 5,
+"nl": false
+},
+{
+"w": "lentamente.",
+"s": 310.34,
+"e": 311.26,
+"escena": 5,
+"nl": false
+},
+{
+"w": "Y",
+"s": 311.26,
+"e": 312.12,
+"escena": 5,
+"nl": true
+},
+{
+"w": "entonces",
+"s": 312.12,
+"e": 312.5,
+"escena": 5,
+"nl": false
+},
+{
+"w": "pude",
+"s": 312.5,
+"e": 313.44,
+"escena": 5,
+"nl": false
+},
+{
+"w": "leer",
+"s": 313.44,
+"e": 313.82,
+"escena": 5,
+"nl": false
+},
+{
+"w": "sus",
+"s": 313.82,
+"e": 314.06,
+"escena": 5,
+"nl": false
+},
+{
+"w": "labios:",
+"s": 314.06,
+"e": 314.5,
+"escena": 5,
+"nl": false
+},
+{
+"w": "—¡NO",
+"s": 315.06,
+"e": 315.42,
+"escena": 5,
+"nl": true
+},
+{
+"w": "BAJES!",
+"s": 315.42,
+"e": 315.94,
+"escena": 5,
+"nl": false
+},
+{
+"w": "Retrocedí",
+"s": 316.46,
+"e": 317.18,
+"escena": 5,
+"nl": true
+},
+{
+"w": "horrorizado.",
+"s": 317.18,
+"e": 317.88,
+"escena": 5,
+"nl": false
+},
+{
+"w": "En",
+"s": 318.48,
+"e": 318.7,
+"escena": 5,
+"nl": true
+},
+{
+"w": "ese",
+"s": 318.7,
+"e": 318.88,
+"escena": 5,
+"nl": false
+},
+{
+"w": "instante,",
+"s": 318.88,
+"e": 319.42,
+"escena": 5,
+"nl": false
+},
+{
+"w": "el",
+"s": 319.42,
+"e": 319.9,
+"escena": 5,
+"nl": false
+},
+{
+"w": "tren",
+"s": 319.9,
+"e": 320.16,
+"escena": 5,
+"nl": false
+},
+{
+"w": "frenó.",
+"s": 320.16,
+"e": 320.64,
+"escena": 5,
+"nl": false
+},
+{
+"w": "Las",
+"s": 321.32,
+"e": 321.46,
+"escena": 5,
+"nl": true
+},
+{
+"w": "puertas",
+"s": 321.46,
+"e": 321.84,
+"escena": 5,
+"nl": false
+},
+{
+"w": "comenzaron",
+"s": 321.84,
+"e": 322.56,
+"escena": 5,
+"nl": false
+},
+{
+"w": "a",
+"s": 322.56,
+"e": 322.72,
+"escena": 5,
+"nl": false
+},
+{
+"w": "abrirse.",
+"s": 322.72,
+"e": 323.16,
+"escena": 5,
+"nl": false
+},
+{
+"w": "Y",
+"s": 323.16,
+"e": 323.88,
+"escena": 5,
+"nl": true
+},
+{
+"w": "una",
+"s": 323.88,
+"e": 324.08,
+"escena": 5,
+"nl": false
+},
+{
+"w": "voz",
+"s": 324.08,
+"e": 324.34,
+"escena": 5,
+"nl": false
+},
+{
+"w": "por",
+"s": 324.34,
+"e": 324.56,
+"escena": 5,
+"nl": false
+},
+{
+"w": "megafonía",
+"s": 324.56,
+"e": 325.2,
+"escena": 5,
+"nl": false
+},
+{
+"w": "anunció:",
+"s": 325.2,
+"e": 326.02,
+"escena": 5,
+"nl": false
+},
+{
+"w": "—Próxima",
+"s": 326.56,
+"e": 327.06,
+"escena": 5,
+"nl": true
+},
+{
+"w": "parada:",
+"s": 327.06,
+"e": 327.46,
+"escena": 5,
+"nl": false
+},
+{
+"w": "destino",
+"s": 327.94,
+"e": 328.46,
+"escena": 5,
+"nl": false
+},
+{
+"w": "final.",
+"s": 328.46,
+"e": 328.78,
+"escena": 5,
+"nl": false
+},
+{
+"w": "Las",
+"s": 330.47,
+"e": 330.73,
+"escena": 6,
+"nl": true
+},
+{
+"w": "puertas",
+"s": 330.73,
+"e": 331.11,
+"escena": 6,
+"nl": false
+},
+{
+"w": "se",
+"s": 331.11,
+"e": 331.35,
+"escena": 6,
+"nl": false
+},
+{
+"w": "abrieron.",
+"s": 331.35,
+"e": 331.83,
+"escena": 6,
+"nl": false
+},
+{
+"w": "Al",
+"s": 332.49,
+"e": 332.63,
+"escena": 6,
+"nl": true
+},
+{
+"w": "otro",
+"s": 332.63,
+"e": 332.83,
+"escena": 6,
+"nl": false
+},
+{
+"w": "lado",
+"s": 332.83,
+"e": 333.19,
+"escena": 6,
+"nl": false
+},
+{
+"w": "había",
+"s": 333.19,
+"e": 333.67,
+"escena": 6,
+"nl": false
+},
+{
+"w": "un",
+"s": 333.67,
+"e": 334.01,
+"escena": 6,
+"nl": false
+},
+{
+"w": "andén",
+"s": 334.01,
+"e": 334.33,
+"escena": 6,
+"nl": false
+},
+{
+"w": "completamente",
+"s": 334.33,
+"e": 335.21,
+"escena": 6,
+"nl": false
+},
+{
+"w": "oscuro.",
+"s": 335.21,
+"e": 335.89,
+"escena": 6,
+"nl": false
+},
+{
+"w": "Solo",
+"s": 336.49,
+"e": 336.95,
+"escena": 6,
+"nl": true
+},
+{
+"w": "una",
+"s": 336.95,
+"e": 337.25,
+"escena": 6,
+"nl": false
+},
+{
+"w": "farola",
+"s": 337.25,
+"e": 337.69,
+"escena": 6,
+"nl": false
+},
+{
+"w": "iluminaba",
+"s": 337.69,
+"e": 338.51,
+"escena": 6,
+"nl": false
+},
+{
+"w": "una",
+"s": 338.51,
+"e": 338.81,
+"escena": 6,
+"nl": false
+},
+{
+"w": "pequeña",
+"s": 338.81,
+"e": 339.23,
+"escena": 6,
+"nl": false
+},
+{
+"w": "parte",
+"s": 339.23,
+"e": 339.77,
+"escena": 6,
+"nl": false
+},
+{
+"w": "del",
+"s": 339.77,
+"e": 340.01,
+"escena": 6,
+"nl": false
+},
+{
+"w": "lugar.",
+"s": 340.01,
+"e": 340.31,
+"escena": 6,
+"nl": false
+},
+{
+"w": "Y",
+"s": 340.89,
+"e": 341.17,
+"escena": 6,
+"nl": true
+},
+{
+"w": "debajo",
+"s": 341.17,
+"e": 341.49,
+"escena": 6,
+"nl": false
+},
+{
+"w": "de",
+"s": 341.49,
+"e": 341.67,
+"escena": 6,
+"nl": false
+},
+{
+"w": "ella",
+"s": 341.67,
+"e": 341.97,
+"escena": 6,
+"nl": false
+},
+{
+"w": "había",
+"s": 341.97,
+"e": 342.59,
+"escena": 6,
+"nl": false
+},
+{
+"w": "un",
+"s": 342.59,
+"e": 342.97,
+"escena": 6,
+"nl": false
+},
+{
+"w": "cartel.",
+"s": 342.97,
+"e": 343.47,
+"escena": 6,
+"nl": false
+},
+{
+"w": "Decía:",
+"s": 344.01,
+"e": 344.49,
+"escena": 6,
+"nl": true
+},
+{
+"w": "ACCIDENTE",
+"s": 345.21,
+"e": 345.87,
+"escena": 6,
+"nl": true
+},
+{
+"w": "FERROVIARIO",
+"s": 345.87,
+"e": 346.49,
+"escena": 6,
+"nl": false
+},
+{
+"w": "–",
+"s": 346.75,
+"e": 347.01,
+"escena": 6,
+"nl": false
+},
+{
+"w": "14",
+"s": 347.01,
+"e": 347.29,
+"escena": 6,
+"nl": false
+},
+{
+"w": "DE",
+"s": 347.29,
+"e": 347.61,
+"escena": 6,
+"nl": false
+},
+{
+"w": "NOVIEMBRE",
+"s": 347.61,
+"e": 348.05,
+"escena": 6,
+"nl": false
+},
+{
+"w": "DE",
+"s": 348.05,
+"e": 348.27,
+"escena": 6,
+"nl": false
+},
+{
+"w": "1996.",
+"s": 348.27,
+"e": 349.37,
+"escena": 6,
+"nl": false
+},
+{
+"w": "Me",
+"s": 350.53,
+"e": 350.73,
+"escena": 6,
+"nl": true
+},
+{
+"w": "acerqué",
+"s": 350.73,
+"e": 351.17,
+"escena": 6,
+"nl": false
+},
+{
+"w": "lentamente.",
+"s": 351.17,
+"e": 352.15,
+"escena": 6,
+"nl": false
+},
+{
+"w": "Debajo",
+"s": 352.83,
+"e": 353.35,
+"escena": 6,
+"nl": true
+},
+{
+"w": "del",
+"s": 353.35,
+"e": 353.47,
+"escena": 6,
+"nl": false
+},
+{
+"w": "cartel",
+"s": 353.47,
+"e": 353.93,
+"escena": 6,
+"nl": false
+},
+{
+"w": "había",
+"s": 353.93,
+"e": 354.45,
+"escena": 6,
+"nl": false
+},
+{
+"w": "una",
+"s": 354.45,
+"e": 354.91,
+"escena": 6,
+"nl": false
+},
+{
+"w": "fotografía",
+"s": 354.91,
+"e": 355.59,
+"escena": 6,
+"nl": false
+},
+{
+"w": "antigua.",
+"s": 355.59,
+"e": 356.17,
+"escena": 6,
+"nl": false
+},
+{
+"w": "Un",
+"s": 356.87,
+"e": 357.09,
+"escena": 6,
+"nl": true
+},
+{
+"w": "tren",
+"s": 357.09,
+"e": 357.37,
+"escena": 6,
+"nl": false
+},
+{
+"w": "destrozado.",
+"s": 357.37,
+"e": 358.15,
+"escena": 6,
+"nl": false
+},
+{
+"w": "Varias",
+"s": 358.79,
+"e": 359.11,
+"escena": 6,
+"nl": true
+},
+{
+"w": "ambulancias.",
+"s": 359.11,
+"e": 359.83,
+"escena": 6,
+"nl": false
+},
+{
+"w": "Y",
+"s": 359.83,
+"e": 360.47,
+"escena": 6,
+"nl": true
+},
+{
+"w": "decenas",
+"s": 360.47,
+"e": 360.93,
+"escena": 6,
+"nl": false
+},
+{
+"w": "de",
+"s": 360.93,
+"e": 361.09,
+"escena": 6,
+"nl": false
+},
+{
+"w": "personas",
+"s": 361.09,
+"e": 361.61,
+"escena": 6,
+"nl": false
+},
+{
+"w": "cubiertas",
+"s": 361.61,
+"e": 362.33,
+"escena": 6,
+"nl": false
+},
+{
+"w": "con",
+"s": 362.33,
+"e": 362.57,
+"escena": 6,
+"nl": false
+},
+{
+"w": "mantas.",
+"s": 362.57,
+"e": 363.09,
+"escena": 6,
+"nl": false
+},
+{
+"w": "Miré",
+"s": 363.67,
+"e": 363.99,
+"escena": 6,
+"nl": true
+},
+{
+"w": "la",
+"s": 363.99,
+"e": 364.27,
+"escena": 6,
+"nl": false
+},
+{
+"w": "fecha.",
+"s": 364.27,
+"e": 364.67,
+"escena": 6,
+"nl": false
+},
+{
+"w": "Era",
+"s": 365.39,
+"e": 365.73,
+"escena": 6,
+"nl": true
+},
+{
+"w": "exactamente",
+"s": 365.73,
+"e": 366.55,
+"escena": 6,
+"nl": false
+},
+{
+"w": "treinta",
+"s": 367.0,
+"e": 367.45,
+"escena": 6,
+"nl": false
+},
+{
+"w": "años",
+"s": 367.45,
+"e": 368.07,
+"escena": 6,
+"nl": false
+},
+{
+"w": "antes.",
+"s": 368.07,
+"e": 368.49,
+"escena": 6,
+"nl": false
+},
+{
+"w": "Entonces",
+"s": 368.83,
+"e": 369.29,
+"escena": 6,
+"nl": true
+},
+{
+"w": "vi",
+"s": 369.29,
+"e": 369.85,
+"escena": 6,
+"nl": false
+},
+{
+"w": "algo",
+"s": 369.85,
+"e": 370.19,
+"escena": 6,
+"nl": false
+},
+{
+"w": "que",
+"s": 370.19,
+"e": 370.39,
+"escena": 6,
+"nl": false
+},
+{
+"w": "me",
+"s": 370.39,
+"e": 370.49,
+"escena": 6,
+"nl": false
+},
+{
+"w": "dejó",
+"s": 370.49,
+"e": 370.83,
+"escena": 6,
+"nl": false
+},
+{
+"w": "sin",
+"s": 370.83,
+"e": 371.05,
+"escena": 6,
+"nl": false
+},
+{
+"w": "respiración.",
+"s": 371.05,
+"e": 371.71,
+"escena": 6,
+"nl": false
+},
+{
+"w": "Entre",
+"s": 372.57,
+"e": 372.95,
+"escena": 6,
+"nl": true
+},
+{
+"w": "las",
+"s": 372.95,
+"e": 373.13,
+"escena": 6,
+"nl": false
+},
+{
+"w": "fotografías",
+"s": 373.13,
+"e": 373.77,
+"escena": 6,
+"nl": false
+},
+{
+"w": "de",
+"s": 373.77,
+"e": 373.97,
+"escena": 6,
+"nl": false
+},
+{
+"w": "las",
+"s": 373.97,
+"e": 374.11,
+"escena": 6,
+"nl": false
+},
+{
+"w": "víctimas",
+"s": 374.11,
+"e": 374.55,
+"escena": 6,
+"nl": false
+},
+{
+"w": "había",
+"s": 374.55,
+"e": 375.23,
+"escena": 6,
+"nl": false
+},
+{
+"w": "una",
+"s": 375.23,
+"e": 375.73,
+"escena": 6,
+"nl": false
+},
+{
+"w": "imagen",
+"s": 375.73,
+"e": 376.25,
+"escena": 6,
+"nl": false
+},
+{
+"w": "mía.",
+"s": 376.25,
+"e": 376.67,
+"escena": 6,
+"nl": false
+},
+{
+"w": "La",
+"s": 377.29,
+"e": 377.43,
+"escena": 6,
+"nl": true
+},
+{
+"w": "misma",
+"s": 377.43,
+"e": 377.75,
+"escena": 6,
+"nl": false
+},
+{
+"w": "ropa.",
+"s": 377.75,
+"e": 378.17,
+"escena": 6,
+"nl": false
+},
+{
+"w": "La",
+"s": 378.71,
+"e": 378.91,
+"escena": 6,
+"nl": true
+},
+{
+"w": "misma",
+"s": 378.91,
+"e": 379.25,
+"escena": 6,
+"nl": false
+},
+{
+"w": "cara.",
+"s": 379.25,
+"e": 379.63,
+"escena": 6,
+"nl": false
+},
+{
+"w": "Y",
+"s": 380.39,
+"e": 380.55,
+"escena": 6,
+"nl": true
+},
+{
+"w": "debajo",
+"s": 380.55,
+"e": 380.91,
+"escena": 6,
+"nl": false
+},
+{
+"w": "de",
+"s": 380.91,
+"e": 381.07,
+"escena": 6,
+"nl": false
+},
+{
+"w": "mi",
+"s": 381.07,
+"e": 381.15,
+"escena": 6,
+"nl": false
+},
+{
+"w": "fotografía",
+"s": 381.15,
+"e": 381.85,
+"escena": 6,
+"nl": false
+},
+{
+"w": "aparecía",
+"s": 381.85,
+"e": 382.79,
+"escena": 6,
+"nl": false
+},
+{
+"w": "un",
+"s": 382.79,
+"e": 383.07,
+"escena": 6,
+"nl": false
+},
+{
+"w": "nombre.",
+"s": 383.07,
+"e": 383.47,
+"escena": 6,
+"nl": false
+},
+{
+"w": "El",
+"s": 384.27,
+"e": 384.43,
+"escena": 6,
+"nl": true
+},
+{
+"w": "mío.",
+"s": 384.43,
+"e": 384.87,
+"escena": 6,
+"nl": false
+},
+{
+"w": "Con",
+"s": 385.47,
+"e": 385.63,
+"escena": 6,
+"nl": true
+},
+{
+"w": "una",
+"s": 385.63,
+"e": 385.83,
+"escena": 6,
+"nl": false
+},
+{
+"w": "fecha",
+"s": 385.83,
+"e": 386.23,
+"escena": 6,
+"nl": false
+},
+{
+"w": "de",
+"s": 386.23,
+"e": 386.35,
+"escena": 6,
+"nl": false
+},
+{
+"w": "fallecimiento.",
+"s": 386.35,
+"e": 386.99,
+"escena": 6,
+"nl": false
+},
+{
+"w": "14",
+"s": 387.81,
+"e": 388.29,
+"escena": 6,
+"nl": true
+},
+{
+"w": "de",
+"s": 388.29,
+"e": 388.57,
+"escena": 6,
+"nl": false
+},
+{
+"w": "noviembre",
+"s": 388.57,
+"e": 389.07,
+"escena": 6,
+"nl": false
+},
+{
+"w": "de",
+"s": 389.07,
+"e": 389.51,
+"escena": 6,
+"nl": false
+},
+{
+"w": "1996.",
+"s": 389.51,
+"e": 390.75,
+"escena": 6,
+"nl": false
+},
+{
+"w": "Entonces",
+"s": 392.25,
+"e": 392.91,
+"escena": 6,
+"nl": true
+},
+{
+"w": "recordé",
+"s": 392.91,
+"e": 393.75,
+"escena": 6,
+"nl": false
+},
+{
+"w": "el",
+"s": 393.75,
+"e": 393.93,
+"escena": 6,
+"nl": false
+},
+{
+"w": "accidente.",
+"s": 393.93,
+"e": 394.53,
+"escena": 6,
+"nl": false
+},
+{
+"w": "El",
+"s": 395.17,
+"e": 395.33,
+"escena": 6,
+"nl": true
+},
+{
+"w": "ruido.",
+"s": 395.33,
+"e": 395.73,
+"escena": 6,
+"nl": false
+},
+{
+"w": "Los",
+"s": 396.33,
+"e": 396.47,
+"escena": 6,
+"nl": true
+},
+{
+"w": "cristales",
+"s": 396.47,
+"e": 397.03,
+"escena": 6,
+"nl": false
+},
+{
+"w": "rompiéndose.",
+"s": 397.03,
+"e": 397.93,
+"escena": 6,
+"nl": false
+},
+{
+"w": "Los",
+"s": 398.53,
+"e": 398.71,
+"escena": 6,
+"nl": true
+},
+{
+"w": "gritos.",
+"s": 398.71,
+"e": 399.11,
+"escena": 6,
+"nl": false
+},
+{
+"w": "Y",
+"s": 399.89,
+"e": 400.05,
+"escena": 6,
+"nl": true
+},
+{
+"w": "después…",
+"s": 400.05,
+"e": 400.35,
+"escena": 6,
+"nl": false
+},
+{
+"w": "nada.",
+"s": 401.27,
+"e": 401.59,
+"escena": 6,
+"nl": false
+},
+{
+"w": "Yo",
+"s": 402.53,
+"e": 402.89,
+"escena": 6,
+"nl": true
+},
+{
+"w": "no",
+"s": 402.89,
+"e": 403.15,
+"escena": 6,
+"nl": false
+},
+{
+"w": "había",
+"s": 403.15,
+"e": 403.43,
+"escena": 6,
+"nl": false
+},
+{
+"w": "perdido",
+"s": 403.43,
+"e": 404.01,
+"escena": 6,
+"nl": false
+},
+{
+"w": "el",
+"s": 404.01,
+"e": 404.17,
+"escena": 6,
+"nl": false
+},
+{
+"w": "último",
+"s": 404.17,
+"e": 404.45,
+"escena": 6,
+"nl": false
+},
+{
+"w": "tren.",
+"s": 404.45,
+"e": 404.75,
+"escena": 6,
+"nl": false
+},
+{
+"w": "Yo",
+"s": 405.59,
+"e": 405.97,
+"escena": 6,
+"nl": true
+},
+{
+"w": "había",
+"s": 405.97,
+"e": 406.71,
+"escena": 6,
+"nl": false
+},
+{
+"w": "muerto",
+"s": 406.71,
+"e": 407.39,
+"escena": 6,
+"nl": false
+},
+{
+"w": "en",
+"s": 407.39,
+"e": 407.59,
+"escena": 6,
+"nl": false
+},
+{
+"w": "aquel",
+"s": 407.59,
+"e": 407.93,
+"escena": 6,
+"nl": false
+},
+{
+"w": "accidente.",
+"s": 407.93,
+"e": 408.55,
+"escena": 6,
+"nl": false
+},
+{
+"w": "De",
+"s": 410.2,
+"e": 410.46,
+"escena": 7,
+"nl": true
+},
+{
+"w": "repente,",
+"s": 410.46,
+"e": 410.84,
+"escena": 7,
+"nl": false
+},
+{
+"w": "escuché",
+"s": 410.84,
+"e": 411.9,
+"escena": 7,
+"nl": false
+},
+{
+"w": "la",
+"s": 411.9,
+"e": 412.04,
+"escena": 7,
+"nl": false
+},
+{
+"w": "voz",
+"s": 412.04,
+"e": 412.3,
+"escena": 7,
+"nl": false
+},
+{
+"w": "de",
+"s": 412.3,
+"e": 412.44,
+"escena": 7,
+"nl": false
+},
+{
+"w": "la",
+"s": 412.44,
+"e": 412.54,
+"escena": 7,
+"nl": false
+},
+{
+"w": "anciana",
+"s": 412.54,
+"e": 413.02,
+"escena": 7,
+"nl": false
+},
+{
+"w": "detrás",
+"s": 413.02,
+"e": 413.46,
+"escena": 7,
+"nl": false
+},
+{
+"w": "de",
+"s": 413.46,
+"e": 413.58,
+"escena": 7,
+"nl": false
+},
+{
+"w": "mí.",
+"s": 413.58,
+"e": 413.76,
+"escena": 7,
+"nl": false
+},
+{
+"w": "—Ya",
+"s": 414.32,
+"e": 414.56,
+"escena": 7,
+"nl": true
+},
+{
+"w": "puedes",
+"s": 414.56,
+"e": 415.06,
+"escena": 7,
+"nl": false
+},
+{
+"w": "descansar.",
+"s": 415.06,
+"e": 415.88,
+"escena": 7,
+"nl": false
+},
+{
+"w": "Me",
+"s": 416.38,
+"e": 416.6,
+"escena": 7,
+"nl": true
+},
+{
+"w": "giré.",
+"s": 416.6,
+"e": 416.94,
+"escena": 7,
+"nl": false
+},
+{
+"w": "Estaba",
+"s": 417.64,
+"e": 418.12,
+"escena": 7,
+"nl": true
+},
+{
+"w": "al",
+"s": 418.12,
+"e": 418.34,
+"escena": 7,
+"nl": false
+},
+{
+"w": "final",
+"s": 418.34,
+"e": 418.58,
+"escena": 7,
+"nl": false
+},
+{
+"w": "del",
+"s": 418.58,
+"e": 418.9,
+"escena": 7,
+"nl": false
+},
+{
+"w": "vagón.",
+"s": 418.9,
+"e": 419.3,
+"escena": 7,
+"nl": false
+},
+{
+"w": "Pero",
+"s": 419.88,
+"e": 420.16,
+"escena": 7,
+"nl": true
+},
+{
+"w": "esta",
+"s": 420.16,
+"e": 420.44,
+"escena": 7,
+"nl": false
+},
+{
+"w": "vez",
+"s": 420.44,
+"e": 420.72,
+"escena": 7,
+"nl": false
+},
+{
+"w": "no",
+"s": 420.72,
+"e": 421.0,
+"escena": 7,
+"nl": false
+},
+{
+"w": "parecía",
+"s": 421.0,
+"e": 421.54,
+"escena": 7,
+"nl": false
+},
+{
+"w": "una",
+"s": 421.54,
+"e": 421.84,
+"escena": 7,
+"nl": false
+},
+{
+"w": "anciana.",
+"s": 421.84,
+"e": 422.26,
+"escena": 7,
+"nl": false
+},
+{
+"w": "Su",
+"s": 423.06,
+"e": 423.26,
+"escena": 7,
+"nl": true
+},
+{
+"w": "rostro",
+"s": 423.26,
+"e": 423.8,
+"escena": 7,
+"nl": false
+},
+{
+"w": "había",
+"s": 423.8,
+"e": 424.1,
+"escena": 7,
+"nl": false
+},
+{
+"w": "cambiado.",
+"s": 424.1,
+"e": 424.76,
+"escena": 7,
+"nl": false
+},
+{
+"w": "Era",
+"s": 425.44,
+"e": 425.68,
+"escena": 7,
+"nl": true
+},
+{
+"w": "mucho",
+"s": 425.68,
+"e": 426.16,
+"escena": 7,
+"nl": false
+},
+{
+"w": "más",
+"s": 426.16,
+"e": 426.4,
+"escena": 7,
+"nl": false
+},
+{
+"w": "joven.",
+"s": 426.4,
+"e": 426.8,
+"escena": 7,
+"nl": false
+},
+{
+"w": "Y",
+"s": 427.4,
+"e": 427.66,
+"escena": 7,
+"nl": true
+},
+{
+"w": "entonces",
+"s": 427.66,
+"e": 428.12,
+"escena": 7,
+"nl": false
+},
+{
+"w": "la",
+"s": 428.12,
+"e": 428.44,
+"escena": 7,
+"nl": false
+},
+{
+"w": "reconocí.",
+"s": 428.44,
+"e": 429.0,
+"escena": 7,
+"nl": false
+},
+{
+"w": "Era",
+"s": 429.76,
+"e": 430.08,
+"escena": 7,
+"nl": true
+},
+{
+"w": "mi",
+"s": 430.08,
+"e": 430.26,
+"escena": 7,
+"nl": false
+},
+{
+"w": "madre.",
+"s": 430.26,
+"e": 430.56,
+"escena": 7,
+"nl": false
+},
+{
+"w": "La",
+"s": 431.24,
+"e": 431.44,
+"escena": 7,
+"nl": true
+},
+{
+"w": "mujer",
+"s": 431.44,
+"e": 431.7,
+"escena": 7,
+"nl": false
+},
+{
+"w": "que",
+"s": 431.7,
+"e": 431.96,
+"escena": 7,
+"nl": false
+},
+{
+"w": "había",
+"s": 431.96,
+"e": 432.2,
+"escena": 7,
+"nl": false
+},
+{
+"w": "muerto",
+"s": 432.2,
+"e": 432.62,
+"escena": 7,
+"nl": false
+},
+{
+"w": "cuando",
+"s": 432.62,
+"e": 432.86,
+"escena": 7,
+"nl": false
+},
+{
+"w": "yo",
+"s": 432.86,
+"e": 433.26,
+"escena": 7,
+"nl": false
+},
+{
+"w": "era",
+"s": 433.26,
+"e": 433.54,
+"escena": 7,
+"nl": false
+},
+{
+"w": "pequeño.",
+"s": 433.54,
+"e": 433.88,
+"escena": 7,
+"nl": false
+},
+{
+"w": "Tenía",
+"s": 434.92,
+"e": 435.44,
+"escena": 7,
+"nl": true
+},
+{
+"w": "los",
+"s": 435.44,
+"e": 435.68,
+"escena": 7,
+"nl": false
+},
+{
+"w": "ojos",
+"s": 435.68,
+"e": 436.04,
+"escena": 7,
+"nl": false
+},
+{
+"w": "llenos",
+"s": 436.04,
+"e": 436.6,
+"escena": 7,
+"nl": false
+},
+{
+"w": "de",
+"s": 436.6,
+"e": 436.78,
+"escena": 7,
+"nl": false
+},
+{
+"w": "lágrimas.",
+"s": 436.78,
+"e": 437.22,
+"escena": 7,
+"nl": false
+},
+{
+"w": "—Llevo",
+"s": 438.06,
+"e": 438.36,
+"escena": 7,
+"nl": true
+},
+{
+"w": "treinta",
+"s": 438.57,
+"e": 438.78,
+"escena": 7,
+"nl": false
+},
+{
+"w": "años",
+"s": 438.78,
+"e": 439.46,
+"escena": 7,
+"nl": false
+},
+{
+"w": "esperándote",
+"s": 439.46,
+"e": 440.4,
+"escena": 7,
+"nl": false
+},
+{
+"w": "—susurró.",
+"s": 440.94,
+"e": 441.54,
+"escena": 7,
+"nl": false
+},
+{
+"w": "Intenté",
+"s": 442.46,
+"e": 443.04,
+"escena": 7,
+"nl": true
+},
+{
+"w": "acercarme,",
+"s": 443.04,
+"e": 443.7,
+"escena": 7,
+"nl": false
+},
+{
+"w": "pero",
+"s": 444.16,
+"e": 444.42,
+"escena": 7,
+"nl": false
+},
+{
+"w": "las",
+"s": 444.42,
+"e": 444.62,
+"escena": 7,
+"nl": false
+},
+{
+"w": "puertas",
+"s": 444.62,
+"e": 445.0,
+"escena": 7,
+"nl": false
+},
+{
+"w": "comenzaron",
+"s": 445.0,
+"e": 445.74,
+"escena": 7,
+"nl": false
+},
+{
+"w": "a",
+"s": 445.74,
+"e": 445.92,
+"escena": 7,
+"nl": false
+},
+{
+"w": "cerrarse.",
+"s": 445.92,
+"e": 446.44,
+"escena": 7,
+"nl": false
+},
+{
+"w": "Ella",
+"s": 447.26,
+"e": 447.62,
+"escena": 7,
+"nl": true
+},
+{
+"w": "extendió",
+"s": 447.62,
+"e": 448.3,
+"escena": 7,
+"nl": false
+},
+{
+"w": "la",
+"s": 448.3,
+"e": 448.46,
+"escena": 7,
+"nl": false
+},
+{
+"w": "mano.",
+"s": 448.46,
+"e": 448.74,
+"escena": 7,
+"nl": false
+},
+{
+"w": "—Ven",
+"s": 449.46,
+"e": 449.64,
+"escena": 7,
+"nl": true
+},
+{
+"w": "conmigo.",
+"s": 449.64,
+"e": 450.22,
+"escena": 7,
+"nl": false
+},
+{
+"w": "Y",
+"s": 451.04,
+"e": 451.14,
+"escena": 7,
+"nl": true
+},
+{
+"w": "por",
+"s": 451.14,
+"e": 451.28,
+"escena": 7,
+"nl": false
+},
+{
+"w": "primera",
+"s": 451.28,
+"e": 451.6,
+"escena": 7,
+"nl": false
+},
+{
+"w": "vez",
+"s": 451.6,
+"e": 451.94,
+"escena": 7,
+"nl": false
+},
+{
+"w": "en",
+"s": 451.94,
+"e": 452.14,
+"escena": 7,
+"nl": false
+},
+{
+"w": "toda",
+"s": 452.14,
+"e": 452.4,
+"escena": 7,
+"nl": false
+},
+{
+"w": "la",
+"s": 452.4,
+"e": 452.64,
+"escena": 7,
+"nl": false
+},
+{
+"w": "noche,",
+"s": 452.64,
+"e": 452.94,
+"escena": 7,
+"nl": false
+},
+{
+"w": "dejé",
+"s": 452.94,
+"e": 453.92,
+"escena": 7,
+"nl": false
+},
+{
+"w": "de",
+"s": 453.92,
+"e": 454.08,
+"escena": 7,
+"nl": false
+},
+{
+"w": "tener",
+"s": 454.08,
+"e": 454.3,
+"escena": 7,
+"nl": false
+},
+{
+"w": "miedo.",
+"s": 454.3,
+"e": 454.68,
+"escena": 7,
+"nl": false
+},
+{
+"w": "El",
+"s": 455.46,
+"e": 455.74,
+"escena": 7,
+"nl": true
+},
+{
+"w": "tren",
+"s": 455.74,
+"e": 455.98,
+"escena": 7,
+"nl": false
+},
+{
+"w": "arrancó.",
+"s": 455.98,
+"e": 456.6,
+"escena": 7,
+"nl": false
+},
+{
+"w": "Las",
+"s": 457.28,
+"e": 457.44,
+"escena": 7,
+"nl": true
+},
+{
+"w": "luces",
+"s": 457.44,
+"e": 457.84,
+"escena": 7,
+"nl": false
+},
+{
+"w": "se",
+"s": 457.84,
+"e": 458.06,
+"escena": 7,
+"nl": false
+},
+{
+"w": "apagaron.",
+"s": 458.06,
+"e": 458.52,
+"escena": 7,
+"nl": false
+},
+{
+"w": "Y",
+"s": 459.02,
+"e": 459.32,
+"escena": 7,
+"nl": true
+},
+{
+"w": "todo",
+"s": 459.32,
+"e": 459.7,
+"escena": 7,
+"nl": false
+},
+{
+"w": "quedó",
+"s": 459.7,
+"e": 460.2,
+"escena": 7,
+"nl": false
+},
+{
+"w": "en",
+"s": 460.2,
+"e": 460.38,
+"escena": 7,
+"nl": false
+},
+{
+"w": "silencio.",
+"s": 460.38,
+"e": 460.92,
+"escena": 7,
+"nl": false
+},
+{
+"w": "A",
+"s": 463.18,
+"e": 463.34,
+"escena": 8,
+"nl": true
+},
+{
+"w": "la",
+"s": 463.34,
+"e": 463.4,
+"escena": 8,
+"nl": false
+},
+{
+"w": "mañana",
+"s": 463.4,
+"e": 463.68,
+"escena": 8,
+"nl": false
+},
+{
+"w": "siguiente,",
+"s": 463.68,
+"e": 464.08,
+"escena": 8,
+"nl": false
+},
+{
+"w": "un",
+"s": 464.08,
+"e": 465.04,
+"escena": 8,
+"nl": false
+},
+{
+"w": "hombre",
+"s": 465.04,
+"e": 465.34,
+"escena": 8,
+"nl": false
+},
+{
+"w": "llegó",
+"s": 465.34,
+"e": 465.58,
+"escena": 8,
+"nl": false
+},
+{
+"w": "a",
+"s": 465.58,
+"e": 465.9,
+"escena": 8,
+"nl": false
+},
+{
+"w": "la",
+"s": 465.9,
+"e": 466.0,
+"escena": 8,
+"nl": false
+},
+{
+"w": "estación",
+"s": 466.0,
+"e": 466.4,
+"escena": 8,
+"nl": false
+},
+{
+"w": "y",
+"s": 466.4,
+"e": 466.92,
+"escena": 8,
+"nl": false
+},
+{
+"w": "preguntó",
+"s": 466.92,
+"e": 467.42,
+"escena": 8,
+"nl": false
+},
+{
+"w": "al",
+"s": 467.42,
+"e": 467.58,
+"escena": 8,
+"nl": false
+},
+{
+"w": "trabajador",
+"s": 467.58,
+"e": 468.18,
+"escena": 8,
+"nl": false
+},
+{
+"w": "de",
+"s": 468.18,
+"e": 468.34,
+"escena": 8,
+"nl": false
+},
+{
+"w": "seguridad",
+"s": 468.34,
+"e": 468.82,
+"escena": 8,
+"nl": false
+},
+{
+"w": "si",
+"s": 468.82,
+"e": 469.4,
+"escena": 8,
+"nl": false
+},
+{
+"w": "había",
+"s": 469.4,
+"e": 469.66,
+"escena": 8,
+"nl": false
+},
+{
+"w": "pasado",
+"s": 469.66,
+"e": 470.1,
+"escena": 8,
+"nl": false
+},
+{
+"w": "algo",
+"s": 470.1,
+"e": 470.52,
+"escena": 8,
+"nl": false
+},
+{
+"w": "extraño",
+"s": 470.52,
+"e": 471.12,
+"escena": 8,
+"nl": false
+},
+{
+"w": "durante",
+"s": 471.12,
+"e": 471.44,
+"escena": 8,
+"nl": false
+},
+{
+"w": "la",
+"s": 471.44,
+"e": 471.64,
+"escena": 8,
+"nl": false
+},
+{
+"w": "noche.",
+"s": 471.64,
+"e": 471.88,
+"escena": 8,
+"nl": false
+},
+{
+"w": "El",
+"s": 472.78,
+"e": 473.0,
+"escena": 8,
+"nl": true
+},
+{
+"w": "trabajador",
+"s": 473.0,
+"e": 473.54,
+"escena": 8,
+"nl": false
+},
+{
+"w": "negó",
+"s": 473.54,
+"e": 474.0,
+"escena": 8,
+"nl": false
+},
+{
+"w": "con",
+"s": 474.0,
+"e": 474.2,
+"escena": 8,
+"nl": false
+},
+{
+"w": "la",
+"s": 474.2,
+"e": 474.32,
+"escena": 8,
+"nl": false
+},
+{
+"w": "cabeza.",
+"s": 474.32,
+"e": 474.68,
+"escena": 8,
+"nl": false
+},
+{
+"w": "Pero",
+"s": 475.4,
+"e": 475.66,
+"escena": 8,
+"nl": true
+},
+{
+"w": "cuando",
+"s": 475.66,
+"e": 475.84,
+"escena": 8,
+"nl": false
+},
+{
+"w": "revisaron",
+"s": 475.84,
+"e": 476.5,
+"escena": 8,
+"nl": false
+},
+{
+"w": "las",
+"s": 476.5,
+"e": 476.72,
+"escena": 8,
+"nl": false
+},
+{
+"w": "cámaras,",
+"s": 476.72,
+"e": 477.28,
+"escena": 8,
+"nl": false
+},
+{
+"w": "encontraron",
+"s": 477.28,
+"e": 478.46,
+"escena": 8,
+"nl": false
+},
+{
+"w": "algo",
+"s": 478.46,
+"e": 478.92,
+"escena": 8,
+"nl": false
+},
+{
+"w": "imposible.",
+"s": 478.92,
+"e": 479.82,
+"escena": 8,
+"nl": false
+},
+{
+"w": "A",
+"s": 480.52,
+"e": 480.92,
+"escena": 8,
+"nl": true
+},
+{
+"w": "las",
+"s": 480.92,
+"e": 481.04,
+"escena": 8,
+"nl": false
+},
+{
+"w": "3:17,",
+"s": 481.04,
+"e": 482.0,
+"escena": 8,
+"nl": false
+},
+{
+"w": "un",
+"s": 482.0,
+"e": 482.7,
+"escena": 8,
+"nl": false
+},
+{
+"w": "tren",
+"s": 482.7,
+"e": 482.98,
+"escena": 8,
+"nl": false
+},
+{
+"w": "había",
+"s": 482.98,
+"e": 483.34,
+"escena": 8,
+"nl": false
+},
+{
+"w": "entrado",
+"s": 483.34,
+"e": 483.92,
+"escena": 8,
+"nl": false
+},
+{
+"w": "en",
+"s": 483.92,
+"e": 484.06,
+"escena": 8,
+"nl": false
+},
+{
+"w": "la",
+"s": 484.06,
+"e": 484.16,
+"escena": 8,
+"nl": false
+},
+{
+"w": "estación.",
+"s": 484.16,
+"e": 484.56,
+"escena": 8,
+"nl": false
+},
+{
+"w": "Las",
+"s": 485.4,
+"e": 485.54,
+"escena": 8,
+"nl": true
+},
+{
+"w": "puertas",
+"s": 485.54,
+"e": 485.96,
+"escena": 8,
+"nl": false
+},
+{
+"w": "se",
+"s": 485.96,
+"e": 486.42,
+"escena": 8,
+"nl": false
+},
+{
+"w": "habían",
+"s": 486.42,
+"e": 486.76,
+"escena": 8,
+"nl": false
+},
+{
+"w": "abierto.",
+"s": 486.76,
+"e": 487.28,
+"escena": 8,
+"nl": false
+},
+{
+"w": "Y",
+"s": 487.78,
+"e": 488.08,
+"escena": 8,
+"nl": true
+},
+{
+"w": "un",
+"s": 488.08,
+"e": 488.22,
+"escena": 8,
+"nl": false
+},
+{
+"w": "hombre",
+"s": 488.22,
+"e": 488.54,
+"escena": 8,
+"nl": false
+},
+{
+"w": "había",
+"s": 488.54,
+"e": 489.12,
+"escena": 8,
+"nl": false
+},
+{
+"w": "subido.",
+"s": 489.12,
+"e": 489.64,
+"escena": 8,
+"nl": false
+},
+{
+"w": "El",
+"s": 490.54,
+"e": 490.7,
+"escena": 8,
+"nl": true
+},
+{
+"w": "trabajador",
+"s": 490.7,
+"e": 491.26,
+"escena": 8,
+"nl": false
+},
+{
+"w": "amplió",
+"s": 491.26,
+"e": 492.0,
+"escena": 8,
+"nl": false
+},
+{
+"w": "la",
+"s": 492.0,
+"e": 492.24,
+"escena": 8,
+"nl": false
+},
+{
+"w": "imagen.",
+"s": 492.24,
+"e": 492.64,
+"escena": 8,
+"nl": false
+},
+{
+"w": "Era",
+"s": 493.34,
+"e": 493.74,
+"escena": 8,
+"nl": true
+},
+{
+"w": "yo.",
+"s": 493.74,
+"e": 494.04,
+"escena": 8,
+"nl": false
+},
+{
+"w": "Entonces",
+"s": 494.8,
+"e": 495.38,
+"escena": 8,
+"nl": true
+},
+{
+"w": "observó",
+"s": 495.38,
+"e": 496.32,
+"escena": 8,
+"nl": false
+},
+{
+"w": "algo",
+"s": 496.32,
+"e": 496.64,
+"escena": 8,
+"nl": false
+},
+{
+"w": "todavía",
+"s": 496.64,
+"e": 497.18,
+"escena": 8,
+"nl": false
+},
+{
+"w": "más",
+"s": 497.18,
+"e": 497.8,
+"escena": 8,
+"nl": false
+},
+{
+"w": "extraño.",
+"s": 497.8,
+"e": 498.46,
+"escena": 8,
+"nl": false
+},
+{
+"w": "En",
+"s": 499.22,
+"e": 499.5,
+"escena": 8,
+"nl": true
+},
+{
+"w": "el",
+"s": 499.5,
+"e": 499.6,
+"escena": 8,
+"nl": false
+},
+{
+"w": "reflejo",
+"s": 499.6,
+"e": 500.14,
+"escena": 8,
+"nl": false
+},
+{
+"w": "de",
+"s": 500.14,
+"e": 500.26,
+"escena": 8,
+"nl": false
+},
+{
+"w": "la",
+"s": 500.26,
+"e": 500.34,
+"escena": 8,
+"nl": false
+},
+{
+"w": "ventana,",
+"s": 500.34,
+"e": 500.82,
+"escena": 8,
+"nl": false
+},
+{
+"w": "justo",
+"s": 501.12,
+"e": 501.64,
+"escena": 8,
+"nl": false
+},
+{
+"w": "detrás",
+"s": 501.64,
+"e": 502.16,
+"escena": 8,
+"nl": false
+},
+{
+"w": "de",
+"s": 502.16,
+"e": 502.32,
+"escena": 8,
+"nl": false
+},
+{
+"w": "mí,",
+"s": 502.32,
+"e": 502.54,
+"escena": 8,
+"nl": false
+},
+{
+"w": "aparecía",
+"s": 503.04,
+"e": 503.76,
+"escena": 8,
+"nl": false
+},
+{
+"w": "la",
+"s": 503.76,
+"e": 503.98,
+"escena": 8,
+"nl": false
+},
+{
+"w": "anciana.",
+"s": 503.98,
+"e": 504.52,
+"escena": 8,
+"nl": false
+},
+{
+"w": "Sonriendo.",
+"s": 504.52,
+"e": 505.98,
+"escena": 8,
+"nl": true
+},
+{
+"w": "Y",
+"s": 506.68,
+"e": 507.04,
+"escena": 8,
+"nl": true
+},
+{
+"w": "antes",
+"s": 507.04,
+"e": 507.34,
+"escena": 8,
+"nl": false
+},
+{
+"w": "de",
+"s": 507.34,
+"e": 507.48,
+"escena": 8,
+"nl": false
+},
+{
+"w": "que",
+"s": 507.48,
+"e": 507.56,
+"escena": 8,
+"nl": false
+},
+{
+"w": "la",
+"s": 507.56,
+"e": 507.68,
+"escena": 8,
+"nl": false
+},
+{
+"w": "grabación",
+"s": 507.68,
+"e": 508.12,
+"escena": 8,
+"nl": false
+},
+{
+"w": "terminara,",
+"s": 508.12,
+"e": 508.78,
+"escena": 8,
+"nl": false
+},
+{
+"w": "la",
+"s": 509.4,
+"e": 509.5,
+"escena": 8,
+"nl": false
+},
+{
+"w": "cámara",
+"s": 509.5,
+"e": 509.86,
+"escena": 8,
+"nl": false
+},
+{
+"w": "captó",
+"s": 509.86,
+"e": 510.68,
+"escena": 8,
+"nl": false
+},
+{
+"w": "algo",
+"s": 510.68,
+"e": 511.04,
+"escena": 8,
+"nl": false
+},
+{
+"w": "escrito",
+"s": 511.04,
+"e": 511.48,
+"escena": 8,
+"nl": false
+},
+{
+"w": "en",
+"s": 511.48,
+"e": 511.76,
+"escena": 8,
+"nl": false
+},
+{
+"w": "el",
+"s": 511.76,
+"e": 511.88,
+"escena": 8,
+"nl": false
+},
+{
+"w": "cristal",
+"s": 511.88,
+"e": 512.42,
+"escena": 8,
+"nl": false
+},
+{
+"w": "del",
+"s": 512.42,
+"e": 512.6,
+"escena": 8,
+"nl": false
+},
+{
+"w": "vagón:",
+"s": 512.6,
+"e": 513.1,
+"escena": 8,
+"nl": false
+},
+{
+"w": "«UNO",
+"s": 513.74,
+"e": 514.34,
+"escena": 8,
+"nl": true
+},
+{
+"w": "MÁS",
+"s": 514.34,
+"e": 514.84,
+"escena": 8,
+"nl": false
+},
+{
+"w": "PARA",
+"s": 514.84,
+"e": 515.38,
+"escena": 8,
+"nl": false
+},
+{
+"w": "EL",
+"s": 515.38,
+"e": 515.5,
+"escena": 8,
+"nl": false
+},
+{
+"w": "PRÓXIMO",
+"s": 515.5,
+"e": 515.94,
+"escena": 8,
+"nl": false
+},
+{
+"w": "VIAJE».",
+"s": 515.94,
+"e": 516.46,
+"escena": 8,
+"nl": false
+},
+{
+"w": "FIN.",
+"s": 517.62,
+"e": 518.04,
+"escena": 8,
+"nl": true
+}
+]
