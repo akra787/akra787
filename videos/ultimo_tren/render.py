@@ -81,7 +81,7 @@ def una(T):
 def trozo(args):
     i0, i1, ruta = args
     ff = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
-                           "-r", str(FPS), "-i", "-", "-c:v", "libx264", "-preset", "medium", "-crf", "19",
+                           "-r", str(FPS), "-i", "-", "-c:v", "libx264", "-preset", "medium", "-crf", "16",
                            "-pix_fmt", "yuv420p", ruta], stdin=subprocess.PIPE)
     for i in range(i0, i1):
         ff.stdin.write(fotograma(i))

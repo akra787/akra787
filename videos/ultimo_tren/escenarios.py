@@ -6,7 +6,7 @@ import math
 
 import cairo
 
-from motor import (H, MAQ, SANS, TITULO, W, cl, fbm1, hash1, hx, lerp, lerpc, lgrad, mul, parpadeo, rgrad,
+from motor import (FCAM, H, KH, MAQ, SANS, TITULO, W, cl, fbm1, hash1, hx, lerp, lerpc, lgrad, mul, parpadeo, rgrad,
                    resplandor, rr, src, texto, tf)
 from personajes import figura, figura_perfil, silueta
 
@@ -14,7 +14,7 @@ from personajes import figura, figura_perfil, silueta
 class Cam:
     def __init__(self, x=0.0, y=1.6, z=0.0, yaw=0.0, pitch=0.0, f=900.0, roll=0.0,
                  niebla=(0.05, 0.07, 0.08), densidad=0.045):
-        self.x, self.y, self.z, self.yaw, self.pitch, self.f, self.roll = x, y, z, yaw, pitch, f, roll
+        self.x, self.y, self.z, self.yaw, self.pitch, self.f, self.roll = x, y, z, yaw, pitch, f * FCAM, roll
         self.niebla, self.densidad = niebla, densidad
         self.cy, self.sy = math.cos(yaw), math.sin(yaw)
         self.cp, self.sp = math.cos(pitch), math.sin(pitch)

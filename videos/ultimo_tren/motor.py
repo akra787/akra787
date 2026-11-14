@@ -10,7 +10,11 @@ from contextlib import contextmanager
 import cairo
 import numpy as np
 
-W, H, FPS = 1080, 1920, 24
+FORMATO = os.environ.get("FORMATO", "horizontal")
+W, H, FPS = (1920, 1080, 24) if FORMATO == "horizontal" else (1080, 1920, 24)
+HOR = W > H
+KH = 0.6 if HOR else 1.0      # escala de personajes/objetos diseñados para el lienzo vertical
+FCAM = 1.28 if HOR else 1.0   # focal de las cámaras 3D (panorámico: objetivo algo más largo)
 AQUI = os.path.dirname(os.path.abspath(__file__))
 
 TITULO = "Bebas Neue"
@@ -335,7 +339,7 @@ def posproceso(arr, T, fi, fx):
     # viñeta
     arr = arr * (1 - fx.get("vineta", 1.0) * (1 - vineta()))
     # grano
-    gk = fx.get("grano", 0.045)
+    gk = fx.get("grano", 0.035)
     if gk > 0:
         arr = arr + grano(fi) * gk * (0.6 + 0.4 * (1 - arr.mean(axis=2, keepdims=True)))
     # fundido a negro

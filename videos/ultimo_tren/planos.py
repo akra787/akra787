@@ -13,7 +13,7 @@ import unicodedata
 import cairo
 import numpy as np
 
-from motor import (AQUI, FPS, H, MAQ, SANS, TITULO, W, cl, eio, ei, eo, fbm1, hash1, hx, lerp, lerpc, lgrad, mul,
+from motor import (AQUI, FPS, H, HOR, KH, MAQ, SANS, TITULO, W, cl, eio, ei, eo, fbm1, hash1, hx, lerp, lerpc, lgrad, mul,
                    parpadeo, pr, rect, resplandor, rgrad, rr, src, ss, texto, tf, cono_luz)
 from personajes import (ANCIANA, BRYAN, GUARDIA, HOMBRE, MADRE, NINA, SOMBRA, busto, cara, figura, figura_perfil,
                         osito, silueta)
@@ -138,11 +138,17 @@ def fondo_escena(c, T, tipo, extra=None):
                 c.fill()
 
 
-def p_busto(c, t, T, d, spec=BRYAN, fondo="vagon", fondo_kw=None, expr="neutral", x=W / 2, y=H * 0.42, r=230,
+def p_busto(c, t, T, d, spec=BRYAN, fondo="vagon", fondo_kw=None, expr="neutral", x=None, y=None, r=230,
             zoom=(1.0, 1.08), mira=(0.0, 0.0), giro=0.0, habla=False, estados=(), luz=1.0, sacudida=0.0,
             parpado=True, rim=hx("#cfe8ff"), lagrimas=0.0, inclina=0.0, pelo_cara=0.0, vaho=0.0, alfa=1.0,
             mezcla=None, calido=0.0, giro_fin=None, mira_fin=None, fx_extra=None, aliento=0.0):
     """Primer plano de un personaje con fondo desenfocado. estados: [(t0, {param: valor})]."""
+    r = r * KH
+    if y is None:
+        y = H * (0.45 if HOR else 0.42)
+    if x is None:
+        # en panorámico: plano/contraplano, Bryan a la izquierda y los demás a la derecha (salvo planos detalle)
+        x = W / 2 if (not HOR or r > 300) else W * (0.4 if spec["nombre"] == "bryan" else 0.6)
     kw = dict(expr=expr, mira=mira, giro=giro, lagrimas=lagrimas, inclina=inclina, pelo_cara=pelo_cara)
     for t0, cambios in estados:
         if t >= t0:
@@ -239,15 +245,15 @@ def brazo_agarre(c, t, T, d):
     src(c, (0, 0, 0, 0.4))
     c.fill()
     # brazo de Bryan (manga granate) cruzando
-    with tf(c, 0, H * 0.55, r=-0.15):
-        rr(c, -100, -170, 1300, 340, 150)
+    with tf(c, 0, H * 0.55, r=-0.15 if not HOR else -0.08, s=0.8 if HOR else 1.0):
+        rr(c, -300, -170, W + 600, 340, 150)
         src(c, BRYAN["torso"])
         c.fill_preserve()
         c.set_source(lgrad(0, -170, 0, 170, [(0, mul(BRYAN["torso_luz"], 1, 0.5)), (1, (0, 0, 0, 0.5))]))
         c.fill()
     k = eo(pr(t, 0.05, 0.25))
     piel = ANCIANA["piel"]
-    with tf(c, W * 0.55, H * 0.55 - 120 - (1 - k) * 600, r=0.1):
+    with tf(c, W * 0.55, H * 0.55 - 120 * (0.8 if HOR else 1) - (1 - k) * 600, r=0.1, s=0.8 if HOR else 1.0):
         rr(c, -120, -900, 240, 800, 100)
         src(c, ANCIANA["torso"])
         c.fill()
@@ -333,7 +339,7 @@ def sala_cctv(c, t, T, d):
     src(c, hx("#04070c"))
     c.fill()
     z = 1 + 0.08 * t / d
-    with tf(c, W / 2, H * 0.4, s=z):
+    with tf(c, W / 2, H * (0.45 if HOR else 0.4), s=z * (0.8 if HOR else 1)):
         for i in range(3):
             for j in range(3):
                 x, y = -480 + i * 330, -420 + j * 290
@@ -363,8 +369,12 @@ def sala_cctv(c, t, T, d):
                 texto(c, f"CAM 0{i + j * 3 + 1}", x + 24, y + 245, MAQ, 22, hx("#9fd0e0", 0.8), ancla=0)
     resplandor(c, W / 2, H * 0.4, 900, hx("#7fb8ff"), 0.35)
     # guardia y hombre de espaldas, en silueta
-    figura(c, W * 0.32, H * 1.12, 1300, GUARDIA, T=T, espalda=True, ilum=0.4)
-    figura(c, W * 0.78, H * 1.15, 1350, HOMBRE, T=T, espalda=True, ilum=0.4)
+    if HOR:
+        figura(c, W * 0.2, H * 1.3, 1100, GUARDIA, T=T, espalda=True, ilum=0.4)
+        figura(c, W * 0.82, H * 1.32, 1150, HOMBRE, T=T, espalda=True, ilum=0.4)
+    else:
+        figura(c, W * 0.32, H * 1.12, 1300, GUARDIA, T=T, espalda=True, ilum=0.4)
+        figura(c, W * 0.78, H * 1.15, 1350, HOMBRE, T=T, espalda=True, ilum=0.4)
     c.rectangle(0, H * 0.62, W, H * 0.38)
     c.set_source(lgrad(0, H * 0.62, 0, H, [(0, (0, 0, 0, 0.0)), (1, (0, 0, 0, 0.75))]))
     c.fill()
@@ -390,24 +400,32 @@ def cctv_anden(fase, t, d, T):
     return dib
 
 
+REFLEJO = (0.66, 0.33) if HOR else (0.68, 0.4)
+
+
 def cctv_reflejo(t, d, T, sonrisa=False):
     def dib(c):
         c.rectangle(0, 0, W, H)
         src(c, hx("#8e979c"))
         c.fill()
         # ventana del tren vista de cerca desde el andén
-        rr(c, 100, 420, W - 200, 1000, 30)
+        VX, VY, VW, VH = (180, 70, W - 360, 800) if HOR else (100, 420, W - 200, 1000)
+        rr(c, VX, VY, VW, VH, 30)
         src(c, hx("#dfe8ea"))
         c.fill()
-        figura(c, W * 0.42, 2350, 1850, BRYAN, T=T, espalda=True)
+        if HOR:
+            figura(c, W * 0.38, H * 1.55, 1500, BRYAN, T=T, espalda=True)
+        else:
+            figura(c, W * 0.42, 2350, 1850, BRYAN, T=T, espalda=True)
         c.save()
-        rr(c, 100, 420, W - 200, 1000, 30)
+        rr(c, VX, VY, VW, VH, 30)
         c.clip()
         a = 0.35 + 0.25 * ss(cl(t / d))
-        with tf(c, W * 0.68, 760, a=a):
-            busto(c, 0, 0, 150, ANCIANA, T=T, expr="inquietante" if sonrisa else "serio", mira=(-0.5, 0.2))
+        with tf(c, W * REFLEJO[0], H * REFLEJO[1], a=a):
+            busto(c, 0, 0, 150 * (0.85 if HOR else 1), ANCIANA, T=T, expr="inquietante" if sonrisa else "serio",
+                  mira=(-0.5, 0.2))
         c.restore()
-        rr(c, 100, 420, W - 200, 1000, 30)
+        rr(c, VX, VY, VW, VH, 30)
         c.set_line_width(24)
         src(c, hx("#5a6468"))
         c.stroke()
@@ -459,20 +477,27 @@ def puerta_desde_dentro(c, t, T, d, bryan=True, cam_a=None, cam_b=None, gente_fn
     gente = gente_fn(t, d, T) if gente_fn else []
     anden(c, cam, T, gente=gente, **kw)
     # marco de la puerta
+    PX, PY, PW, PH = (W * 0.2, 30, W * 0.6, H - 60) if HOR else (70, 170, W - 140, 1640)
     c.rectangle(0, 0, W, H)
-    rr(c, 70, 170, W - 140, 1640, 18)
+    rr(c, PX, PY, PW, PH, 18)
     c.set_fill_rule(cairo.FILL_RULE_EVEN_ODD)
     src(c, hx("#151a1c"))
     c.fill()
     c.set_fill_rule(cairo.FILL_RULE_WINDING)
-    rr(c, 70, 170, W - 140, 1640, 18)
+    if HOR:  # pared interior del vagón a los lados de la puerta, con barras
+        for xx in (PX - 60, PX + PW + 40):
+            rect(c, xx, 0, 20, H, hx("#8f9a9d", 0.35))
+    rr(c, PX, PY, PW, PH, 18)
     c.set_line_width(10)
     src(c, hx("#3a4448"))
     c.stroke()
-    rect(c, 70, 1760, W - 140, 50, hx("#2a3236"))
+    rect(c, PX, PY + PH - 50, PW, 50, hx("#2a3236"))
     if bryan:
         k = ss(cl(t / d)) * avance
-        figura(c, W * 0.42, H * (1.25 - 0.05 * k), 1700 * (1 - 0.15 * k), BRYAN, T=T, espalda=True)
+        if HOR:
+            figura(c, W * 0.44, H * (1.42 - 0.05 * k), 1250 * (1 - 0.15 * k), BRYAN, T=T, espalda=True)
+        else:
+            figura(c, W * 0.42, H * (1.25 - 0.05 * k), 1700 * (1 - 0.15 * k), BRYAN, T=T, espalda=True)
     return dict(niebla=0.35, niebla_color=(0.35, 0.25, 0.25))
 
 
@@ -488,22 +513,24 @@ def fantasmas_cerca(c, t, T, d):
     c.fill()
     palido = dict(SOMBRA, piel=hx("#a9b0b2"), piel_sombra=hx("#5c6466"), torso=hx("#1a1f21"))
     z = lerp(1.0, 1.12, ss(t / d))
-    for k, (x, y, r) in enumerate(((W * 0.2, H * 0.4, 170), (W * 0.8, H * 0.36, 160), (W * 0.5, H * 0.47, 210))):
+    pos = (((W * 0.24, H * 0.42, 170), (W * 0.76, H * 0.4, 160), (W * 0.5, H * 0.5, 210)) if HOR else
+           ((W * 0.2, H * 0.4, 170), (W * 0.8, H * 0.36, 160), (W * 0.5, H * 0.47, 210)))
+    for k, (x, y, r) in enumerate(pos):
         with tf(c, W / 2 + (x - W / 2) * z, y, s=z):
-            busto(c, 0, 0, r, palido, T=T, expr="neutral", respira=0)
+            busto(c, 0, 0, r * KH * (1.15 if HOR else 1), palido, T=T, expr="neutral", respira=0)
     return dict(niebla=0.55, niebla_color=(0.3, 0.22, 0.22), rojo=0.2, luz=0.6 + 0.4 * parpadeo(T, 2.2))
 
 
 def nina_levanta(c, t, T, d):
     k = ss(pr(t, d * 0.35, d * 0.5))
-    return p_busto(c, t, T, d, spec=NINA, fondo="fantasma", r=200, y=H * 0.4, expr="neutral",
+    return p_busto(c, t, T, d, spec=NINA, fondo="fantasma", r=200, x=W / 2, y=H * 0.4, expr="neutral",
                    pelo_cara=lerp(1.0, 0.3, k), mira=(0, lerp(0.6, -0.1, k)), inclina=lerp(0.25, 0.0, k),
                    zoom=(1.0, 1.15), rim=hx("#ff9a8a"), parpado=False,
                    fx_extra=dict(niebla=0.5, niebla_color=(0.3, 0.22, 0.22), rojo=0.2))
 
 
 def nina_nombre(c, t, T, d):
-    fx = p_busto(c, t, T, d, spec=NINA, fondo="fantasma", r=380, y=H * 0.36, expr="neutral", pelo_cara=0.3,
+    fx = p_busto(c, t, T, d, spec=NINA, fondo="fantasma", r=380, x=W / 2, y=H * 0.36, expr="neutral", pelo_cara=0.3,
                  zoom=(1.1, 1.25), parpado=False, rim=hx("#ff9a8a"),
                  fx_extra=dict(niebla=0.4, niebla_color=(0.3, 0.22, 0.22), rojo=0.25))
     # la niña susurra «Bryan…»
@@ -511,9 +538,10 @@ def nina_nombre(c, t, T, d):
     habla = 0.35 * math.sin(cl((t - 0.25) / 0.9) * math.pi) if 0.25 < t < 1.15 else 0.0
     if habla > 0:
         with tf(c, W / 2, H * 0.36, s=lerp(1.1, 1.25, ss(t / d))):
-            busto(c, 0, 0, 380, NINA, T=T, habla=habla, pelo_cara=0.3, parp=1.0)
+            busto(c, 0, 0, 380 * KH, NINA, T=T, habla=habla, pelo_cara=0.3, parp=1.0)
     a = k * (1 - pr(t, d - 0.5, 0.5))
-    texto(c, "«Bryan…»", W / 2 + (hash1(math.floor(T * 15)) - 0.5) * 8, H * 0.64, "Noto Serif", 96,
+    texto(c, "«Bryan…»", W / 2 + (hash1(math.floor(T * 15)) - 0.5) * 8, H * (0.73 if HOR else 0.64), "Noto Serif",
+          96 * (0.85 if HOR else 1),
           hx("#f1d6d0", a * 0.95))
     fx["glitch"] = 0.3 if 0.2 < t < 0.6 else 0
     fx["aberracion"] = 4
@@ -535,7 +563,8 @@ def nina_camina(c, t, T, d, cerca=False):
         return g
     fx = puerta_desde_dentro(c, t, T, d, bryan=False, gente_fn=gente, viejo=1.0, rojo=0.7, nombre="SAN MIGUEL",
                              luces=0.55, maquina=False, panel=False, reloj=False,
-                             cam_a=dict(z=5.5 if cerca else 8.0, x=1.2 if not cerca else 0.6),
+                             cam_a=dict(z=5.5 if cerca else 8.0, x=1.2 if not cerca else 0.9,
+                                        y=1.6 if not cerca else 1.15, pitch=0.0 if not cerca else -0.1),
                              cam_b=dict(x=0.9 if not cerca else 0.4))
     fx["rojo"] = 0.15
     return fx
@@ -599,7 +628,7 @@ PLANOS = [
       a=dict(x=-2.0, y=3.8, z=1.0, pitch=-0.3, yaw=0.08), b=dict(z=-3.0, y=4.1),
       gente_fn=solo_bryan(x=-1.8, z=8.5)),
     P("Las luces parpadeaban", p_anden, dict(amb="zumbido", tension=0.35, sfx=[(0.2, "chispazo", 0.6)]),
-      a=dict(x=-2.0, y=3.3, z=4.0, pitch=0.85, yaw=0.0), b=dict(z=4.6),
+      a=dict(x=-1.6, y=2.4, z=2.0, pitch=0.42, yaw=-0.1), b=dict(z=3.0),
       fx_extra=dict(luz=1.0)),
     P("el zumbido de las máquinas", p_anden, dict(amb="maquina"),
       a=dict(x=-1.0, y=1.4, z=6.0, yaw=-0.85), b=dict(z=6.6, yaw=-0.75)),
@@ -622,13 +651,13 @@ PLANOS = [
       a=dict(x=-1.6, y=1.5, z=-2.0, yaw=0.16), b=dict(z=-1.0), tren_mov=tren_llega),
     P("las puertas del tren se abrieron", p_anden, dict(amb="tren_parado", tension=0.55,
                                                         sfx=[(0.25, "puertas_abren", 0.9)]),
-      a=dict(x=-3.4, y=1.6, z=6.0, yaw=1.5708), b=dict(x=-3.0),
+      a=dict(x=-3.95, y=1.6, z=6.0, yaw=1.5708), b=dict(x=-3.7),
       tren_mov=lambda t, d: dict(z=3.5 - 6.5 * 0 + 0.0, puertas=ss(cl((t - 0.25) / 1.1)), luz=1.0, faro=0.0),
-      gente_fn=lambda t, d, T: [dict(x=-2.1, z=6.4, spec=B, kw=dict(espalda=True))]),
+      gente_fn=lambda t, d, T: [dict(x=-2.5, z=6.4, spec=B, kw=dict(espalda=True))]),
     P("No sé por qué subí", p_anden, dict(amb="tren_parado", tension=0.5),
-      a=dict(x=-3.4, y=1.6, z=6.0, yaw=1.5708), b=dict(x=-2.6),
+      a=dict(x=-3.95, y=1.6, z=6.0, yaw=1.5708), b=dict(x=-3.4),
       tren_mov=lambda t, d: dict(z=3.5, puertas=1.0, luz=1.0, faro=0.0),
-      gente_fn=lambda t, d, T: [dict(x=lerp(-2.1, -0.2, ss(t / d)), z=6.4, spec=B,
+      gente_fn=lambda t, d, T: [dict(x=lerp(-2.5, -0.2, ss(t / d)), z=6.4, spec=B,
                                      kw=dict(espalda=True, paso=T * 1.7))]),
     P("Quizá porque estaba cansado", p_busto, dict(amb="tren_parado", tension=0.4),
       fondo="anden", fondo_kw=dict(tren=dict(z=-5, puertas=1.0, luz=1.0), yaw=0.9), expr="triste",
@@ -848,7 +877,7 @@ PLANOS = [
     P("Me acerqué lentamente", p_busto, dict(amb="tren_marcha", tension=0.8),
       fondo=VAG, fondo_kw=dict(yaw=1.5), expr="miedo", giro=0.7, mira=(0.9, 0), zoom=(0.9, 1.35)),
     P("Y entonces pude leer sus labios", p_busto, dict(amb="latidos", tension=0.9),
-      fondo="tunel", expr="neutral", r=900, y=H * 0.5 - 0.68 * 900, habla=True, parpado=False, zoom=(1.0, 1.08)),
+      fondo="tunel", expr="neutral", r=900, y=H * 0.5 - 0.68 * 900 * KH, habla=True, parpado=False, zoom=(1.0, 1.08)),
     P("¡NO BAJES!", p_insert, dict(amb="silencio", tension=1.0, sfx=[(0.0, "impacto", 1.0), (0.0, "grito", 0.6)]),
       fn=ins.ventana_tunel, vel=0.6, doble=dict(alto=1500, dy=380, mano=1.0, habla=1.0, expr="terror"),
       letrero=1.0, luz_int=0.5, fx_extra=dict(sacudida=18, aberracion=6, rojo=0.08)),
@@ -979,11 +1008,11 @@ PLANOS = [
       spec=MADRE, fondo=VAG, fondo_kw=dict(luz_col=CALIDO), expr="dulce", lagrimas=1.0, calido=0.7, habla=True,
       rim=hx("#ffd6a0"), r=320, zoom=(1.1, 1.16), fx_extra=dict(gradacion=0.3)),
     P("Intenté acercarme", p_anden, dict(amb="calido", tension=0.3, sfx=[(1.6, "pitidos_puerta", 0.5)]),
-      a=dict(x=-3.4, y=1.6, z=6.0, yaw=1.5708, niebla=(0.01, 0.012, 0.014), densidad=0.06), b=dict(x=-3.0),
+      a=dict(x=-3.95, y=1.6, z=6.0, yaw=1.5708, niebla=(0.01, 0.012, 0.014), densidad=0.06), b=dict(x=-3.7),
       oscuro=True, luces=0, nombre="", maquina=False, panel=False, reloj=False, banco=False,
       tren_mov=lambda t, d: dict(z=3.5, puertas=lerp(1.0, 0.45, ss(pr(t, d * 0.4, d * 0.6))), luz=1.0, faro=0.0,
                                  ventanas_col=hx("#ffd9a0")),
-      gente_fn=lambda t, d, T: [dict(x=lerp(-2.1, -1.0, ss(t / d)), z=6.4, spec=B,
+      gente_fn=lambda t, d, T: [dict(x=lerp(-2.5, -1.3, ss(t / d)), z=6.4, spec=B,
                                      kw=dict(espalda=True, paso=T * 1.3))],
       fx_extra=dict(gradacion=0.4)),
     P("Ella extendió la mano", p_vagon, dict(amb="calido", tension=0.1),
@@ -1039,10 +1068,10 @@ PLANOS = [
       spec=GUARDIA, fondo="cctv", expr="miedo", rim=hx("#7fb8ff"), zoom=(1.0, 1.15),
       fx_extra=dict(gradacion=0.6)),
     P("En el reflejo de la ventana", p_cctv, dict(amb="sala", tension=0.85, sfx=[(0.5, "drone_sube", 0.7)]),
-      contenido=lambda t, d, T: cctv_reflejo(t, d, T), zoom=(1.0, 1.3), foco=(0.6, 0.4), pixel=3,
+      contenido=lambda t, d, T: cctv_reflejo(t, d, T), zoom=(1.0, 1.3), foco=REFLEJO, pixel=3,
       hora="03:17:52"),
     P("Sonriendo", p_cctv, dict(amb="silencio", tension=0.95, sfx=[(0.0, "impacto", 0.9)]),
-      contenido=lambda t, d, T: cctv_reflejo(d, d, T, sonrisa=True), zoom=(2.2, 2.5), foco=(0.68, 0.4),
+      contenido=lambda t, d, T: cctv_reflejo(d, d, T, sonrisa=True), zoom=(2.2, 2.5), foco=REFLEJO,
       pixel=4, hora="03:17:53"),
     P("Y antes de que la grabación terminara", p_cctv, dict(amb="sala", tension=0.85),
       contenido=lambda t, d, T: cctv_reflejo(d, d, T, sonrisa=True), zoom=(1.0, 1.0), pixel=2,
@@ -1126,7 +1155,7 @@ def subtitulos(c, T):
         if f["s"] <= T <= f["e"]:
             ws = f["palabras"]
             txt = " ".join(w["w"] for w in ws)
-            tam = 64
+            tam = 56 if HOR else 64
             fuente_ = "Inter"
             c.select_font_face(fuente_, cairo.FONT_SLANT_NORMAL, cairo.FONT_WEIGHT_BOLD)
             c.set_font_size(tam)
@@ -1141,7 +1170,7 @@ def subtitulos(c, T):
             a_out = cl((f["e"] - T) / 0.15)
             alfa = min(a_in, a_out)
             x = W / 2 - total / 2
-            y = H * 0.775
+            y = H * (0.9 if HOR else 0.775)
             rojo = "BAJES" in txt
             col_base = hx("#ff5b4f") if rojo else (hx("#cfe6ff") if f["dialogo"] else hx("#f4f6f7"))
             for w in ws:

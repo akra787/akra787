@@ -3,10 +3,13 @@ import math
 
 import cairo
 
-from motor import (H, MAQ, SANS, SERIF, TITULO, W, cl, eio, eo, fbm1, hash1, hx, lerp, lerpc, lgrad, mul, parpadeo,
+from motor import (H, HOR, KH, MAQ, SANS, SERIF, TITULO, W, cl, eio, eo, fbm1, hash1, hx, lerp, lerpc, lgrad, mul, parpadeo,
                    pr, rect, resplandor, rgrad, rr, src, ss, texto, tf, cono_luz)
 from personajes import (ANCIANA, BRYAN, MADRE, busto, cara, cabeza_perfil, figura, figura_perfil, osito, silueta)
 from escenarios import reloj_estacion
+
+
+KO = 0.78 if HOR else 1.0  # escala de los objetos en primer plano (panel, reloj, móvil…)
 
 
 def fondo(c, col):
@@ -52,10 +55,10 @@ def titulo_tunel(c, t, T, d, texto_on=1.0):
     if texto_on > 0:
         a = cl(pr(t, 0.2, 0.8)) * texto_on
         temb = (hash1(math.floor(T * 20)) - 0.5) * 6 * (1 - pr(t, 0.4, 1.2))
-        texto(c, "EL ÚLTIMO TREN", W / 2 + temb, H * 0.24, TITULO, 170, hx("#e8eef0", a), espaciado=6,
+        texto(c, "EL ÚLTIMO TREN", W / 2 + temb, H * (0.2 if HOR else 0.24), TITULO, 170, hx("#e8eef0", a), espaciado=6,
               sombra=(0, 8, (0, 0, 0, 0.7 * a)))
-        texto(c, "DE LA NOCHE", W / 2, H * 0.24 + 120, TITULO, 110, hx("#b8323a", a), espaciado=22)
-        c.rectangle(W / 2 - 220 * a, H * 0.24 + 150, 440 * a, 3)
+        texto(c, "DE LA NOCHE", W / 2, H * (0.2 if HOR else 0.24) + 120, TITULO, 110, hx("#b8323a", a), espaciado=22)
+        c.rectangle(W / 2 - 220 * a, H * (0.2 if HOR else 0.24) + 150, 440 * a, 3)
         src(c, hx("#b8323a", a * 0.8))
         c.fill()
     return dict(niebla=0.6, grano=0.06)
@@ -66,15 +69,15 @@ def reloj_cerca(c, t, T, d, parado=False):
     fondo(c, hx("#0b1013"))
     luz = parpadeo(T, 3.3, 1.0)
     # pared de azulejos desenfocada
-    for i in range(12):
-        for j in range(20):
+    for i in range(W // 100 + 2):
+        for j in range(H // 100 + 2):
             x, y = i * 100 - 20, j * 100 - 30
             rr(c, x + 4, y + 4, 92, 92, 6)
             src(c, mul(hx("#5b6b66"), 0.35 + 0.15 * hash1(i * 31 + j), 1))
             c.fill()
     resplandor(c, W * 0.3, -100, 900, hx("#d8f0ff"), 0.5 * luz)
     z = 1 + 0.06 * t / d
-    with tf(c, W / 2, H * 0.47, s=z):
+    with tf(c, W / 2, H * (0.52 if HOR else 0.47), s=z * KO):
         reloj_estacion(c, 0, 0, 380, 3, 17, T, ilum=luz, segundos=0 if parado else (T * 1.0) % 60)
     return dict(niebla=0.25, luz=0.75 + 0.25 * luz)
 
@@ -83,7 +86,7 @@ def reloj_cerca(c, t, T, d, parado=False):
 def panel_salidas(c, t, T, d, fase="normal", zoom=0.0):
     fondo(c, hx("#06090b"))
     z = 1 + 0.05 * t / d + zoom
-    with tf(c, W / 2, H * 0.45, s=z):
+    with tf(c, W / 2, H * (0.5 if HOR else 0.45), s=z * KO):
         rr(c, -500, -420, 1000, 840, 24)
         src(c, hx("#151a1d"))
         c.fill()
@@ -138,7 +141,7 @@ def panel_salidas(c, t, T, d, fase="normal", zoom=0.0):
 def movil(c, t, T, d):
     fondo(c, hx("#05080a"))
     k = eo(pr(t, 0, 0.6))
-    with tf(c, W / 2, H * 0.52 + (1 - k) * 300, r=-0.06):
+    with tf(c, W / 2, H * (0.5 if HOR else 0.52) + (1 - k) * 300, r=-0.06, s=0.95 if HOR else 1.0):
         # mano
         c.move_to(-260, 150)
         c.curve_to(-330, 350, -250, 700, -120, 900)
@@ -177,14 +180,19 @@ def ventana_tunel(c, t, T, d, vel=1.0, rojo=0.0, siluetas=0.0, doble=None, golpe
                   estacion=None, letrero=0.0, zoom=1.0, foco=(0.5, 0.5), reflejo=0.0):
     """Lo que se ve por la ventana. doble: dict(fase, expr, habla, mano) para el hombre que corre."""
     fondo(c, hx("#030405"))
+    VS = 0.62 if HOR else 1.0
+    Wv = W / VS
     with tf(c, W * foco[0], H * foco[1], s=zoom):
         c.translate(-W * foco[0], -H * foco[1])
+        c.scale(VS, VS)
+        if HOR:
+            c.translate(0, -120)
         desp = T * 900 * vel
         # pared del túnel: bloques húmedos con parallax
         for capa, (vk, y0, y1, colc) in enumerate(((0.35, 300, 1650, hx("#141a1a")), (1.0, 250, 1700, hx("#1f2725")))):
             ancho = 260 if capa else 400
             off = (desp * vk) % ancho
-            for i in range(-1, W // ancho + 2):
+            for i in range(-1, int(Wv) // ancho + 2):
                 x = i * ancho - off
                 n = int((desp * vk + x) // ancho)
                 colb = mul(colc, 0.8 + 0.4 * hash1(n * 1.7 + capa))
@@ -216,7 +224,7 @@ def ventana_tunel(c, t, T, d, vel=1.0, rojo=0.0, siluetas=0.0, doble=None, golpe
         if siluetas > 0:
             per = 1300
             off = (desp * 0.55) % per
-            for i in range(-1, W // per + 2):
+            for i in range(-1, int(Wv) // per + 2):
                 x = i * per - off + 400
                 n = int((desp * 0.55 + x) // per)
                 if hash1(n * 2.3) < 0.75:
@@ -226,7 +234,7 @@ def ventana_tunel(c, t, T, d, vel=1.0, rojo=0.0, siluetas=0.0, doble=None, golpe
         per = 700
         off = (desp * 1.0) % per
         col = lerpc(hx("#ffd9a0"), hx("#ff2a1f"), rojo)
-        for i in range(-1, W // per + 2):
+        for i in range(-1, int(Wv) // per + 2):
             x = i * per - off + 200
             rect(c, x - 40, 300, 80, 22, col)
             resplandor(c, x, 330, 520, col, 1.0)
@@ -244,7 +252,7 @@ def ventana_tunel(c, t, T, d, vel=1.0, rojo=0.0, siluetas=0.0, doble=None, golpe
             estacion(c, t, T)
         # el doble corriendo
         if doble:
-            xd = W * 0.5 + doble.get("dx", 0)
+            xd = Wv * 0.5 + doble.get("dx", 0)
             figura_perfil(c, xd, 1880 + doble.get("dy", 0), doble.get("alto", 1300), BRYAN, T=T, modo="corre",
                           fase=T * 1.6, expr=doble.get("expr", "terror"), habla=doble.get("habla", 0.0),
                           voltear=True, brazo_alzado=doble.get("mano", 0.0), golpe=doble.get("golpe", 0.0))
@@ -253,46 +261,48 @@ def ventana_tunel(c, t, T, d, vel=1.0, rojo=0.0, siluetas=0.0, doble=None, golpe
             g = t - tg
             if 0 <= g < 1.2:
                 a = cl(1 - g / 1.2)
-                with tf(c, W * 0.52 + (hash1(tg) - 0.5) * 200, H * 0.42 + (hash1(tg + 1) - 0.5) * 200,
+                with tf(c, Wv * 0.52 + (hash1(tg) - 0.5) * 200, (H / VS) * 0.42 + (120 if HOR else 0)
+                        + (hash1(tg + 1) - 0.5) * 200,
                         s=1.0 + 0.15 * (1 - eo(cl(g / 0.12)))):
                     mano_palma(c, a)
     if marco:
         # marco de la ventana y pared interior del vagón
         luz = luz_int * (1 - 0.65 * rojo)
         pared = lerpc(hx("#111517"), hx("#7f8b8e"), luz)
+        VX, VY, VW, VH = (120, 50, W - 240, 820) if HOR else (70, 330, W - 140, 1150)
         c.rectangle(0, 0, W, H)
-        rr(c, 70, 330, W - 140, 1150, 50)
+        rr(c, VX, VY, VW, VH, 50)
         c.set_fill_rule(cairo.FILL_RULE_EVEN_ODD)
         src(c, pared)
         c.fill()
         c.set_fill_rule(cairo.FILL_RULE_WINDING)
-        rr(c, 70, 330, W - 140, 1150, 50)
+        rr(c, VX, VY, VW, VH, 50)
         c.set_line_width(26)
         src(c, mul(pared, 0.6))
         c.stroke()
-        rr(c, 70, 330, W - 140, 1150, 50)
+        rr(c, VX, VY, VW, VH, 50)
         c.set_line_width(6)
         src(c, mul(pared, 1.15))
         c.stroke()
         # reflejo del interior en el cristal
         c.save()
-        rr(c, 70, 330, W - 140, 1150, 50)
+        rr(c, VX, VY, VW, VH, 50)
         c.clip()
-        c.set_source(lgrad(0, 330, W, 1480, [(0, (1, 1, 1, 0.05 * luz)), (0.45, (1, 1, 1, 0.0)),
+        c.set_source(lgrad(0, VY, W, VY + VH, [(0, (1, 1, 1, 0.05 * luz)), (0.45, (1, 1, 1, 0.0)),
                                              (0.55, (1, 1, 1, 0.07 * luz)), (0.6, (1, 1, 1, 0))]))
         c.paint()
         if reflejo > 0:
-            cara(c, W * 0.3, H * 0.4, 160, ANCIANA, T, expr="inquietante", ilum=1.0)
+            cara(c, W * 0.3, H * 0.4, 160 * KH, ANCIANA, T, expr="inquietante", ilum=1.0)
             src(c, (0.03, 0.04, 0.05, 1 - reflejo * 0.35))
             c.paint()
         c.restore()
         # banco y respaldo
-        rect(c, 0, 1560, W, 360, mul(hx("#2b4c5e"), 0.3 + 0.7 * luz))
-        rect(c, 0, 1540, W, 30, mul(hx("#203845"), 0.3 + 0.7 * luz))
+        rect(c, 0, VY + VH + 80, W, H, mul(hx("#2b4c5e"), 0.3 + 0.7 * luz))
+        rect(c, 0, VY + VH + 60, W, 30, mul(hx("#203845"), 0.3 + 0.7 * luz))
     if letrero > 0:
         # «¡NO BAJES!» vaho escrito
         a = letrero
-        texto(c, "¡NO BAJES!", W / 2 + (hash1(math.floor(T * 30)) - 0.5) * 10, H * 0.36, TITULO, 210,
+        texto(c, "¡NO BAJES!", W / 2 + (hash1(math.floor(T * 30)) - 0.5) * 10, H * 0.36, TITULO, 210 * (0.9 if HOR else 1),
               hx("#ff3b30", a), espaciado=8, sombra=(0, 0, (0, 0, 0, 0)))
     return dict(niebla=0.2, rojo=0.1 * rojo)
 
@@ -343,14 +353,14 @@ def cartel_san_miguel(c, t, T, d):
     fondo(c, hx("#0a0806"))
     luz = parpadeo(T, 8.8, 1.3)
     # pared vieja
-    for i in range(14):
-        for j in range(22):
+    for i in range(W // 80 + 2):
+        for j in range(H // 90 + 2):
             x, y = i * 80 - 10 + (j % 2) * 40, j * 90
             rr(c, x + 3, y + 3, 74, 84, 4)
             src(c, mul(hx("#6c6a55"), (0.3 + 0.2 * hash1(i * 17 + j)) * luz))
             c.fill()
     z = 1.0 + 0.08 * t / d
-    with tf(c, W / 2, H * 0.44, s=z, r=-0.03):
+    with tf(c, W / 2, H * (0.5 if HOR else 0.44), s=z, r=-0.03):
         rr(c, -480, -180, 960, 360, 30)
         src(c, mul(hx("#2a3a52"), 0.4 + 0.6 * luz))
         c.fill()
@@ -471,29 +481,35 @@ def tablon_victimas(c, t, T, d, foco=0.0, revela_nombre=0.0, revela_fecha=0.0, l
     specs = []
     from personajes import GUARDIA, HOMBRE, NINA, SOMBRA
     paleta = [HOMBRE, GUARDIA, NINA, ANCIANA, MADRE, SOMBRA]
-    z = lerp(1.0, 2.7, eio(foco))
-    bx, by = 250, 1040  # foto de Bryan (centrada un poco por debajo para que se lea el nombre)
+    if HOR:
+        cols, filas, px, py, x0, y0, sc, bi, bj, zmax = 7, 3, 240, 335, 240, 215, 0.85, 1, 1, 2.0
+    else:
+        cols, filas, px, py, x0, y0, sc, bi, bj, zmax = 4, 4, 250, 360, 160, 460, 1.0, 0, 1, 2.7
+    z = lerp(1.0, zmax, eio(foco))
+    bxp, byp = x0 + bi * px + (0 if HOR else 90), y0 + bj * py + (0 if HOR else 160)
+    bx, by = bxp, byp + 60 * sc  # foto de Bryan (algo por debajo para que se lea el nombre)
     nombres = ["LUIS", "MARTA", "ANA", "PEDRO", "ELENA", "JOSÉ", "CARMEN", "RAÚL", "SARA", "TOMÁS", "LUCÍA",
                "IVÁN", "ROSA", "DANI", "EVA", "JUAN"]
     with tf(c, W / 2, H * 0.5, s=z):
         c.translate(-W / 2 - (bx - W / 2) * eio(foco), -H * 0.5 - (by - H * 0.5) * eio(foco))
-        rect(c, 30, 300, W - 60, 1300, mul(hx("#2a2118"), luz))
-        for j in range(4):
-            for i in range(4):
-                if i == 0 and j == 1:
+        rect(c, x0 - 140 * sc, y0 - 190 * sc, (cols - 1) * px + 280 * sc, (filas - 1) * py + 420 * sc,
+             mul(hx("#2a2118"), luz))
+        for j in range(filas):
+            for i in range(cols):
+                if i == bi and j == bj:
                     continue
-                x, y = 160 + i * 250, 460 + j * 360
+                x, y = x0 + i * px, y0 + j * py
                 rot = (rnd.random() - 0.5) * 0.1
-                with tf(c, x, y, r=rot):
+                with tf(c, x, y, r=rot, s=sc):
                     sp = dict(paleta[(i + j * 3) % len(paleta)])
                     if sp["nombre"] == "sombra":
                         sp = dict(HOMBRE, pelo=hx("#2a2018"), torso=hx("#3b4a3a"))
-                    foto_victima(c, 0, 0, 1.0, sp, nombre=nombres[(i + j * 4) % 16], fecha="† 14·11·1996",
+                    foto_victima(c, 0, 0, 1.0, sp, nombre=nombres[(i + j * cols) % 16], fecha="† 14·11·1996",
                                  luz=luz * 0.9)
                     c.arc(0, -150, 9, 0, 2 * math.pi)
                     src(c, hx("#9b2222"))
                     c.fill()
-        with tf(c, 250, 980, r=-0.03):
+        with tf(c, bxp, byp, r=-0.03, s=sc):
             c.rectangle(-125, -150, 250, 370)
             src(c, (0, 0, 0, 0.5))
             c.fill()
@@ -509,6 +525,23 @@ def tablon_victimas(c, t, T, d, foco=0.0, revela_nombre=0.0, revela_fecha=0.0, l
 # ----------------------------------------------------------------- manos
 def manos(c, t, T, d, corte=1.0, zoom=(1.0, 1.0)):
     fondo(c, hx("#0b0f11"))
+    c.set_source(lgrad(0, H * 0.55, 0, H, [(0, hx("#1b2232")), (1, hx("#0d1018"))]))
+    c.rectangle(0, H * 0.55, W, H)
+    c.fill()
+    if HOR:
+        c.save()
+        c.translate(W / 2, H * 0.5)
+        c.scale(0.62, 0.62)
+        c.translate(-540, -960)
+    _manos(c, t, T, d, corte, zoom)
+    if HOR:
+        c.restore()
+    resplandor(c, W / 2, H * 0.2, 900, hx("#d8f0ff"), 0.3)
+    return dict(niebla=0.1)
+
+
+def _manos(c, t, T, d, corte, zoom):
+    W, H = 1080, 1920  # lienzo de diseño
     z = lerp(zoom[0], zoom[1], ss(t / d))
     # el dedo con el corte (índice de la mano derecha) queda en el centro al acercarse
     fxp, fyp = W / 2 + 230 - 60 * 1, 1050 - 120 - 120
@@ -516,10 +549,6 @@ def manos(c, t, T, d, corte=1.0, zoom=(1.0, 1.0)):
     c.translate(W / 2, H * 0.42)
     c.scale(z, z)
     c.translate(-(W / 2 + (fxp - W / 2) * cl((z - 1) / 1.5)), -(H * 0.42 + (fyp - H * 0.42) * cl((z - 1) / 1.5)))
-    # rodillas/vaqueros desenfocados
-    c.set_source(lgrad(0, 1100, 0, H, [(0, hx("#1b2232")), (1, hx("#0d1018"))]))
-    c.rectangle(0, 1100, W, H)
-    c.fill()
     temb = math.sin(T * 23) * 3
     piel = BRYAN["piel"]
     for lado in (-1, 1):
@@ -567,15 +596,13 @@ def manos(c, t, T, d, corte=1.0, zoom=(1.0, 1.0)):
             src(c, BRYAN["torso"])
             c.fill()
     c.restore()
-    resplandor(c, W / 2, 400, 900, hx("#d8f0ff"), 0.3)
-    return dict(niebla=0.1)
 
 
 # ----------------------------------------------------------------- periódico y billetes
 def periodico(c, t, T, d):
     fondo(c, hx("#0c0a08"))
     z = 1.0 + 0.1 * t / d
-    with tf(c, W / 2, H * 0.48, s=z, r=0.04):
+    with tf(c, W / 2, H * 0.48, s=z * (0.68 if HOR else 1.0), r=0.04):
         rect(c, -460, -700, 920, 1400, hx("#d7cdb3"))
         texto(c, "EL DIARIO DE LA CIUDAD", 0, -610, SERIF, 52, hx("#1b1a17"), negrita=True)
         texto(c, "Viernes, 15 de noviembre de 1996", 0, -565, SERIF, 26, hx("#3b3a35"))
@@ -604,11 +631,11 @@ def billetes(c, t, T, d):
     for k in range(0, H, 140):
         rect(c, 0, k, W, 4, hx("#1a1f22"))
     for i in range(9):
-        x = 140 + hash1(i * 2.2) * 800
-        y = 300 + hash1(i * 3.7) * 1300
+        x = W * 0.13 + hash1(i * 2.2) * W * 0.74
+        y = H * 0.16 + hash1(i * 3.7) * H * 0.68
         caida = eo(pr(t, i * 0.12, 0.8))
         rot = (hash1(i * 5.1) - 0.5) * 1.2 + (1 - caida) * 2
-        with tf(c, x, y - (1 - caida) * 400, r=rot, a=caida):
+        with tf(c, x, y - (1 - caida) * 400, r=rot, a=caida, s=0.9 if HOR else 1.0):
             rr(c, -150, -70, 300, 140, 8)
             src(c, hx("#e3dcc7"))
             c.fill()
@@ -633,7 +660,7 @@ def megafonia(c, t, T, d, texto_on=0.0):
     luz = parpadeo(T, 4.2, 1.2)
     c.set_source(lgrad(0, 0, 0, H, [(0, hx("#9aa6a9")), (1, hx("#4a5356"))]))
     c.paint()
-    with tf(c, W / 2, H * 0.32, s=1.0 + 0.05 * t / d):
+    with tf(c, W * (0.27 if HOR else 0.5), H * (0.5 if HOR else 0.32), s=(1.0 + 0.05 * t / d) * (0.95 if HOR else 1)):
         c.arc(0, 0, 260, 0, 2 * math.pi)
         src(c, hx("#2a3033"))
         c.fill()
@@ -643,7 +670,7 @@ def megafonia(c, t, T, d, texto_on=0.0):
                     c.arc(i * 26, j * 26, 8, 0, 2 * math.pi)
         src(c, hx("#0b0d0e"))
         c.fill()
-    with tf(c, W / 2, H * 0.68):
+    with tf(c, W * (0.68 if HOR else 0.5), H * (0.5 if HOR else 0.68), s=0.95 if HOR else 1.0):
         rr(c, -470, -120, 940, 240, 16)
         src(c, hx("#0a0a0a"))
         c.fill()
@@ -668,14 +695,14 @@ def flashback(c, t, T, d, fase="ruido"):
         # interior volcándose
         ang = math.sin(T * 7) * 0.25 + (0.6 if fase != "ruido" else 0.0) * eo(pr(t, 0, 0.5))
         with tf(c, W / 2, H / 2, r=ang, s=1.2):
-            for k in range(6):
-                y = -800 + k * 300
-                rect(c, -900, y, 1800, 160, hx("#3a1a18", 0.6))
-            rect(c, -900, -200, 1800, 400, hx("#e8d0c0", 0.25 + 0.25 * (hash1(rnd_t) > 0.5)))
-            for k in range(5):
-                x = -700 + k * 330
-                c.move_to(x, -900)
-                c.line_to(x, 900)
+            for k in range(8):
+                y = -1100 + k * 300
+                rect(c, -1500, y, 3000, 160, hx("#3a1a18", 0.6))
+            rect(c, -1500, -200, 3000, 400, hx("#e8d0c0", 0.25 + 0.25 * (hash1(rnd_t) > 0.5)))
+            for k in range(9):
+                x = -1320 + k * 330
+                c.move_to(x, -1400)
+                c.line_to(x, 1400)
             c.set_line_width(30)
             src(c, hx("#8a8f92", 0.6))
             c.stroke()
@@ -711,8 +738,9 @@ def flashback(c, t, T, d, fase="ruido"):
             c.stroke()
     if fase == "gritos":
         for i in range(5):
-            x = 150 + i * 200 + math.sin(T * 9 + i) * 20
-            silueta(c, x, 1700 + (i % 2) * 80, 900, col=(0.05, 0.0, 0.0, 0.9), T=T, semilla=i,
+            x = W * (0.14 + i * 0.18) + math.sin(T * 9 + i) * 20
+            silueta(c, x, H * 0.9 + (i % 2) * 80 * KH, 900 * (0.75 if HOR else 1), col=(0.05, 0.0, 0.0, 0.9), T=T,
+                    semilla=i,
                     ladeo=math.sin(T * 5 + i) * 0.2)
     fl = 1.0 if hash1(rnd_t * 3.3) > 0.6 else 0.0
     if fase == "nada":
@@ -726,7 +754,7 @@ def flashback(c, t, T, d, fase="ruido"):
 def foto_madre(c, t, T, d):
     fondo(c, hx("#0a0907"))
     z = 1.0 + 0.08 * t / d
-    with tf(c, W / 2, H * 0.47, s=z, r=-0.05):
+    with tf(c, W / 2, H * 0.47, s=z * (0.88 if HOR else 1.0), r=-0.05):
         rect(c, -400, -470, 800, 980, hx("#ece6d6"))
         c.save()
         c.rectangle(-360, -430, 720, 760)
@@ -787,34 +815,45 @@ def cristal_escrito(c, t, T, d, progreso=1.0):
     for i in range(4):
         x = (i * 400 - T * 300) % (W + 400) - 200
         resplandor(c, x, H * 0.4, 300, hx("#ffd9a0"), 0.4)
+    gx0, gy0, gw, gh = (120, 60, W - 240, H - 120) if HOR else (80, 300, W - 160, 1300)
     # vaho
-    c.rectangle(80, 300, W - 160, 1300)
+    c.rectangle(gx0, gy0, gw, gh)
     src(c, hx("#b7c4c8", 0.55))
     c.fill()
-    for i in range(160):
-        x = 80 + hash1(i * 1.1) * (W - 160)
-        y = 300 + hash1(i * 2.3) * 1300
+    for i in range(220):
+        x = gx0 + hash1(i * 1.1) * gw
+        y = gy0 + hash1(i * 2.3) * gh
         c.arc(x, y, 2 + 5 * hash1(i * 3.3), 0, 2 * math.pi)
         src(c, hx("#e8f0f2", 0.35))
         c.fill()
-    lineas = ["UNO MÁS", "PARA EL", "PRÓXIMO", "VIAJE"]
+    if HOR:
+        lineas, ytop, paso, tam = ["UNO MÁS PARA EL", "PRÓXIMO VIAJE"], H * 0.42, 270, 215
+    else:
+        lineas, ytop, paso, tam = ["UNO MÁS", "PARA EL", "PRÓXIMO", "VIAJE"], 640, 260, 230
     total = sum(len(l) for l in lineas)
     n = int(progreso * total + 0.5)
     for k, l in enumerate(lineas):
         vis = l[:max(0, min(len(l), n))]
         n -= len(l)
         if vis:
-            y = 640 + k * 260
-            # trazo "borrado" en el vaho: oscuro y con gotas
-            texto(c, vis, W / 2 - 0 * len(vis), y, TITULO, 230, hx("#0a1012", 0.92), ancla=0.5 * len(vis) / len(l)
-                  if False else 0.5, espaciado=6)
+            y = ytop + k * paso
+            # el texto aparece letra a letra desde la izquierda de su línea
+            c.select_font_face(TITULO, cairo.FONT_SLANT_NORMAL, cairo.FONT_WEIGHT_NORMAL)
+            c.set_font_size(tam)
+            ancho_total = c.text_extents(l).x_advance + 6 * (len(l) - 1)
+            x0 = W / 2 - ancho_total / 2
+            texto(c, vis, x0, y, TITULO, tam, hx("#0a1012", 0.92), ancla=0, espaciado=6)
+            # gotas que escurren de cada letra
+            cw = ancho_total / len(l)
             for g in range(len(vis)):
-                gx = W / 2 - len(l) * 60 + g * 120 + 40
+                if vis[g] == " ":
+                    continue
+                gx = x0 + g * cw + cw * 0.45
                 gl = 40 + 120 * hash1(k * 31 + g) * cl(progreso * 2)
                 c.rectangle(gx, y + 5, 6, gl)
                 src(c, hx("#0a1012", 0.7))
                 c.fill()
-    rr(c, 80, 300, W - 160, 1300, 40)
+    rr(c, gx0, gy0, gw, gh, 40)
     c.set_line_width(40)
     src(c, hx("#5a6468"))
     c.stroke()
