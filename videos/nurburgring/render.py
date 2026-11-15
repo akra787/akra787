@@ -19,7 +19,7 @@ import numpy as np
 from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import piloto  # noqa: E402
+import sombra  # noqa: E402
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 W, H, FPS = 1080, 1920, 30
@@ -1362,12 +1362,12 @@ def sc_final(f, t):
     speed_lines(f, t, GREEN, -1, (250, 1700), 0.5, 1.4)
     beats = [(114.54, 115.85, "30", "DÍAS", GREEN), (115.9, 116.88, "1", "COCHE", WHITE),
              (116.92, 118.1, "1", "OBJETIVO", GOLD)]
+    draw_piloto(f, t)
     for t0, t1, big, small, col in beats:
         if t0 <= t < t1:
             T(f, t, t0, big, 440, 560, col, "ital", anim="slam", glow=20)
             T(f, t, t0 + 0.1, small, 130, 870, WHITE, "ital", anim="up")
             flash(f, 0.35 * (1 - prog(t, t0, 0.2)))
-    draw_piloto(f, t)
     if 118.1 <= t < 119.5:
         draw_track(f, W / 2, 900, 820, e_out(prog(t, 118.1, 1.0)), GREEN, t=t)
         T(f, t, 118.18, "NÜRBURGRING", 160, 420, WHITE, "ital", anim="slam", glow=12)
@@ -1395,35 +1395,47 @@ def voice_level(t):
     return VOICE_ENV[i]
 
 
+@lru_cache(maxsize=1)
+def shade_grad():
+    y = np.clip((np.arange(H) - 700) / 700, 0, 1) ** 1.2
+    a = np.zeros((H, W, 4), np.uint8)
+    a[..., 3] = (y * 170).astype(np.uint8)[:, None]
+    return Image.fromarray(a, "RGBA")
+
+
 def draw_piloto(f, t):
-    """El Piloto, mascota de la serie: aparece en "30 días · un coche · un objetivo"."""
-    t_in, t_out = 114.35, 117.8
-    if not (t_in <= t < t_out + 0.4):
+    """Piloto misterioso de la serie: aparece en "30 días · un coche · un objetivo"."""
+    t_in, t_out = 114.3, 117.85
+    if not (t_in <= t < t_out + 0.35):
         return
-    pose = "point" if t < 115.9 else "wheel" if t < 116.92 else "thumbs"
-    last = max(x for x in (t_in, 115.9, 116.92) if x <= t)
-    mouth = int(clamp(voice_level(t) * 1.3) * 4)
-    blink = (t % 2.7) < 0.09 and pose != "thumbs"
-    wq = int(math.sin(t * 7) * 6) if pose == "wheel" else 0
-    img = piloto.character(pose, mouth, blink, wq)
-    enter = e_back(prog(t, t_in, 0.5), 1.6)
-    leave = e_in(prog(t, t_out, 0.3))
-    y = 1440 + (1 - enter) * 900 + leave * 900 + math.sin(t * 5) * 8
-    pop = prog(t, last, 0.25)
-    sx = 1 + 0.08 * math.sin(pop * math.pi) * (1 - pop)
-    sy = 1 - 0.06 * math.sin(pop * math.pi) * (1 - pop)
-    if abs(sx - 1) > 0.003:
-        img = img.resize((int(img.width * sx), int(img.height * sy)), Image.BILINEAR)
-    rot = math.sin(t * 2.4) * 2.5 + (math.sin(t * 9) * 3 if pose == "wheel" else 0)
-    put(f, img, W / 2, y, 1.0, 1.0, rot=rot)
-    # pequeñas líneas de acción al cambiar de gesto
-    if pop < 1:
+    beats = [114.54, 115.9, 116.92]
+    last = max([b for b in beats if b <= t] or [t_in])
+    hit = 1 - prog(t, last, 0.6) if t >= beats[0] else 0
+    appear = e_out(prog(t, t_in, 0.6))
+    leave = prog(t, t_out, 0.35)
+    a = appear * (1 - leave)
+    scale = lerp(1.02, 1.10, prog(t, t_in, t_out - t_in)) * (1 + 0.15 * e_in(leave))
+    cx, cy = W / 2, 1460 + (1 - appear) * 80
+    # oscurece el fondo bajo él para que imponga
+    put(f, shade_grad(), W / 2, H / 2, 1, a)
+    # rayos de luz giratorios detrás de la cabeza
+    put(f, sombra.rays(), cx, cy - 460 * scale, 1.0 + 0.1 * hit, a * (0.7 + 0.6 * hit), rot=t * 8)
+    # aura de energía
+    put(f, sombra.aura(t, 1.05 + 0.8 * hit), cx, cy, scale, a)
+    # onda expansiva en el suelo
+    if t >= beats[0] and hit > 0:
+        r = (1 - hit) * 620
         d = ImageDraw.Draw(f)
-        for k in range(8):
-            a = k / 8 * 2 * math.pi
-            r0, r1 = 380 + 120 * pop, 430 + 160 * pop
-            d.line((W / 2 + math.cos(a) * r0, y - 180 + math.sin(a) * r0 * 0.8,
-                    W / 2 + math.cos(a) * r1, y - 180 + math.sin(a) * r1 * 0.8), fill=mix(DARK, WHITE, 1 - pop), width=8)
+        d.ellipse((cx - r, 1830 - r * 0.18, cx + r, 1830 + r * 0.18), outline=mix(DARK, GREEN, hit * a), width=6)
+    # figura: ojos que se encienden y destello en la visera en cada golpe
+    eye = clamp(prog(t, 114.5, 0.35) * (0.75 + 0.25 * math.sin(t * 6)) + 0.4 * hit)
+    g = prog(t, last, 0.45)
+    glint = int(g * 15) if t >= beats[0] and g < 1 else -1
+    put(f, sombra.figure(int(eye * 8), glint), cx, cy, scale, a)
+    # niebla en el suelo
+    fg = sombra.fog()
+    off = int(t * 60) % W
+    put(f, fg.crop((off, 0, off + W, fg.height)), W / 2, H - fg.height / 2 + 40, 1, a)
 
 
 def sc_end(f, t):
