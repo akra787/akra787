@@ -18,6 +18,9 @@ from multiprocessing import Pool
 import numpy as np
 from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import piloto  # noqa: E402
+
 AQUI = os.path.dirname(os.path.abspath(__file__))
 W, H, FPS = 1080, 1920, 30
 DUR = 124.6
@@ -1361,9 +1364,10 @@ def sc_final(f, t):
              (116.92, 118.1, "1", "OBJETIVO", GOLD)]
     for t0, t1, big, small, col in beats:
         if t0 <= t < t1:
-            T(f, t, t0, big, 520, 820, col, "ital", anim="slam", glow=20)
-            T(f, t, t0 + 0.1, small, 140, 1180, WHITE, "ital", anim="up")
+            T(f, t, t0, big, 440, 560, col, "ital", anim="slam", glow=20)
+            T(f, t, t0 + 0.1, small, 130, 870, WHITE, "ital", anim="up")
             flash(f, 0.35 * (1 - prog(t, t0, 0.2)))
+    draw_piloto(f, t)
     if 118.1 <= t < 119.5:
         draw_track(f, W / 2, 900, 820, e_out(prog(t, 118.1, 1.0)), GREEN, t=t)
         T(f, t, 118.18, "NÜRBURGRING", 160, 420, WHITE, "ital", anim="slam", glow=12)
@@ -1379,6 +1383,47 @@ def sc_final(f, t):
             e_back(prog(t, 119.7, 0.3)))
         put(f, txt("DÍAS   HORAS   MIN   SEG", 30, GREY, "mono", 0, 0, (0, 0, 0), 6), W / 2, 1150,
             clamp(prog(t, 119.8, 0.3)))
+
+
+VOICE_ENV = None
+
+
+def voice_level(t):
+    i = int(t * FPS)
+    if VOICE_ENV is None or not (0 <= i < len(VOICE_ENV)):
+        return 0.0
+    return VOICE_ENV[i]
+
+
+def draw_piloto(f, t):
+    """El Piloto, mascota de la serie: aparece en "30 días · un coche · un objetivo"."""
+    t_in, t_out = 114.35, 117.8
+    if not (t_in <= t < t_out + 0.4):
+        return
+    pose = "point" if t < 115.9 else "wheel" if t < 116.92 else "thumbs"
+    last = max(x for x in (t_in, 115.9, 116.92) if x <= t)
+    mouth = int(clamp(voice_level(t) * 1.3) * 4)
+    blink = (t % 2.7) < 0.09 and pose != "thumbs"
+    wq = int(math.sin(t * 7) * 6) if pose == "wheel" else 0
+    img = piloto.character(pose, mouth, blink, wq)
+    enter = e_back(prog(t, t_in, 0.5), 1.6)
+    leave = e_in(prog(t, t_out, 0.3))
+    y = 1440 + (1 - enter) * 900 + leave * 900 + math.sin(t * 5) * 8
+    pop = prog(t, last, 0.25)
+    sx = 1 + 0.08 * math.sin(pop * math.pi) * (1 - pop)
+    sy = 1 - 0.06 * math.sin(pop * math.pi) * (1 - pop)
+    if abs(sx - 1) > 0.003:
+        img = img.resize((int(img.width * sx), int(img.height * sy)), Image.BILINEAR)
+    rot = math.sin(t * 2.4) * 2.5 + (math.sin(t * 9) * 3 if pose == "wheel" else 0)
+    put(f, img, W / 2, y, 1.0, 1.0, rot=rot)
+    # pequeñas líneas de acción al cambiar de gesto
+    if pop < 1:
+        d = ImageDraw.Draw(f)
+        for k in range(8):
+            a = k / 8 * 2 * math.pi
+            r0, r1 = 380 + 120 * pop, 430 + 160 * pop
+            d.line((W / 2 + math.cos(a) * r0, y - 180 + math.sin(a) * r0 * 0.8,
+                    W / 2 + math.cos(a) * r1, y - 180 + math.sin(a) * r1 * 0.8), fill=mix(DARK, WHITE, 1 - pop), width=8)
 
 
 def sc_end(f, t):
@@ -1449,9 +1494,18 @@ def render(t):
 STATIC = None
 
 
+START = 0.75  # recorta el "Título." que dice la locución al principio
+
+
 def init():
-    global STATIC
+    global STATIC, VOICE_ENV
     STATIC = make_static()
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", os.path.join(AQUI, "voz.mp3"), "-f", "f32le", "-ac", "1",
+                          "-ar", "8000", "-"], capture_output=True, check=True).stdout
+    v = np.abs(np.frombuffer(raw, np.float32))
+    n = len(v) // (8000 // FPS)
+    rms = np.sqrt((v[: n * (8000 // FPS)].reshape(n, -1) ** 2).mean(1))
+    VOICE_ENV = np.clip(rms / (np.percentile(rms, 95) + 1e-9), 0, 1)
 
 
 def work(i):
@@ -1468,12 +1522,12 @@ def main():
     out = os.path.join(AQUI, "..", "nurburgring.mp4")
     nframes = int(DUR * FPS)
     ff = subprocess.Popen(["ffmpeg", "-y", "-v", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
-                           "-r", str(FPS), "-i", "-", "-i", os.path.join(AQUI, "mezcla.wav"),
+                           "-r", str(FPS), "-i", "-", "-ss", str(START), "-i", os.path.join(AQUI, "mezcla.wav"),
                            "-c:v", "libx264", "-preset", "slow", "-crf", "25", "-maxrate", "6M", "-bufsize", "12M", "-pix_fmt", "yuv420p",
                            "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", out],
                           stdin=subprocess.PIPE)
     with Pool(4, initializer=init) as pool:
-        for i, b in enumerate(pool.imap(work, range(nframes), chunksize=8)):
+        for i, b in enumerate(pool.imap(work, range(int(START * FPS), nframes), chunksize=8)):
             ff.stdin.write(b)
             if i % 300 == 0:
                 print(f"{i}/{nframes}", flush=True)
