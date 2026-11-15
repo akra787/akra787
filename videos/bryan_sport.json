@@ -1,0 +1,82 @@
+{
+  "formato": "vertical",
+  "idioma": "es",
+  "voz_modelo": "es_ES-davefx-medium",
+  "musica": "epica",
+  "volumen_musica": 0.8,
+  "marca": "BRYAN SPORT",
+  "acento": "#ff2a3c",
+  "escenas": [
+    {
+      "titulo": "1.500€ → ¿6.000€?",
+      "texto": "Lo compré hecho chatarra. En 30 días lo vendo... o lo convierto en un cohete.",
+      "voz": "Compré este coche por mil quinientos euros. Todo el mundo me dijo que estaba muerto. En treinta días lo voy a resucitar... y tú vas a decidir cómo termina.",
+      "imagen": "bryan/antes.jpg",
+      "oscurecer": 0.2,
+      "zoom": "in",
+      "posicion_y": 0.22
+    },
+    {
+      "titulo": "PARTE 1: El diagnóstico",
+      "texto": "Óxido · embrague patinando · 230.000 km · huele a quemado",
+      "voz": "Parte uno. El diagnóstico. Óxido por todas partes, el embrague patina, doscientos treinta mil kilómetros, y un olor a quemado que no me gusta nada. Pero el motor... el motor tiene alma.",
+      "imagen": "bryan/antes.jpg",
+      "oscurecer": 0.35,
+      "pan": "derecha",
+      "posicion_y": 0.22
+    },
+    {
+      "titulo": "PARTE 2: Mecánica",
+      "texto": "Embrague nuevo · aceite y filtros · turbo revisado",
+      "voz": "Parte dos. Mecánica. Embrague nuevo, aceite, filtros, y el turbo desmontado pieza a pieza. Tres noches sin dormir en el taller. Ya arranca a la primera.",
+      "imagen": "bryan/taller.jpg",
+      "oscurecer": 0.2,
+      "zoom": "in",
+      "posicion_y": 0.22
+    },
+    {
+      "titulo": "PARTE 3: Chapa y pintura",
+      "texto": "Adiós óxido. Hola rojo Bryan.",
+      "voz": "Parte tres. Chapa y pintura. Lijamos todo el óxido, masilla, imprimación... y le damos el color de la casa: rojo Bryan. Míralo. Ya no parece el mismo coche.",
+      "imagen": "bryan/despues.jpg",
+      "oscurecer": 0.15,
+      "zoom": "out",
+      "posicion_y": 0.22
+    },
+    {
+      "titulo": "PARTE 4: La repro",
+      "texto": "Stage 1 · de 105 a 150 CV · banco de potencia",
+      "voz": "Parte cuatro. La repro. Le metemos una reprogramación stage uno y lo subimos al banco de potencia. De ciento cinco caballos... a ciento cincuenta. Cuarenta y cinco caballos gratis. Escucha cómo suena.",
+      "imagen": "bryan/repro.jpg",
+      "oscurecer": 0.15,
+      "zoom": "in",
+      "posicion_y": 0.22
+    },
+    {
+      "titulo": "¡DECIDES TÚ!",
+      "texto": "A: negro mate + llantas doradas de 19\"\nB: stage 2 + downpipe + intercooler",
+      "voz": "Y ahora decides tú. Opción A: lo vinilamos en negro mate con llantas doradas de diecinueve, para venderlo como una joya. Opción B: nos volvemos locos, stage dos, downpipe e intercooler, y lo llevamos a más de ciento ochenta caballos. ¿A o B? Déjalo en comentarios. Lo que más se vote, es lo que hago en el próximo vídeo.",
+      "imagen": "bryan/opciones.jpg",
+      "oscurecer": 0.3,
+      "posicion_y": 0.47
+    },
+    {
+      "titulo": "BRYAN SPORT CLUB",
+      "texto": "Sígueme = eres del club\nComenta \"CLUB\" + tu ciudad",
+      "voz": "Y escucha. Todo el que me siga entra oficialmente en el Bryan Sport Club. Comenta la palabra club y tu ciudad, y los nombres de los socios saldrán en una pegatina en la luna trasera de este coche cuando lo venda. Tu nombre, rodando por la carretera.",
+      "imagen": "bryan/club.jpg",
+      "oscurecer": 0.2,
+      "zoom": "in",
+      "posicion_y": 0.22
+    },
+    {
+      "titulo": "¿A o B?",
+      "texto": "Parte 5 muy pronto. No te la pierdas.",
+      "voz": "¿A o B? Te leo en comentarios. Nos vemos en la parte cinco. Bryan Sport, fuera.",
+      "imagen": "bryan/opciones.jpg",
+      "oscurecer": 0.45,
+      "zoom": "out",
+      "posicion_y": 0.47
+    }
+  ]
+}
