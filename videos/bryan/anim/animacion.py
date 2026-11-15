@@ -330,7 +330,7 @@ def esc_mecanica(fr, ctx):
     shake = (math.sin(u * 70) * 6) if 0.78 < p < 0.92 else 0
     d = ImageDraw.Draw(fr)
     for lx in (650 - 225, 650 + 230):  # brazos del elevador
-        d.rectangle([lx - 14, car_y + 60, lx + 14, 1500], fill=(240, 190, 20))
+        d.rectangle([lx - 14, min(car_y + 60, 1499), lx + 14, 1500], fill=(240, 190, 20))
         d.rectangle([lx - 60, 1495, lx + 60, 1515], fill=(60, 60, 64))
     pegar_coche(fr, 650 + shake, car_y, 0, color=(130, 132, 128), oxido=True)
     if 0.05 < p < 0.75:

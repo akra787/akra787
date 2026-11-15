@@ -1,1360 +1,1200 @@
 {
 "firma": [
-"Compré este coche por mil quinientos euros. Todo el mundo me dijo que estaba muerto. En treinta días lo voy a resucitar... y tú vas a decidir cómo termina.",
-"Parte uno. El diagnóstico. Óxido por todas partes, el embrague patina, doscientos treinta mil kilómetros, y un olor a quemado que no me gusta nada. Pero el motor... el motor tiene alma.",
-"Parte dos. Mecánica. Embrague nuevo, aceite, filtros, y el turbo desmontado pieza a pieza. Tres noches sin dormir en el taller. Ya arranca a la primera.",
-"Parte tres. Chapa y pintura. Lijamos todo el óxido, masilla, imprimación... y le damos el color de la casa: rojo Bryan. Míralo. Ya no parece el mismo coche.",
-"Parte cuatro. La repro. Le metemos una reprogramación stage uno y lo subimos al banco de potencia. De ciento cinco caballos... a ciento cincuenta. Cuarenta y cinco caballos gratis. Escucha cómo suena.",
-"Y ahora decides tú. Opción A: lo vinilamos en negro mate con llantas doradas de diecinueve, para venderlo como una joya. Opción B: nos volvemos locos, stage dos, downpipe e intercooler, y lo llevamos a más de ciento ochenta caballos. ¿A o B? Déjalo en comentarios. Lo que más se vote, es lo que hago en el próximo vídeo.",
-"Y escucha. Todo el que me siga entra oficialmente en el Bryan Sport Club. Comenta la palabra club y tu ciudad, y los nombres de los socios saldrán en una pegatina en la luna trasera de este coche cuando lo venda. Tu nombre, rodando por la carretera.",
-"¿A o B? Te leo en comentarios. Nos vemos en la parte cinco. Bryan Sport, fuera.",
-null
+"Compré este coche por 1.500 euros. Todo el mundo me dijo que estaba muerto. En 30 días lo voy a resucitar, y tú vas a decidir cómo termina.",
+"Óxido por todas partes, el embrague patina, 230.000 kilómetros y un olor a quemado que no me gusta nada. Pero el motor... el motor tiene alma.",
+"Embrague nuevo, aceite, filtros y el turbo desmontado pieza a pieza. 3 noches sin dormir en el taller. Ya arranca a la primera.",
+"Lijamos todo el óxido, masilla, imprimación, y le damos el color de la casa. Rojo Bryan. Ya no parece el mismo coche.",
+"Le metemos una repro stage 1 y lo subimos al banco de potencia. De 105 caballos a 150. 45 caballos gratis. Escucha cómo suena.",
+"Decides tú. Opción A: lo vinilamos en negro mate con llantas doradas de 19 para venderlo como una joya. Opción B: nos volvemos locos. Stage 2, downpipe e intercooler, a más de 180 caballos. ¿A o B? Déjalo en comentarios. Lo que más se vote es lo que hago en el próximo vídeo.",
+"Todo el que me siga entra oficialmente en el Bryan Sport Club. Comenta la palabra club y tu ciudad, y los nombres de los socios saldrán en una pegatina en la luna trasera de este coche cuando lo venda. Tu nombre, rodando por la carretera.",
+"¿A o B? Te leo en comentarios. Nos vemos en la parte 5. Bryan Sport, fuera.",
+"bryan/audio/voz_bryan_editada.wav"
 ],
 "palabras": [
 {
 "txt": "Compré",
-"ini": 0.43,
-"fin": 1.11
+"ini": 0.0,
+"fin": 0.42
 },
 {
 "txt": "este",
-"ini": 1.11,
-"fin": 1.31
+"ini": 0.42,
+"fin": 0.6
 },
 {
 "txt": "coche",
-"ini": 1.31,
-"fin": 1.57
+"ini": 0.6,
+"fin": 0.92
 },
 {
 "txt": "por",
-"ini": 1.57,
-"fin": 1.75
+"ini": 0.92,
+"fin": 1.16
 },
 {
-"txt": "mil",
-"ini": 1.75,
-"fin": 1.8558823529411765
-},
-{
-"txt": "quinientos",
-"ini": 1.8676470588235294,
-"fin": 2.1217647058823528
+"txt": "1.500",
+"ini": 1.16,
+"fin": 1.736
 },
 {
 "txt": "euros.",
-"ini": 2.15,
-"fin": 2.67
+"ini": 1.8,
+"fin": 2.32
 },
 {
 "txt": "Todo",
-"ini": 3.25,
-"fin": 3.53
+"ini": 2.8,
+"fin": 3.12
 },
 {
 "txt": "el",
-"ini": 3.53,
-"fin": 3.71
+"ini": 3.12,
+"fin": 3.28
 },
 {
 "txt": "mundo",
-"ini": 3.71,
-"fin": 3.87
+"ini": 3.28,
+"fin": 3.5
 },
 {
 "txt": "me",
-"ini": 3.87,
-"fin": 4.05
+"ini": 3.5,
+"fin": 3.66
 },
 {
 "txt": "dijo",
-"ini": 4.05,
-"fin": 4.23
+"ini": 3.66,
+"fin": 3.9
 },
 {
 "txt": "que",
-"ini": 4.23,
-"fin": 4.37
+"ini": 3.9,
+"fin": 4.1
 },
 {
 "txt": "estaba",
-"ini": 4.37,
-"fin": 4.55
+"ini": 4.1,
+"fin": 4.46
 },
 {
 "txt": "muerto.",
-"ini": 4.55,
-"fin": 4.95
+"ini": 4.46,
+"fin": 4.9
 },
 {
 "txt": "En",
-"ini": 5.37,
-"fin": 5.69
+"ini": 5.34,
+"fin": 5.68
 },
 {
-"txt": "treinta",
-"ini": 5.69,
-"fin": 5.888
+"txt": "30",
+"ini": 5.68,
+"fin": 6.02
 },
 {
 "txt": "días",
-"ini": 5.91,
-"fin": 6.23
+"ini": 6.02,
+"fin": 6.32
 },
 {
 "txt": "lo",
-"ini": 6.23,
-"fin": 6.41
+"ini": 6.32,
+"fin": 6.58
 },
 {
 "txt": "voy",
-"ini": 6.41,
-"fin": 6.55
+"ini": 6.58,
+"fin": 6.8
 },
 {
 "txt": "a",
-"ini": 6.55,
-"fin": 6.65
+"ini": 6.8,
+"fin": 6.96
 },
 {
-"txt": "resucitar...",
-"ini": 6.65,
-"fin": 7.09
+"txt": "resucitar,",
+"ini": 6.96,
+"fin": 7.5
 },
 {
 "txt": "y",
-"ini": 7.09,
-"fin": 7.21
+"ini": 8.1,
+"fin": 8.2
 },
 {
 "txt": "tú",
-"ini": 7.21,
-"fin": 7.31
+"ini": 8.2,
+"fin": 8.42
 },
 {
 "txt": "vas",
-"ini": 7.31,
-"fin": 7.49
+"ini": 8.42,
+"fin": 9.02
 },
 {
 "txt": "a",
-"ini": 7.49,
-"fin": 7.57
+"ini": 9.02,
+"fin": 9.16
 },
 {
 "txt": "decidir",
-"ini": 7.57,
-"fin": 7.91
+"ini": 9.16,
+"fin": 9.6
 },
 {
 "txt": "cómo",
-"ini": 7.91,
-"fin": 8.11
+"ini": 9.6,
+"fin": 9.94
 },
 {
 "txt": "termina.",
-"ini": 8.11,
-"fin": 8.57
-},
-{
-"txt": "Parte",
-"ini": 9.73,
-"fin": 10.25
-},
-{
-"txt": "uno.",
-"ini": 10.25,
-"fin": 11.06
-},
-{
-"txt": "El",
-"ini": 11.15,
-"fin": 11.21
-},
-{
-"txt": "diagnóstico.",
-"ini": 11.21,
-"fin": 12.272
+"ini": 9.94,
+"fin": 10.48
 },
 {
 "txt": "Óxido",
-"ini": 12.39,
-"fin": 12.77
+"ini": 11.02,
+"fin": 11.54
 },
 {
 "txt": "por",
-"ini": 12.77,
-"fin": 12.97
+"ini": 11.54,
+"fin": 11.8
 },
 {
 "txt": "todas",
-"ini": 12.97,
-"fin": 13.11
+"ini": 11.8,
+"fin": 12.1
 },
 {
 "txt": "partes,",
-"ini": 13.11,
-"fin": 13.57
+"ini": 12.1,
+"fin": 12.62
 },
 {
 "txt": "el",
-"ini": 13.57,
-"fin": 13.75
+"ini": 13.06,
+"fin": 13.16
 },
 {
 "txt": "embrague",
-"ini": 13.75,
-"fin": 14.11
+"ini": 13.16,
+"fin": 13.54
 },
 {
 "txt": "patina,",
-"ini": 14.15,
-"fin": 14.45
+"ini": 13.54,
+"fin": 13.96
 },
 {
-"txt": "doscientos",
-"ini": 14.45,
-"fin": 14.820285714285713
+"txt": "230.000",
+"ini": 13.96,
+"fin": 15.328000000000001
 },
 {
-"txt": "treinta",
-"ini": 14.86142857142857,
-"fin": 15.139142857142856
-},
-{
-"txt": "mil",
-"ini": 15.17,
-"fin": 15.71
-},
-{
-"txt": "kilómetros,",
-"ini": 15.71,
-"fin": 16.19
+"txt": "kilómetros",
+"ini": 15.48,
+"fin": 15.96
 },
 {
 "txt": "y",
-"ini": 16.19,
-"fin": 16.73
+"ini": 15.96,
+"fin": 16.54
 },
 {
 "txt": "un",
-"ini": 16.73,
-"fin": 16.85
+"ini": 16.54,
+"fin": 16.68
 },
 {
 "txt": "olor",
-"ini": 16.85,
-"fin": 17.05
+"ini": 16.68,
+"fin": 16.92
 },
 {
 "txt": "a",
-"ini": 17.05,
-"fin": 17.17
+"ini": 16.92,
+"fin": 16.98
 },
 {
 "txt": "quemado",
-"ini": 17.17,
-"fin": 17.49
+"ini": 16.98,
+"fin": 17.32
 },
 {
 "txt": "que",
-"ini": 17.49,
-"fin": 17.65
+"ini": 17.32,
+"fin": 17.5
 },
 {
 "txt": "no",
-"ini": 17.65,
-"fin": 17.77
+"ini": 17.5,
+"fin": 17.78
 },
 {
 "txt": "me",
-"ini": 17.77,
-"fin": 17.89
+"ini": 17.78,
+"fin": 17.92
 },
 {
 "txt": "gusta",
-"ini": 17.89,
-"fin": 18.09
+"ini": 17.92,
+"fin": 18.16
 },
 {
 "txt": "nada.",
-"ini": 18.09,
-"fin": 18.35
+"ini": 18.16,
+"fin": 18.46
 },
 {
 "txt": "Pero",
-"ini": 18.77,
-"fin": 19.05
+"ini": 19.06,
+"fin": 19.28
 },
 {
 "txt": "el",
-"ini": 19.05,
-"fin": 19.19
+"ini": 19.28,
+"fin": 19.42
 },
 {
 "txt": "motor...",
-"ini": 19.19,
-"fin": 19.45
+"ini": 19.42,
+"fin": 19.76
 },
 {
 "txt": "el",
-"ini": 19.53,
-"fin": 19.59
+"ini": 20.28,
+"fin": 20.62
 },
 {
 "txt": "motor",
-"ini": 19.59,
-"fin": 19.85
+"ini": 20.62,
+"fin": 21.0
 },
 {
 "txt": "tiene",
-"ini": 19.85,
-"fin": 20.13
+"ini": 21.0,
+"fin": 21.58
 },
 {
 "txt": "alma.",
-"ini": 20.13,
-"fin": 20.51
-},
-{
-"txt": "Parte",
-"ini": 21.69,
-"fin": 22.21
-},
-{
-"txt": "dos.",
-"ini": 22.21,
-"fin": 22.984
-},
-{
-"txt": "Mecánica.",
-"ini": 23.07,
-"fin": 23.61
+"ini": 21.58,
+"fin": 22.0
 },
 {
 "txt": "Embrague",
-"ini": 23.61,
-"fin": 24.474
+"ini": 22.66,
+"fin": 23.2
 },
 {
 "txt": "nuevo,",
-"ini": 24.57,
-"fin": 24.73
+"ini": 23.2,
+"fin": 23.44
 },
 {
 "txt": "aceite,",
-"ini": 24.73,
-"fin": 25.15
+"ini": 23.94,
+"fin": 24.18
 },
 {
-"txt": "filtros,",
-"ini": 25.33,
-"fin": 25.67
+"txt": "filtros",
+"ini": 24.74,
+"fin": 25.18
 },
 {
 "txt": "y",
-"ini": 25.67,
-"fin": 26.13
+"ini": 25.18,
+"fin": 25.62
 },
 {
 "txt": "el",
-"ini": 26.13,
-"fin": 26.27
+"ini": 25.62,
+"fin": 25.76
 },
 {
 "txt": "turbo",
-"ini": 26.27,
-"fin": 26.45
+"ini": 25.76,
+"fin": 26.0
 },
 {
 "txt": "desmontado",
-"ini": 26.45,
-"fin": 26.97
+"ini": 26.0,
+"fin": 26.7
 },
 {
 "txt": "pieza",
-"ini": 26.97,
-"fin": 27.29
+"ini": 26.7,
+"fin": 27.24
 },
 {
 "txt": "a",
-"ini": 27.29,
-"fin": 27.37
+"ini": 27.24,
+"fin": 27.36
 },
 {
 "txt": "pieza.",
-"ini": 27.37,
-"fin": 27.79
+"ini": 27.36,
+"fin": 28.08
 },
 {
-"txt": "Tres",
-"ini": 27.79,
-"fin": 28.35
+"txt": "3",
+"ini": 28.18,
+"fin": 28.46
 },
 {
 "txt": "noches",
-"ini": 28.35,
-"fin": 28.75
+"ini": 28.46,
+"fin": 28.88
 },
 {
 "txt": "sin",
-"ini": 28.75,
-"fin": 28.99
+"ini": 28.88,
+"fin": 29.1
 },
 {
 "txt": "dormir",
-"ini": 28.99,
-"fin": 29.21
+"ini": 29.1,
+"fin": 29.38
 },
 {
 "txt": "en",
-"ini": 29.21,
-"fin": 29.45
+"ini": 29.38,
+"fin": 29.38
 },
 {
 "txt": "el",
-"ini": 29.45,
-"fin": 29.55
+"ini": 29.38,
+"fin": 29.68
 },
 {
 "txt": "taller.",
-"ini": 29.55,
-"fin": 29.73
+"ini": 29.68,
+"fin": 29.9
 },
 {
 "txt": "Ya",
-"ini": 30.15,
-"fin": 30.57
+"ini": 30.42,
+"fin": 30.74
 },
 {
 "txt": "arranca",
-"ini": 30.57,
-"fin": 30.87
+"ini": 30.74,
+"fin": 31.22
 },
 {
 "txt": "a",
-"ini": 30.87,
-"fin": 31.14
+"ini": 31.22,
+"fin": 31.49
 },
 {
 "txt": "la",
-"ini": 30.87,
-"fin": 30.99
+"ini": 31.22,
+"fin": 31.34
 },
 {
 "txt": "primera.",
-"ini": 30.99,
-"fin": 31.33
-},
-{
-"txt": "Parte",
-"ini": 32.75,
-"fin": 33.05
-},
-{
-"txt": "tres.",
-"ini": 33.05,
-"fin": 33.788
-},
-{
-"txt": "Chapa",
-"ini": 33.87,
-"fin": 34.23
-},
-{
-"txt": "y",
-"ini": 34.23,
-"fin": 34.41
-},
-{
-"txt": "pintura.",
-"ini": 34.41,
-"fin": 34.83
+"ini": 31.34,
+"fin": 31.64
 },
 {
 "txt": "Lijamos",
-"ini": 34.83,
-"fin": 35.550000000000004
+"ini": 32.3,
+"fin": 32.76
 },
 {
 "txt": "todo",
-"ini": 35.63,
-"fin": 35.93
+"ini": 32.76,
+"fin": 33.14
 },
 {
 "txt": "el",
-"ini": 35.93,
-"fin": 36.11
+"ini": 33.14,
+"fin": 33.34
 },
 {
 "txt": "óxido,",
-"ini": 36.11,
-"fin": 36.41
+"ini": 33.34,
+"fin": 33.7
 },
 {
 "txt": "masilla,",
-"ini": 36.61,
-"fin": 36.91
+"ini": 34.02,
+"fin": 34.54
 },
 {
-"txt": "imprimación...",
-"ini": 37.25,
-"fin": 37.75
+"txt": "imprimación,",
+"ini": 34.84,
+"fin": 35.4
 },
 {
 "txt": "y",
-"ini": 37.75,
-"fin": 37.91
+"ini": 35.4,
+"fin": 36.04
 },
 {
 "txt": "le",
-"ini": 37.91,
-"fin": 38.03
+"ini": 36.04,
+"fin": 36.14
 },
 {
 "txt": "damos",
-"ini": 38.03,
-"fin": 38.23
+"ini": 36.14,
+"fin": 36.34
 },
 {
 "txt": "el",
-"ini": 38.23,
-"fin": 38.39
+"ini": 36.34,
+"fin": 36.58
 },
 {
 "txt": "color",
-"ini": 38.39,
-"fin": 38.57
+"ini": 36.58,
+"fin": 36.86
 },
 {
 "txt": "de",
-"ini": 38.57,
-"fin": 38.75
+"ini": 36.86,
+"fin": 37.04
 },
 {
 "txt": "la",
-"ini": 38.75,
-"fin": 38.81
+"ini": 37.04,
+"fin": 37.16
 },
 {
-"txt": "casa:",
-"ini": 38.81,
-"fin": 39.01
+"txt": "casa.",
+"ini": 37.16,
+"fin": 37.4
 },
 {
-"txt": "rojo",
-"ini": 39.01,
-"fin": 39.49
+"txt": "Rojo",
+"ini": 37.98,
+"fin": 38.44
 },
 {
 "txt": "Bryan.",
-"ini": 39.49,
-"fin": 40.26929411764706
-},
-{
-"txt": "Míralo.",
-"ini": 40.35588235294118,
-"fin": 41.232588235294116
+"ini": 38.44,
+"fin": 38.8
 },
 {
 "txt": "Ya",
-"ini": 41.33,
-"fin": 41.53
+"ini": 39.28,
+"fin": 39.56
 },
 {
 "txt": "no",
-"ini": 41.53,
-"fin": 41.63
+"ini": 39.56,
+"fin": 39.7
 },
 {
 "txt": "parece",
-"ini": 41.63,
-"fin": 41.81
+"ini": 39.7,
+"fin": 40.02
 },
 {
 "txt": "el",
-"ini": 41.81,
-"fin": 42.01
+"ini": 40.02,
+"fin": 40.24
 },
 {
 "txt": "mismo",
-"ini": 42.01,
-"fin": 42.23
+"ini": 40.24,
+"fin": 40.58
 },
 {
 "txt": "coche.",
-"ini": 42.23,
-"fin": 42.59
-},
-{
-"txt": "Parte",
-"ini": 43.71,
-"fin": 44.27
-},
-{
-"txt": "cuatro.",
-"ini": 44.27,
-"fin": 45.134
-},
-{
-"txt": "La",
-"ini": 45.23,
-"fin": 45.39
-},
-{
-"txt": "repro.",
-"ini": 45.39,
-"fin": 46.2
+"ini": 40.58,
+"fin": 40.96
 },
 {
 "txt": "Le",
-"ini": 46.29,
-"fin": 46.37
+"ini": 41.54,
+"fin": 41.68
 },
 {
 "txt": "metemos",
-"ini": 46.37,
-"fin": 46.69
+"ini": 41.68,
+"fin": 41.98
 },
 {
 "txt": "una",
-"ini": 46.69,
-"fin": 46.85
+"ini": 41.98,
+"fin": 42.22
 },
 {
-"txt": "reprogramación",
-"ini": 46.85,
-"fin": 47.53
+"txt": "repro",
+"ini": 42.22,
+"fin": 42.58
 },
 {
 "txt": "stage",
-"ini": 47.67,
-"fin": 47.79
+"ini": 42.58,
+"fin": 42.9
 },
 {
-"txt": "uno",
-"ini": 47.79,
-"fin": 48.042
+"txt": "1",
+"ini": 42.9,
+"fin": 43.26
 },
 {
 "txt": "y",
-"ini": 48.07,
-"fin": 48.19
+"ini": 43.26,
+"fin": 43.66
 },
 {
 "txt": "lo",
-"ini": 48.19,
-"fin": 48.29
+"ini": 43.66,
+"fin": 43.76
 },
 {
 "txt": "subimos",
-"ini": 48.29,
-"fin": 48.59
+"ini": 43.76,
+"fin": 44.12
 },
 {
 "txt": "al",
-"ini": 48.59,
-"fin": 48.77
+"ini": 44.12,
+"fin": 44.36
 },
 {
 "txt": "banco",
-"ini": 48.77,
-"fin": 48.97
+"ini": 44.36,
+"fin": 44.68
 },
 {
 "txt": "de",
-"ini": 48.97,
-"fin": 49.15
+"ini": 44.68,
+"fin": 44.8
 },
 {
 "txt": "potencia.",
-"ini": 49.15,
-"fin": 49.63
+"ini": 44.8,
+"fin": 45.3
 },
 {
 "txt": "De",
-"ini": 50.09,
-"fin": 50.31
+"ini": 45.8,
+"fin": 45.9
 },
 {
-"txt": "ciento",
-"ini": 50.31,
-"fin": 50.5308
-},
-{
-"txt": "cinco",
-"ini": 50.55533333333334,
-"fin": 50.748533333333334
-},
-{
-"txt": "caballos...",
-"ini": 50.77,
-"fin": 51.19
-},
-{
-"txt": "a",
-"ini": 51.19,
-"fin": 51.31
-},
-{
-"txt": "ciento",
-"ini": 51.31,
-"fin": 51.580000000000005
-},
-{
-"txt": "cincuenta.",
-"ini": 51.61,
-"fin": 52.015
-},
-{
-"txt": "Cuarenta",
-"ini": 52.06,
-"fin": 52.3975
-},
-{
-"txt": "y",
-"ini": 52.435,
-"fin": 52.53625
-},
-{
-"txt": "cinco",
-"ini": 52.5475,
-"fin": 52.78375
+"txt": "105",
+"ini": 45.9,
+"fin": 46.52
 },
 {
 "txt": "caballos",
-"ini": 52.81,
-"fin": 53.57
-},
-{
-"txt": "gratis.",
-"ini": 53.57,
-"fin": 54.09
-},
-{
-"txt": "Escucha",
-"ini": 54.55,
-"fin": 55.07
-},
-{
-"txt": "cómo",
-"ini": 55.07,
-"fin": 55.25
-},
-{
-"txt": "suena.",
-"ini": 55.25,
-"fin": 55.61
-},
-{
-"txt": "Y",
-"ini": 56.79,
-"fin": 57.23
-},
-{
-"txt": "ahora",
-"ini": 57.23,
-"fin": 57.47
-},
-{
-"txt": "decides",
-"ini": 57.47,
-"fin": 57.83
-},
-{
-"txt": "tú.",
-"ini": 57.83,
-"fin": 58.09
-},
-{
-"txt": "Opción",
-"ini": 58.09,
-"fin": 58.846000000000004
-},
-{
-"txt": "A:",
-"ini": 58.93,
-"fin": 59.308
-},
-{
-"txt": "lo",
-"ini": 59.35,
-"fin": 59.45
-},
-{
-"txt": "vinilamos",
-"ini": 59.45,
-"fin": 59.87
-},
-{
-"txt": "en",
-"ini": 59.87,
-"fin": 60.09
-},
-{
-"txt": "negro",
-"ini": 60.09,
-"fin": 60.25
-},
-{
-"txt": "mate",
-"ini": 60.25,
-"fin": 60.55
-},
-{
-"txt": "con",
-"ini": 60.55,
-"fin": 60.75
-},
-{
-"txt": "llantas",
-"ini": 60.75,
-"fin": 61.01
-},
-{
-"txt": "doradas",
-"ini": 61.01,
-"fin": 61.49
-},
-{
-"txt": "de",
-"ini": 61.49,
-"fin": 61.65
-},
-{
-"txt": "diecinueve,",
-"ini": 61.65,
-"fin": 61.938
-},
-{
-"txt": "para",
-"ini": 61.97,
-"fin": 62.43
-},
-{
-"txt": "venderlo",
-"ini": 62.43,
-"fin": 62.85
-},
-{
-"txt": "como",
-"ini": 62.85,
-"fin": 63.01
-},
-{
-"txt": "una",
-"ini": 63.01,
-"fin": 63.21
-},
-{
-"txt": "joya.",
-"ini": 63.21,
-"fin": 63.55
-},
-{
-"txt": "Opción",
-"ini": 63.73,
-"fin": 64.33
-},
-{
-"txt": "B:",
-"ini": 64.33,
-"fin": 64.47
-},
-{
-"txt": "nos",
-"ini": 64.47,
-"fin": 64.83
-},
-{
-"txt": "volvemos",
-"ini": 64.83,
-"fin": 65.27
-},
-{
-"txt": "locos,",
-"ini": 65.27,
-"fin": 65.65
-},
-{
-"txt": "stage",
-"ini": 65.85,
-"fin": 66.01
-},
-{
-"txt": "dos,",
-"ini": 66.01,
-"fin": 66.23909090909092
-},
-{
-"txt": "downpipe",
-"ini": 66.26454545454546,
-"fin": 66.64636363636363
-},
-{
-"txt": "e",
-"ini": 66.68878787878788,
-"fin": 66.80333333333333
-},
-{
-"txt": "intercooler,",
-"ini": 66.8160606060606,
-"fin": 67.35060606060605
-},
-{
-"txt": "y",
-"ini": 67.41,
-"fin": 67.85
-},
-{
-"txt": "lo",
-"ini": 67.85,
-"fin": 67.95
-},
-{
-"txt": "llevamos",
-"ini": 67.95,
-"fin": 68.23
+"ini": 46.52,
+"fin": 47.16
 },
 {
 "txt": "a",
-"ini": 68.23,
-"fin": 68.35
+"ini": 47.16,
+"fin": 47.52
 },
 {
-"txt": "más",
-"ini": 68.35,
-"fin": 68.45
+"txt": "150.",
+"ini": 47.52,
+"fin": 48.06
 },
 {
-"txt": "de",
-"ini": 68.45,
-"fin": 68.55
+"txt": "45",
+"ini": 48.9,
+"fin": 49.42
 },
 {
-"txt": "ciento",
-"ini": 68.55,
-"fin": 68.77023529411764
+"txt": "caballos",
+"ini": 49.42,
+"fin": 50.42
 },
 {
-"txt": "ochenta",
-"ini": 68.79470588235294,
-"fin": 69.04247058823529
+"txt": "gratis.",
+"ini": 50.42,
+"fin": 50.9
 },
 {
-"txt": "caballos.",
-"ini": 69.07,
-"fin": 69.65
+"txt": "Escucha",
+"ini": 51.18,
+"fin": 51.84
 },
 {
-"txt": "¿A",
-"ini": 70.09,
-"fin": 70.31
+"txt": "cómo",
+"ini": 51.84,
+"fin": 52.04
 },
 {
-"txt": "o",
-"ini": 70.31,
-"fin": 70.43
+"txt": "suena.",
+"ini": 52.04,
+"fin": 52.38
 },
 {
-"txt": "B?",
-"ini": 70.43,
-"fin": 70.59
+"txt": "Decides",
+"ini": 53.04,
+"fin": 53.56
 },
 {
-"txt": "Déjalo",
-"ini": 70.59,
-"fin": 71.49
+"txt": "tú.",
+"ini": 53.56,
+"fin": 53.94
 },
 {
-"txt": "en",
-"ini": 71.49,
-"fin": 71.67
+"txt": "Opción",
+"ini": 53.94,
+"fin": 54.96
 },
 {
-"txt": "comentarios.",
-"ini": 71.67,
-"fin": 72.11
-},
-{
-"txt": "Lo",
-"ini": 72.89,
-"fin": 73.03
-},
-{
-"txt": "que",
-"ini": 73.03,
-"fin": 73.15
-},
-{
-"txt": "más",
-"ini": 73.15,
-"fin": 73.29
-},
-{
-"txt": "se",
-"ini": 73.29,
-"fin": 73.41
-},
-{
-"txt": "vote,",
-"ini": 73.41,
-"fin": 73.572
-},
-{
-"txt": "es",
-"ini": 73.59,
-"fin": 73.91
+"txt": "A:",
+"ini": 55.07333333333333,
+"fin": 55.58333333333333
 },
 {
 "txt": "lo",
-"ini": 73.91,
-"fin": 74.01
+"ini": 55.64,
+"fin": 55.78
 },
 {
-"txt": "que",
-"ini": 74.01,
-"fin": 74.13
-},
-{
-"txt": "hago",
-"ini": 74.13,
-"fin": 74.29
+"txt": "vinilamos",
+"ini": 55.78,
+"fin": 56.22
 },
 {
 "txt": "en",
-"ini": 74.29,
-"fin": 74.43
+"ini": 56.22,
+"fin": 56.44
 },
 {
-"txt": "el",
-"ini": 74.43,
-"fin": 74.53
+"txt": "negro",
+"ini": 56.44,
+"fin": 56.72
 },
 {
-"txt": "próximo",
-"ini": 74.53,
-"fin": 74.73
+"txt": "mate",
+"ini": 56.72,
+"fin": 57.02
 },
 {
-"txt": "vídeo.",
-"ini": 74.73,
-"fin": 75.15
+"txt": "con",
+"ini": 57.02,
+"fin": 57.26
 },
 {
-"txt": "Y",
-"ini": 76.43,
-"fin": 76.87
+"txt": "llantas",
+"ini": 57.26,
+"fin": 57.56
 },
 {
-"txt": "escucha.",
-"ini": 76.87,
-"fin": 77.31
-},
-{
-"txt": "Todo",
-"ini": 77.75,
-"fin": 77.91
-},
-{
-"txt": "el",
-"ini": 77.91,
-"fin": 78.05
-},
-{
-"txt": "que",
-"ini": 78.05,
-"fin": 78.15
-},
-{
-"txt": "me",
-"ini": 78.15,
-"fin": 78.27
-},
-{
-"txt": "siga",
-"ini": 78.27,
-"fin": 78.55
-},
-{
-"txt": "entra",
-"ini": 78.55,
-"fin": 78.77
-},
-{
-"txt": "oficialmente",
-"ini": 78.77,
-"fin": 79.47
-},
-{
-"txt": "en",
-"ini": 79.47,
-"fin": 79.57
-},
-{
-"txt": "el",
-"ini": 79.57,
-"fin": 79.71
-},
-{
-"txt": "Bryan",
-"ini": 79.71,
-"fin": 79.908
-},
-{
-"txt": "Sport",
-"ini": 79.93,
-"fin": 80.17
-},
-{
-"txt": "Club.",
-"ini": 80.17,
-"fin": 80.45
-},
-{
-"txt": "Comenta",
-"ini": 80.79,
-"fin": 81.33
-},
-{
-"txt": "la",
-"ini": 81.33,
-"fin": 81.49
-},
-{
-"txt": "palabra",
-"ini": 81.49,
-"fin": 81.71
-},
-{
-"txt": "club",
-"ini": 81.71,
-"fin": 82.07
-},
-{
-"txt": "y",
-"ini": 82.07,
-"fin": 82.29
-},
-{
-"txt": "tu",
-"ini": 82.29,
-"fin": 82.37
-},
-{
-"txt": "ciudad,",
-"ini": 82.37,
-"fin": 82.71
-},
-{
-"txt": "y",
-"ini": 83.07,
-"fin": 83.15
-},
-{
-"txt": "los",
-"ini": 83.15,
-"fin": 83.27
-},
-{
-"txt": "nombres",
-"ini": 83.27,
-"fin": 83.53
+"txt": "doradas",
+"ini": 57.56,
+"fin": 58.0
 },
 {
 "txt": "de",
-"ini": 83.53,
-"fin": 83.69
+"ini": 58.0,
+"fin": 58.16
 },
 {
-"txt": "los",
-"ini": 83.69,
-"fin": 83.81
+"txt": "19",
+"ini": 58.16,
+"fin": 58.5
 },
 {
-"txt": "socios",
-"ini": 83.81,
-"fin": 84.25
+"txt": "para",
+"ini": 58.5,
+"fin": 59.02
 },
 {
-"txt": "saldrán",
-"ini": 84.25,
-"fin": 84.71
+"txt": "venderlo",
+"ini": 59.02,
+"fin": 59.62
 },
 {
-"txt": "en",
-"ini": 84.71,
-"fin": 84.85
+"txt": "como",
+"ini": 59.62,
+"fin": 59.84
 },
 {
 "txt": "una",
-"ini": 84.85,
-"fin": 84.99
+"ini": 59.84,
+"fin": 60.16
 },
 {
-"txt": "pegatina",
-"ini": 84.99,
-"fin": 85.494
+"txt": "joya.",
+"ini": 60.16,
+"fin": 61.1
 },
 {
-"txt": "en",
-"ini": 85.55,
-"fin": 85.67
+"txt": "Opción",
+"ini": 61.1,
+"fin": 61.52
 },
 {
-"txt": "la",
-"ini": 85.67,
-"fin": 85.75
+"txt": "B:",
+"ini": 61.52,
+"fin": 61.72
 },
 {
-"txt": "luna",
-"ini": 85.75,
-"fin": 85.99
+"txt": "nos",
+"ini": 62.16,
+"fin": 62.36
 },
 {
-"txt": "trasera",
-"ini": 85.99,
-"fin": 86.47
+"txt": "volvemos",
+"ini": 62.36,
+"fin": 63.0
+},
+{
+"txt": "locos.",
+"ini": 63.0,
+"fin": 63.42
+},
+{
+"txt": "Stage",
+"ini": 63.78,
+"fin": 64.08
+},
+{
+"txt": "2,",
+"ini": 64.08,
+"fin": 64.44
+},
+{
+"txt": "downpipe",
+"ini": 64.88,
+"fin": 65.3
+},
+{
+"txt": "e",
+"ini": 65.3,
+"fin": 65.56
+},
+{
+"txt": "intercooler,",
+"ini": 65.56,
+"fin": 66.3
+},
+{
+"txt": "a",
+"ini": 66.48,
+"fin": 66.64
+},
+{
+"txt": "más",
+"ini": 66.64,
+"fin": 66.78
 },
 {
 "txt": "de",
-"ini": 86.47,
-"fin": 86.61
+"ini": 66.78,
+"fin": 66.96
 },
 {
-"txt": "este",
-"ini": 86.61,
-"fin": 86.75
+"txt": "180",
+"ini": 66.96,
+"fin": 67.78
 },
 {
-"txt": "coche",
-"ini": 86.75,
-"fin": 87.03
-},
-{
-"txt": "cuando",
-"ini": 87.03,
-"fin": 87.21
-},
-{
-"txt": "lo",
-"ini": 87.21,
-"fin": 87.39
-},
-{
-"txt": "venda.",
-"ini": 87.39,
-"fin": 87.65
-},
-{
-"txt": "Tu",
-"ini": 87.65,
-"fin": 88.19
-},
-{
-"txt": "nombre,",
-"ini": 88.25,
-"fin": 88.49
-},
-{
-"txt": "rodando",
-"ini": 88.67,
-"fin": 88.97
-},
-{
-"txt": "por",
-"ini": 88.97,
-"fin": 89.13
-},
-{
-"txt": "la",
-"ini": 89.13,
-"fin": 89.23
-},
-{
-"txt": "carretera.",
-"ini": 89.23,
-"fin": 89.69
+"txt": "caballos.",
+"ini": 67.78,
+"fin": 68.46
 },
 {
 "txt": "¿A",
-"ini": 90.91,
-"fin": 91.29
+"ini": 68.88,
+"fin": 69.18
 },
 {
 "txt": "o",
-"ini": 91.29,
-"fin": 91.41
+"ini": 69.18,
+"fin": 69.56
 },
 {
 "txt": "B?",
-"ini": 91.41,
-"fin": 91.55
+"ini": 69.56,
+"fin": 69.7
 },
 {
-"txt": "Te",
-"ini": 92.01,
-"fin": 92.21
-},
-{
-"txt": "leo",
-"ini": 92.21,
-"fin": 92.49
+"txt": "Déjalo",
+"ini": 70.26,
+"fin": 70.56
 },
 {
 "txt": "en",
-"ini": 92.49,
-"fin": 92.63
+"ini": 70.56,
+"fin": 70.64
 },
 {
 "txt": "comentarios.",
-"ini": 92.63,
-"fin": 93.07
+"ini": 70.64,
+"fin": 71.0
 },
 {
-"txt": "Nos",
-"ini": 93.85,
-"fin": 94.01
+"txt": "Lo",
+"ini": 71.52,
+"fin": 71.7
 },
 {
-"txt": "vemos",
-"ini": 94.01,
-"fin": 94.27
+"txt": "que",
+"ini": 71.7,
+"fin": 71.8
+},
+{
+"txt": "más",
+"ini": 71.8,
+"fin": 71.96
+},
+{
+"txt": "se",
+"ini": 71.96,
+"fin": 72.1
+},
+{
+"txt": "vote",
+"ini": 72.1,
+"fin": 72.262
+},
+{
+"txt": "es",
+"ini": 72.28,
+"fin": 72.74
+},
+{
+"txt": "lo",
+"ini": 72.74,
+"fin": 72.9
+},
+{
+"txt": "que",
+"ini": 72.9,
+"fin": 73.02
+},
+{
+"txt": "hago",
+"ini": 73.02,
+"fin": 73.22
 },
 {
 "txt": "en",
-"ini": 94.27,
-"fin": 94.43
+"ini": 73.22,
+"fin": 73.32
 },
 {
-"txt": "la",
-"ini": 94.43,
-"fin": 94.51
+"txt": "el",
+"ini": 73.32,
+"fin": 73.46
 },
 {
-"txt": "parte",
-"ini": 94.51,
-"fin": 94.69
+"txt": "próximo",
+"ini": 73.46,
+"fin": 73.72
 },
 {
-"txt": "cinco.",
-"ini": 94.69,
-"fin": 95.2564
+"txt": "vídeo.",
+"ini": 73.72,
+"fin": 74.14
+},
+{
+"txt": "Todo",
+"ini": 74.68,
+"fin": 74.84
+},
+{
+"txt": "el",
+"ini": 74.84,
+"fin": 75.02
+},
+{
+"txt": "que",
+"ini": 75.02,
+"fin": 75.1
+},
+{
+"txt": "me",
+"ini": 75.1,
+"fin": 75.2
+},
+{
+"txt": "siga",
+"ini": 75.2,
+"fin": 75.54
+},
+{
+"txt": "entra",
+"ini": 75.54,
+"fin": 76.0
+},
+{
+"txt": "oficialmente",
+"ini": 76.0,
+"fin": 76.76
+},
+{
+"txt": "en",
+"ini": 76.76,
+"fin": 76.88
+},
+{
+"txt": "el",
+"ini": 76.88,
+"fin": 77.02
 },
 {
 "txt": "Bryan",
-"ini": 95.31933333333333,
-"fin": 95.81493333333333
+"ini": 77.02,
+"fin": 77.36
+},
+{
+"txt": "Sport",
+"ini": 77.36,
+"fin": 77.74
+},
+{
+"txt": "Club.",
+"ini": 77.74,
+"fin": 78.12
+},
+{
+"txt": "Comenta",
+"ini": 78.6,
+"fin": 78.96
+},
+{
+"txt": "la",
+"ini": 78.96,
+"fin": 79.08
+},
+{
+"txt": "palabra",
+"ini": 79.08,
+"fin": 79.32
+},
+{
+"txt": "club",
+"ini": 79.32,
+"fin": 79.68
+},
+{
+"txt": "y",
+"ini": 79.68,
+"fin": 79.98
+},
+{
+"txt": "tu",
+"ini": 79.98,
+"fin": 80.08
+},
+{
+"txt": "ciudad,",
+"ini": 80.08,
+"fin": 80.42
+},
+{
+"txt": "y",
+"ini": 80.7,
+"fin": 80.86
+},
+{
+"txt": "los",
+"ini": 80.86,
+"fin": 80.98
+},
+{
+"txt": "nombres",
+"ini": 80.98,
+"fin": 81.28
+},
+{
+"txt": "de",
+"ini": 81.28,
+"fin": 81.44
+},
+{
+"txt": "los",
+"ini": 81.44,
+"fin": 81.56
+},
+{
+"txt": "socios",
+"ini": 81.56,
+"fin": 82.04
+},
+{
+"txt": "saldrán",
+"ini": 82.04,
+"fin": 82.6
+},
+{
+"txt": "en",
+"ini": 82.6,
+"fin": 82.7
+},
+{
+"txt": "una",
+"ini": 82.7,
+"fin": 82.84
+},
+{
+"txt": "pegatina",
+"ini": 82.84,
+"fin": 83.34
+},
+{
+"txt": "en",
+"ini": 83.34,
+"fin": 83.48
+},
+{
+"txt": "la",
+"ini": 83.48,
+"fin": 83.6
+},
+{
+"txt": "luna",
+"ini": 83.6,
+"fin": 83.82
+},
+{
+"txt": "trasera",
+"ini": 83.82,
+"fin": 84.28
+},
+{
+"txt": "de",
+"ini": 84.28,
+"fin": 84.42
+},
+{
+"txt": "este",
+"ini": 84.42,
+"fin": 84.64
+},
+{
+"txt": "coche",
+"ini": 84.64,
+"fin": 84.96
+},
+{
+"txt": "cuando",
+"ini": 84.96,
+"fin": 85.2
+},
+{
+"txt": "lo",
+"ini": 85.2,
+"fin": 85.42
+},
+{
+"txt": "venda.",
+"ini": 85.42,
+"fin": 85.68
+},
+{
+"txt": "Tu",
+"ini": 85.68,
+"fin": 86.34
+},
+{
+"txt": "nombre,",
+"ini": 86.34,
+"fin": 86.7
+},
+{
+"txt": "rodando",
+"ini": 86.7,
+"fin": 87.64
+},
+{
+"txt": "por",
+"ini": 87.64,
+"fin": 87.84
+},
+{
+"txt": "la",
+"ini": 87.84,
+"fin": 87.98
+},
+{
+"txt": "carretera.",
+"ini": 87.98,
+"fin": 88.56
+},
+{
+"txt": "¿A",
+"ini": 88.9,
+"fin": 89.2
+},
+{
+"txt": "o",
+"ini": 89.2,
+"fin": 89.58
+},
+{
+"txt": "B?",
+"ini": 89.58,
+"fin": 89.72
+},
+{
+"txt": "Te",
+"ini": 90.2,
+"fin": 90.28
+},
+{
+"txt": "leo",
+"ini": 90.28,
+"fin": 90.54
+},
+{
+"txt": "en",
+"ini": 90.54,
+"fin": 90.64
+},
+{
+"txt": "comentarios.",
+"ini": 90.64,
+"fin": 91.04
+},
+{
+"txt": "Nos",
+"ini": 91.54,
+"fin": 91.76
+},
+{
+"txt": "vemos",
+"ini": 91.76,
+"fin": 92.02
+},
+{
+"txt": "en",
+"ini": 92.02,
+"fin": 92.24
+},
+{
+"txt": "la",
+"ini": 92.24,
+"fin": 92.34
+},
+{
+"txt": "parte",
+"ini": 92.34,
+"fin": 92.54
+},
+{
+"txt": "5.",
+"ini": 92.54,
+"fin": 92.9
+},
+{
+"txt": "Bryan",
+"ini": 93.56,
+"fin": 93.74
 },
 {
 "txt": "Sport,",
-"ini": 95.87,
-"fin": 96.11
+"ini": 93.74,
+"fin": 94.16
 },
 {
 "txt": "fuera.",
-"ini": 96.11,
-"fin": 96.41
+"ini": 94.16,
+"fin": 94.8
 }
 ]
 }
