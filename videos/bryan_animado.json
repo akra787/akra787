@@ -1,16 +1,48 @@
 {
-  "_nota": "Guion del vídeo animado. Si 'audio' tiene una ruta, se usa esa voz y los tiempos 'inicio' de cada escena (segundos). Si no, se genera la voz con Piper.",
-  "audio": null,
+  "_nota": "Voz: ElevenLabs (subida por el usuario), con dos acotaciones recortadas. 'inicio' = segundo en que empieza cada escena.",
+  "audio": "bryan/audio/voz_bryan_editada.wav",
   "voz_modelo": "es_ES-davefx-medium",
   "salida": "bryan_animado.mp4",
   "escenas": [
-    {"tipo": "intro", "voz": "Compré este coche por mil quinientos euros. Todo el mundo me dijo que estaba muerto. En treinta días lo voy a resucitar... y tú vas a decidir cómo termina."},
-    {"tipo": "diagnostico", "voz": "Parte uno. El diagnóstico. Óxido por todas partes, el embrague patina, doscientos treinta mil kilómetros, y un olor a quemado que no me gusta nada. Pero el motor... el motor tiene alma."},
-    {"tipo": "mecanica", "voz": "Parte dos. Mecánica. Embrague nuevo, aceite, filtros, y el turbo desmontado pieza a pieza. Tres noches sin dormir en el taller. Ya arranca a la primera."},
-    {"tipo": "pintura", "voz": "Parte tres. Chapa y pintura. Lijamos todo el óxido, masilla, imprimación... y le damos el color de la casa: rojo Bryan. Míralo. Ya no parece el mismo coche."},
-    {"tipo": "repro", "voz": "Parte cuatro. La repro. Le metemos una reprogramación stage uno y lo subimos al banco de potencia. De ciento cinco caballos... a ciento cincuenta. Cuarenta y cinco caballos gratis. Escucha cómo suena."},
-    {"tipo": "votacion", "voz": "Y ahora decides tú. Opción A: lo vinilamos en negro mate con llantas doradas de diecinueve, para venderlo como una joya. Opción B: nos volvemos locos, stage dos, downpipe e intercooler, y lo llevamos a más de ciento ochenta caballos. ¿A o B? Déjalo en comentarios. Lo que más se vote, es lo que hago en el próximo vídeo."},
-    {"tipo": "club", "voz": "Y escucha. Todo el que me siga entra oficialmente en el Bryan Sport Club. Comenta la palabra club y tu ciudad, y los nombres de los socios saldrán en una pegatina en la luna trasera de este coche cuando lo venda. Tu nombre, rodando por la carretera."},
-    {"tipo": "cierre", "voz": "¿A o B? Te leo en comentarios. Nos vemos en la parte cinco. Bryan Sport, fuera."}
+    {
+      "tipo": "intro",
+      "voz": "Compré este coche por 1.500 euros. Todo el mundo me dijo que estaba muerto. En 30 días lo voy a resucitar, y tú vas a decidir cómo termina.",
+      "inicio": 0
+    },
+    {
+      "tipo": "diagnostico",
+      "voz": "Óxido por todas partes, el embrague patina, 230.000 kilómetros y un olor a quemado que no me gusta nada. Pero el motor... el motor tiene alma.",
+      "inicio": 10.75
+    },
+    {
+      "tipo": "mecanica",
+      "voz": "Embrague nuevo, aceite, filtros y el turbo desmontado pieza a pieza. 3 noches sin dormir en el taller. Ya arranca a la primera.",
+      "inicio": 22.3
+    },
+    {
+      "tipo": "pintura",
+      "voz": "Lijamos todo el óxido, masilla, imprimación, y le damos el color de la casa. Rojo Bryan. Ya no parece el mismo coche.",
+      "inicio": 31.95
+    },
+    {
+      "tipo": "repro",
+      "voz": "Le metemos una repro stage 1 y lo subimos al banco de potencia. De 105 caballos a 150. 45 caballos gratis. Escucha cómo suena.",
+      "inicio": 41.2
+    },
+    {
+      "tipo": "votacion",
+      "voz": "Decides tú. Opción A: lo vinilamos en negro mate con llantas doradas de 19 para venderlo como una joya. Opción B: nos volvemos locos. Stage 2, downpipe e intercooler, a más de 180 caballos. ¿A o B? Déjalo en comentarios. Lo que más se vote es lo que hago en el próximo vídeo.",
+      "inicio": 52.7
+    },
+    {
+      "tipo": "club",
+      "voz": "Todo el que me siga entra oficialmente en el Bryan Sport Club. Comenta la palabra club y tu ciudad, y los nombres de los socios saldrán en una pegatina en la luna trasera de este coche cuando lo venda. Tu nombre, rodando por la carretera.",
+      "inicio": 74.45
+    },
+    {
+      "tipo": "cierre",
+      "voz": "¿A o B? Te leo en comentarios. Nos vemos en la parte 5. Bryan Sport, fuera.",
+      "inicio": 88.85
+    }
   ]
 }
