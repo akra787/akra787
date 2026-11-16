@@ -453,6 +453,8 @@ POSES = {
     "pistola": ((12, 8), (80, 100)),
     "movil": ((25, -85), (12, 8)),
     "encoge": ((45, -60), (45, -60)),
+    "lupa": ((12, 8), (70, 135)),
+    "piensa": ((12, 8), (35, 160)),
 }
 
 
@@ -641,6 +643,14 @@ def _objeto(d, obj, lx, ly, rx, ry, k, t, cx, tt):
         d.rounded_rectangle([rx - 20 * k, ry - 40 * k, rx + 120 * k, ry + 5 * k], radius=int(10 * k), fill=(70, 75, 85))
         d.rectangle([rx + 110 * k, ry - 30 * k, rx + 160 * k, ry - 15 * k], fill=(180, 180, 190))
         d.rounded_rectangle([rx + 10 * k, ry - 120 * k, rx + 70 * k, ry - 40 * k], radius=int(10 * k), fill=(200, 30, 45))
+        _mano(d, rx, ry, 0, k)
+    elif obj == "lupa":
+        a = math.radians(-50)
+        ex, ey = rx + math.cos(a) * 110 * k, ry + math.sin(a) * 110 * k
+        d.line([(rx, ry), (ex, ey)], fill=(90, 60, 30), width=int(20 * k))
+        d.ellipse([ex - 62 * k, ey - 62 * k, ex + 62 * k, ey + 62 * k], fill=(60, 60, 70))
+        d.ellipse([ex - 50 * k, ey - 50 * k, ex + 50 * k, ey + 50 * k], fill=(190, 225, 255))
+        d.ellipse([ex - 30 * k, ey - 38 * k, ex - 10 * k, ey - 18 * k], fill=(255, 255, 255))
         _mano(d, rx, ry, 0, k)
     elif obj == "movil":
         d.rounded_rectangle([lx - 10 * k, ly - 150 * k, lx + 80 * k, ly + 20 * k], radius=int(14 * k), fill=(20, 20, 24))

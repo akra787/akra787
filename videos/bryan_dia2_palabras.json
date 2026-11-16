@@ -1,0 +1,1353 @@
+{
+"firma": [
+"Día 2. Empieza la transformación.",
+"¡Familia! Habéis elegido la opción B y ahora toca cumplir. ¡Vamos a convertir este coche en una auténtica máquina! Hoy empieza el trabajo en Bryan Sport.",
+"Hoy estamos en el garaje de casa, con nuestras herramientas y muchas ganas de empezar. No tenemos un taller profesional, pero tenemos imaginación y ganas de hacer un proyectazo. Vamos a revisar el coche, preparar las herramientas y empezar poco a poco con las mejoras. ¡Esto promete!",
+"Y ahora vamos con algo más serio: queremos preparar este coche para una Stage 2. Para ello, vamos a estudiar la instalación de un downpipe, que mejora el flujo de gases de escape, y un intercooler mejorado, que ayuda a mantener el aire de admisión más fresco. Después tocará una calibración electrónica específica para las nuevas piezas, comprobando que todo funcione correctamente y de forma segura. ¡Queremos potencia, pero también fiabilidad!",
+"Pero antes de seguir, necesito que volváis a decidir vosotros. ¿Qué le hacemos ahora? Opción A: le ponemos unas llantas deportivas para darle un aspecto mucho más agresivo. Opción B: le instalamos unos baquets para darle un auténtico estilo racing. ¡Vosotros mandáis!",
+"Por cierto, Rubettos nos ha seguido y ha elegido representar al Club Madrid. Así que vamos a ponerle una pequeña pegatina en la luna trasera. ¡Madrid ya tiene su sitio en Bryan Sport! Y recordad: si nos sigues, ya formas parte del Bryan Sport Club. Déjanos el nombre de tu ciudad en comentarios, vota A o B y quién sabe... ¡quizás tu ciudad sea la siguiente en aparecer en nuestro coche! ¡Nos vemos en el próximo capítulo!",
+"bryan/dia2/voz_dia2.mp3"
+],
+"palabras": [
+{
+"txt": "Día",
+"ini": 0.0,
+"fin": 0.42
+},
+{
+"txt": "2.",
+"ini": 0.42,
+"fin": 0.74
+},
+{
+"txt": "Empieza",
+"ini": 1.16,
+"fin": 1.8
+},
+{
+"txt": "la",
+"ini": 1.8,
+"fin": 1.98
+},
+{
+"txt": "transformación.",
+"ini": 1.98,
+"fin": 2.78
+},
+{
+"txt": "¡Familia!",
+"ini": 3.54,
+"fin": 3.98
+},
+{
+"txt": "Habéis",
+"ini": 4.44,
+"fin": 4.78
+},
+{
+"txt": "elegido",
+"ini": 4.78,
+"fin": 5.26
+},
+{
+"txt": "la",
+"ini": 5.26,
+"fin": 5.4
+},
+{
+"txt": "opción",
+"ini": 5.4,
+"fin": 5.76
+},
+{
+"txt": "B",
+"ini": 5.76,
+"fin": 6.04
+},
+{
+"txt": "y",
+"ini": 6.04,
+"fin": 6.46
+},
+{
+"txt": "ahora",
+"ini": 6.46,
+"fin": 6.76
+},
+{
+"txt": "toca",
+"ini": 6.76,
+"fin": 7.14
+},
+{
+"txt": "cumplir.",
+"ini": 7.14,
+"fin": 7.74
+},
+{
+"txt": "¡Vamos",
+"ini": 8.16,
+"fin": 8.46
+},
+{
+"txt": "a",
+"ini": 8.46,
+"fin": 8.64
+},
+{
+"txt": "convertir",
+"ini": 8.64,
+"fin": 9.08
+},
+{
+"txt": "este",
+"ini": 9.08,
+"fin": 9.32
+},
+{
+"txt": "coche",
+"ini": 9.32,
+"fin": 9.68
+},
+{
+"txt": "en",
+"ini": 9.68,
+"fin": 10.06
+},
+{
+"txt": "una",
+"ini": 10.06,
+"fin": 10.24
+},
+{
+"txt": "auténtica",
+"ini": 10.24,
+"fin": 11.0
+},
+{
+"txt": "máquina!",
+"ini": 11.0,
+"fin": 11.36
+},
+{
+"txt": "Hoy",
+"ini": 12.02,
+"fin": 12.28
+},
+{
+"txt": "empieza",
+"ini": 12.28,
+"fin": 12.74
+},
+{
+"txt": "el",
+"ini": 12.74,
+"fin": 12.86
+},
+{
+"txt": "trabajo",
+"ini": 12.86,
+"fin": 13.26
+},
+{
+"txt": "en",
+"ini": 13.26,
+"fin": 13.52
+},
+{
+"txt": "Bryan",
+"ini": 13.52,
+"fin": 13.86
+},
+{
+"txt": "Sport.",
+"ini": 13.86,
+"fin": 14.22
+},
+{
+"txt": "Hoy",
+"ini": 15.04,
+"fin": 15.28
+},
+{
+"txt": "estamos",
+"ini": 15.28,
+"fin": 15.58
+},
+{
+"txt": "en",
+"ini": 15.58,
+"fin": 15.86
+},
+{
+"txt": "el",
+"ini": 15.86,
+"fin": 15.98
+},
+{
+"txt": "garaje",
+"ini": 15.98,
+"fin": 16.32
+},
+{
+"txt": "de",
+"ini": 16.32,
+"fin": 16.48
+},
+{
+"txt": "casa,",
+"ini": 16.48,
+"fin": 16.72
+},
+{
+"txt": "con",
+"ini": 17.06,
+"fin": 17.26
+},
+{
+"txt": "nuestras",
+"ini": 17.26,
+"fin": 17.52
+},
+{
+"txt": "herramientas",
+"ini": 17.52,
+"fin": 18.28
+},
+{
+"txt": "y",
+"ini": 18.28,
+"fin": 18.6
+},
+{
+"txt": "muchas",
+"ini": 18.6,
+"fin": 19.06
+},
+{
+"txt": "ganas",
+"ini": 19.06,
+"fin": 19.5
+},
+{
+"txt": "de",
+"ini": 19.5,
+"fin": 19.6
+},
+{
+"txt": "empezar.",
+"ini": 19.6,
+"fin": 19.88
+},
+{
+"txt": "No",
+"ini": 20.52,
+"fin": 20.8
+},
+{
+"txt": "tenemos",
+"ini": 20.8,
+"fin": 21.12
+},
+{
+"txt": "un",
+"ini": 21.12,
+"fin": 21.36
+},
+{
+"txt": "taller",
+"ini": 21.36,
+"fin": 21.54
+},
+{
+"txt": "profesional,",
+"ini": 21.54,
+"fin": 22.1
+},
+{
+"txt": "pero",
+"ini": 22.6,
+"fin": 22.8
+},
+{
+"txt": "tenemos",
+"ini": 22.8,
+"fin": 23.1
+},
+{
+"txt": "imaginación",
+"ini": 23.1,
+"fin": 23.82
+},
+{
+"txt": "y",
+"ini": 23.82,
+"fin": 24.28
+},
+{
+"txt": "ganas",
+"ini": 24.28,
+"fin": 24.68
+},
+{
+"txt": "de",
+"ini": 24.68,
+"fin": 24.78
+},
+{
+"txt": "hacer",
+"ini": 24.78,
+"fin": 25.06
+},
+{
+"txt": "un",
+"ini": 25.06,
+"fin": 25.38
+},
+{
+"txt": "proyectazo.",
+"ini": 25.38,
+"fin": 26.06
+},
+{
+"txt": "Vamos",
+"ini": 26.56,
+"fin": 26.88
+},
+{
+"txt": "a",
+"ini": 26.88,
+"fin": 27.08
+},
+{
+"txt": "revisar",
+"ini": 27.08,
+"fin": 27.42
+},
+{
+"txt": "el",
+"ini": 27.42,
+"fin": 27.54
+},
+{
+"txt": "coche,",
+"ini": 27.54,
+"fin": 27.88
+},
+{
+"txt": "preparar",
+"ini": 28.2,
+"fin": 28.66
+},
+{
+"txt": "las",
+"ini": 28.66,
+"fin": 28.8
+},
+{
+"txt": "herramientas",
+"ini": 28.8,
+"fin": 29.42
+},
+{
+"txt": "y",
+"ini": 29.42,
+"fin": 29.8
+},
+{
+"txt": "empezar",
+"ini": 29.8,
+"fin": 30.18
+},
+{
+"txt": "poco",
+"ini": 30.18,
+"fin": 30.68
+},
+{
+"txt": "a",
+"ini": 30.68,
+"fin": 30.86
+},
+{
+"txt": "poco",
+"ini": 30.86,
+"fin": 31.06
+},
+{
+"txt": "con",
+"ini": 31.06,
+"fin": 31.3
+},
+{
+"txt": "las",
+"ini": 31.3,
+"fin": 31.46
+},
+{
+"txt": "mejoras.",
+"ini": 31.46,
+"fin": 31.98
+},
+{
+"txt": "¡Esto",
+"ini": 32.38,
+"fin": 32.76
+},
+{
+"txt": "promete!",
+"ini": 32.76,
+"fin": 33.36
+},
+{
+"txt": "Y",
+"ini": 33.98,
+"fin": 34.16
+},
+{
+"txt": "ahora",
+"ini": 34.16,
+"fin": 34.38
+},
+{
+"txt": "vamos",
+"ini": 34.38,
+"fin": 34.86
+},
+{
+"txt": "con",
+"ini": 34.86,
+"fin": 35.16
+},
+{
+"txt": "algo",
+"ini": 35.16,
+"fin": 35.42
+},
+{
+"txt": "más",
+"ini": 35.42,
+"fin": 35.8
+},
+{
+"txt": "serio:",
+"ini": 35.8,
+"fin": 36.08
+},
+{
+"txt": "queremos",
+"ini": 36.78,
+"fin": 36.94
+},
+{
+"txt": "preparar",
+"ini": 36.94,
+"fin": 37.48
+},
+{
+"txt": "este",
+"ini": 37.48,
+"fin": 37.7
+},
+{
+"txt": "coche",
+"ini": 37.7,
+"fin": 38.0
+},
+{
+"txt": "para",
+"ini": 38.0,
+"fin": 38.26
+},
+{
+"txt": "una",
+"ini": 38.26,
+"fin": 38.5
+},
+{
+"txt": "Stage",
+"ini": 38.5,
+"fin": 38.94
+},
+{
+"txt": "2.",
+"ini": 38.94,
+"fin": 39.26
+},
+{
+"txt": "Para",
+"ini": 39.9,
+"fin": 40.08
+},
+{
+"txt": "ello,",
+"ini": 40.08,
+"fin": 40.34
+},
+{
+"txt": "vamos",
+"ini": 40.86,
+"fin": 40.86
+},
+{
+"txt": "a",
+"ini": 40.86,
+"fin": 41.04
+},
+{
+"txt": "estudiar",
+"ini": 41.04,
+"fin": 41.36
+},
+{
+"txt": "la",
+"ini": 41.36,
+"fin": 41.56
+},
+{
+"txt": "instalación",
+"ini": 41.56,
+"fin": 42.12
+},
+{
+"txt": "de",
+"ini": 42.12,
+"fin": 42.36
+},
+{
+"txt": "un",
+"ini": 42.36,
+"fin": 42.52
+},
+{
+"txt": "downpipe,",
+"ini": 42.52,
+"fin": 43.12
+},
+{
+"txt": "que",
+"ini": 43.46,
+"fin": 43.6
+},
+{
+"txt": "mejora",
+"ini": 43.6,
+"fin": 44.04
+},
+{
+"txt": "el",
+"ini": 44.04,
+"fin": 44.12
+},
+{
+"txt": "flujo",
+"ini": 44.12,
+"fin": 44.52
+},
+{
+"txt": "de",
+"ini": 44.52,
+"fin": 44.6
+},
+{
+"txt": "gases",
+"ini": 44.6,
+"fin": 44.88
+},
+{
+"txt": "de",
+"ini": 44.88,
+"fin": 45.04
+},
+{
+"txt": "escape,",
+"ini": 45.04,
+"fin": 45.36
+},
+{
+"txt": "y",
+"ini": 45.36,
+"fin": 45.96
+},
+{
+"txt": "un",
+"ini": 45.96,
+"fin": 46.12
+},
+{
+"txt": "intercooler",
+"ini": 46.12,
+"fin": 46.8
+},
+{
+"txt": "mejorado,",
+"ini": 46.8,
+"fin": 47.34
+},
+{
+"txt": "que",
+"ini": 47.6,
+"fin": 47.82
+},
+{
+"txt": "ayuda",
+"ini": 47.82,
+"fin": 48.1
+},
+{
+"txt": "a",
+"ini": 48.1,
+"fin": 48.3
+},
+{
+"txt": "mantener",
+"ini": 48.3,
+"fin": 48.6
+},
+{
+"txt": "el",
+"ini": 48.6,
+"fin": 48.9
+},
+{
+"txt": "aire",
+"ini": 48.9,
+"fin": 49.1
+},
+{
+"txt": "de",
+"ini": 49.1,
+"fin": 49.26
+},
+{
+"txt": "admisión",
+"ini": 49.26,
+"fin": 49.66
+},
+{
+"txt": "más",
+"ini": 49.66,
+"fin": 50.1
+},
+{
+"txt": "fresco.",
+"ini": 50.1,
+"fin": 50.54
+},
+{
+"txt": "Después",
+"ini": 51.1,
+"fin": 51.56
+},
+{
+"txt": "tocará",
+"ini": 51.94,
+"fin": 52.32
+},
+{
+"txt": "una",
+"ini": 52.32,
+"fin": 52.5
+},
+{
+"txt": "calibración",
+"ini": 52.5,
+"fin": 53.08
+},
+{
+"txt": "electrónica",
+"ini": 53.08,
+"fin": 53.78
+},
+{
+"txt": "específica",
+"ini": 53.78,
+"fin": 54.48
+},
+{
+"txt": "para",
+"ini": 54.48,
+"fin": 54.62
+},
+{
+"txt": "las",
+"ini": 54.62,
+"fin": 54.82
+},
+{
+"txt": "nuevas",
+"ini": 54.82,
+"fin": 55.08
+},
+{
+"txt": "piezas,",
+"ini": 55.08,
+"fin": 55.6
+},
+{
+"txt": "comprobando",
+"ini": 55.92,
+"fin": 56.5
+},
+{
+"txt": "que",
+"ini": 56.5,
+"fin": 56.94
+},
+{
+"txt": "todo",
+"ini": 56.94,
+"fin": 57.26
+},
+{
+"txt": "funcione",
+"ini": 57.26,
+"fin": 57.82
+},
+{
+"txt": "correctamente",
+"ini": 57.82,
+"fin": 58.7
+},
+{
+"txt": "y",
+"ini": 58.7,
+"fin": 59.08
+},
+{
+"txt": "de",
+"ini": 59.08,
+"fin": 59.18
+},
+{
+"txt": "forma",
+"ini": 59.18,
+"fin": 59.44
+},
+{
+"txt": "segura.",
+"ini": 59.44,
+"fin": 59.96
+},
+{
+"txt": "¡Queremos",
+"ini": 60.56,
+"fin": 60.92
+},
+{
+"txt": "potencia,",
+"ini": 60.92,
+"fin": 61.54
+},
+{
+"txt": "pero",
+"ini": 61.78,
+"fin": 61.98
+},
+{
+"txt": "también",
+"ini": 61.98,
+"fin": 62.44
+},
+{
+"txt": "fiabilidad!",
+"ini": 62.44,
+"fin": 63.2
+},
+{
+"txt": "Pero",
+"ini": 63.92,
+"fin": 64.1
+},
+{
+"txt": "antes",
+"ini": 64.1,
+"fin": 64.34
+},
+{
+"txt": "de",
+"ini": 64.34,
+"fin": 64.52
+},
+{
+"txt": "seguir,",
+"ini": 64.52,
+"fin": 64.8
+},
+{
+"txt": "necesito",
+"ini": 65.22,
+"fin": 65.68
+},
+{
+"txt": "que",
+"ini": 65.68,
+"fin": 65.8
+},
+{
+"txt": "volváis",
+"ini": 65.8,
+"fin": 66.24
+},
+{
+"txt": "a",
+"ini": 66.24,
+"fin": 66.4
+},
+{
+"txt": "decidir",
+"ini": 66.4,
+"fin": 66.84
+},
+{
+"txt": "vosotros.",
+"ini": 66.84,
+"fin": 67.32
+},
+{
+"txt": "¿Qué",
+"ini": 68.04,
+"fin": 68.16
+},
+{
+"txt": "le",
+"ini": 68.16,
+"fin": 68.26
+},
+{
+"txt": "hacemos",
+"ini": 68.26,
+"fin": 68.46
+},
+{
+"txt": "ahora?",
+"ini": 68.46,
+"fin": 68.82
+},
+{
+"txt": "Opción",
+"ini": 68.82,
+"fin": 69.92399999999999
+},
+{
+"txt": "A:",
+"ini": 70.04666666666667,
+"fin": 70.59866666666667
+},
+{
+"txt": "le",
+"ini": 70.66,
+"fin": 70.68
+},
+{
+"txt": "ponemos",
+"ini": 70.68,
+"fin": 71.08
+},
+{
+"txt": "unas",
+"ini": 71.08,
+"fin": 71.28
+},
+{
+"txt": "llantas",
+"ini": 71.28,
+"fin": 71.62
+},
+{
+"txt": "deportivas",
+"ini": 71.62,
+"fin": 72.26
+},
+{
+"txt": "para",
+"ini": 72.26,
+"fin": 72.7
+},
+{
+"txt": "darle",
+"ini": 72.7,
+"fin": 72.96
+},
+{
+"txt": "un",
+"ini": 72.96,
+"fin": 73.18
+},
+{
+"txt": "aspecto",
+"ini": 73.18,
+"fin": 73.74
+},
+{
+"txt": "mucho",
+"ini": 73.74,
+"fin": 74.2
+},
+{
+"txt": "más",
+"ini": 74.2,
+"fin": 74.46
+},
+{
+"txt": "agresivo.",
+"ini": 74.46,
+"fin": 75.06
+},
+{
+"txt": "Opción",
+"ini": 75.74,
+"fin": 76.12
+},
+{
+"txt": "B:",
+"ini": 76.12,
+"fin": 76.38
+},
+{
+"txt": "le",
+"ini": 76.94,
+"fin": 77.0
+},
+{
+"txt": "instalamos",
+"ini": 77.0,
+"fin": 77.54
+},
+{
+"txt": "unos",
+"ini": 77.54,
+"fin": 77.78
+},
+{
+"txt": "baquets",
+"ini": 77.78,
+"fin": 78.122
+},
+{
+"txt": "para",
+"ini": 78.16,
+"fin": 78.7
+},
+{
+"txt": "darle",
+"ini": 78.7,
+"fin": 78.96
+},
+{
+"txt": "un",
+"ini": 78.96,
+"fin": 79.22
+},
+{
+"txt": "auténtico",
+"ini": 79.22,
+"fin": 79.98
+},
+{
+"txt": "estilo",
+"ini": 79.98,
+"fin": 80.36
+},
+{
+"txt": "racing.",
+"ini": 80.36,
+"fin": 80.74
+},
+{
+"txt": "¡Vosotros",
+"ini": 81.56,
+"fin": 82.0
+},
+{
+"txt": "mandáis!",
+"ini": 82.0,
+"fin": 82.42
+},
+{
+"txt": "Por",
+"ini": 83.14,
+"fin": 83.38
+},
+{
+"txt": "cierto,",
+"ini": 83.38,
+"fin": 83.72
+},
+{
+"txt": "Rubettos",
+"ini": 83.72,
+"fin": 84.512
+},
+{
+"txt": "nos",
+"ini": 84.6,
+"fin": 84.84
+},
+{
+"txt": "ha",
+"ini": 84.84,
+"fin": 85.02
+},
+{
+"txt": "seguido",
+"ini": 85.02,
+"fin": 85.48
+},
+{
+"txt": "y",
+"ini": 85.48,
+"fin": 85.82
+},
+{
+"txt": "ha",
+"ini": 85.82,
+"fin": 85.88
+},
+{
+"txt": "elegido",
+"ini": 85.88,
+"fin": 86.28
+},
+{
+"txt": "representar",
+"ini": 86.28,
+"fin": 86.96
+},
+{
+"txt": "al",
+"ini": 86.96,
+"fin": 87.14
+},
+{
+"txt": "Club",
+"ini": 87.14,
+"fin": 87.42
+},
+{
+"txt": "Madrid.",
+"ini": 87.42,
+"fin": 87.8
+},
+{
+"txt": "Así",
+"ini": 88.3,
+"fin": 88.56
+},
+{
+"txt": "que",
+"ini": 88.56,
+"fin": 88.76
+},
+{
+"txt": "vamos",
+"ini": 88.76,
+"fin": 88.96
+},
+{
+"txt": "a",
+"ini": 88.96,
+"fin": 89.12
+},
+{
+"txt": "ponerle",
+"ini": 89.12,
+"fin": 89.54
+},
+{
+"txt": "una",
+"ini": 89.54,
+"fin": 89.7
+},
+{
+"txt": "pequeña",
+"ini": 89.7,
+"fin": 90.1
+},
+{
+"txt": "pegatina",
+"ini": 90.1,
+"fin": 90.68
+},
+{
+"txt": "en",
+"ini": 90.68,
+"fin": 90.86
+},
+{
+"txt": "la",
+"ini": 90.86,
+"fin": 90.98
+},
+{
+"txt": "luna",
+"ini": 90.98,
+"fin": 91.24
+},
+{
+"txt": "trasera.",
+"ini": 91.24,
+"fin": 91.72
+},
+{
+"txt": "¡Madrid",
+"ini": 92.18,
+"fin": 92.62
+},
+{
+"txt": "ya",
+"ini": 92.62,
+"fin": 93.12
+},
+{
+"txt": "tiene",
+"ini": 93.12,
+"fin": 93.44
+},
+{
+"txt": "su",
+"ini": 93.44,
+"fin": 93.64
+},
+{
+"txt": "sitio",
+"ini": 93.64,
+"fin": 93.96
+},
+{
+"txt": "en",
+"ini": 93.96,
+"fin": 94.18
+},
+{
+"txt": "Bryan",
+"ini": 94.18,
+"fin": 94.5
+},
+{
+"txt": "Sport!",
+"ini": 94.5,
+"fin": 94.84
+},
+{
+"txt": "Y",
+"ini": 95.56,
+"fin": 95.74
+},
+{
+"txt": "recordad:",
+"ini": 95.74,
+"fin": 96.2
+},
+{
+"txt": "si",
+"ini": 96.64,
+"fin": 96.82
+},
+{
+"txt": "nos",
+"ini": 96.82,
+"fin": 96.94
+},
+{
+"txt": "sigues,",
+"ini": 96.94,
+"fin": 97.3
+},
+{
+"txt": "ya",
+"ini": 97.62,
+"fin": 97.84
+},
+{
+"txt": "formas",
+"ini": 97.84,
+"fin": 98.12
+},
+{
+"txt": "parte",
+"ini": 98.12,
+"fin": 98.54
+},
+{
+"txt": "del",
+"ini": 98.54,
+"fin": 98.84
+},
+{
+"txt": "Bryan",
+"ini": 98.84,
+"fin": 99.18
+},
+{
+"txt": "Sport",
+"ini": 99.18,
+"fin": 99.6
+},
+{
+"txt": "Club.",
+"ini": 99.6,
+"fin": 99.98
+},
+{
+"txt": "Déjanos",
+"ini": 100.58,
+"fin": 101.08
+},
+{
+"txt": "el",
+"ini": 101.08,
+"fin": 101.22
+},
+{
+"txt": "nombre",
+"ini": 101.22,
+"fin": 101.48
+},
+{
+"txt": "de",
+"ini": 101.48,
+"fin": 101.66
+},
+{
+"txt": "tu",
+"ini": 101.66,
+"fin": 101.78
+},
+{
+"txt": "ciudad",
+"ini": 101.78,
+"fin": 102.06
+},
+{
+"txt": "en",
+"ini": 102.06,
+"fin": 102.24
+},
+{
+"txt": "comentarios,",
+"ini": 102.24,
+"fin": 102.74
+},
+{
+"txt": "vota",
+"ini": 103.2,
+"fin": 103.56
+},
+{
+"txt": "A",
+"ini": 103.56,
+"fin": 103.92
+},
+{
+"txt": "o",
+"ini": 103.92,
+"fin": 104.24
+},
+{
+"txt": "B",
+"ini": 104.24,
+"fin": 104.44
+},
+{
+"txt": "y",
+"ini": 104.86,
+"fin": 105.06
+},
+{
+"txt": "quién",
+"ini": 105.24,
+"fin": 105.34
+},
+{
+"txt": "sabe...",
+"ini": 105.34,
+"fin": 105.62
+},
+{
+"txt": "¡quizás",
+"ini": 106.18,
+"fin": 106.54
+},
+{
+"txt": "tu",
+"ini": 106.54,
+"fin": 106.7
+},
+{
+"txt": "ciudad",
+"ini": 106.7,
+"fin": 107.04
+},
+{
+"txt": "sea",
+"ini": 107.04,
+"fin": 107.54
+},
+{
+"txt": "la",
+"ini": 107.54,
+"fin": 107.72
+},
+{
+"txt": "siguiente",
+"ini": 107.72,
+"fin": 108.06
+},
+{
+"txt": "en",
+"ini": 108.06,
+"fin": 108.36
+},
+{
+"txt": "aparecer",
+"ini": 108.36,
+"fin": 108.74
+},
+{
+"txt": "en",
+"ini": 108.74,
+"fin": 108.96
+},
+{
+"txt": "nuestro",
+"ini": 108.96,
+"fin": 109.12
+},
+{
+"txt": "coche!",
+"ini": 109.12,
+"fin": 109.58
+},
+{
+"txt": "¡Nos",
+"ini": 109.98,
+"fin": 110.3
+},
+{
+"txt": "vemos",
+"ini": 110.3,
+"fin": 110.6
+},
+{
+"txt": "en",
+"ini": 110.6,
+"fin": 110.86
+},
+{
+"txt": "el",
+"ini": 110.86,
+"fin": 110.96
+},
+{
+"txt": "próximo",
+"ini": 110.96,
+"fin": 111.26
+},
+{
+"txt": "capítulo!",
+"ini": 111.26,
+"fin": 111.86
+}
+]
+}

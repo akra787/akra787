@@ -1,0 +1,38 @@
+{
+  "_nota": "Bryan Sport · Día 2. Voz de ElevenLabs subida por el usuario. Se genera con videos/bryan/anim/dia2.py",
+  "audio": "bryan/dia2/voz_dia2.mp3",
+  "salida": "bryan_dia2.mp4",
+  "cola": 1.3,
+  "escenas": [
+    {
+      "tipo": "portada",
+      "inicio": 0,
+      "voz": "Día 2. Empieza la transformación."
+    },
+    {
+      "tipo": "gancho",
+      "inicio": 3.2,
+      "voz": "¡Familia! Habéis elegido la opción B y ahora toca cumplir. ¡Vamos a convertir este coche en una auténtica máquina! Hoy empieza el trabajo en Bryan Sport."
+    },
+    {
+      "tipo": "garaje",
+      "inicio": 14.7,
+      "voz": "Hoy estamos en el garaje de casa, con nuestras herramientas y muchas ganas de empezar. No tenemos un taller profesional, pero tenemos imaginación y ganas de hacer un proyectazo. Vamos a revisar el coche, preparar las herramientas y empezar poco a poco con las mejoras. ¡Esto promete!"
+    },
+    {
+      "tipo": "stage2",
+      "inicio": 33.7,
+      "voz": "Y ahora vamos con algo más serio: queremos preparar este coche para una Stage 2. Para ello, vamos a estudiar la instalación de un downpipe, que mejora el flujo de gases de escape, y un intercooler mejorado, que ayuda a mantener el aire de admisión más fresco. Después tocará una calibración electrónica específica para las nuevas piezas, comprobando que todo funcione correctamente y de forma segura. ¡Queremos potencia, pero también fiabilidad!"
+    },
+    {
+      "tipo": "decision",
+      "inicio": 63.5,
+      "voz": "Pero antes de seguir, necesito que volváis a decidir vosotros. ¿Qué le hacemos ahora? Opción A: le ponemos unas llantas deportivas para darle un aspecto mucho más agresivo. Opción B: le instalamos unos baquets para darle un auténtico estilo racing. ¡Vosotros mandáis!"
+    },
+    {
+      "tipo": "rubettos",
+      "inicio": 82.9,
+      "voz": "Por cierto, Rubettos nos ha seguido y ha elegido representar al Club Madrid. Así que vamos a ponerle una pequeña pegatina en la luna trasera. ¡Madrid ya tiene su sitio en Bryan Sport! Y recordad: si nos sigues, ya formas parte del Bryan Sport Club. Déjanos el nombre de tu ciudad en comentarios, vota A o B y quién sabe... ¡quizás tu ciudad sea la siguiente en aparecer en nuestro coche! ¡Nos vemos en el próximo capítulo!"
+    }
+  ]
+}

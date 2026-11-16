@@ -229,8 +229,8 @@ def dibujar_bryan(fr, ctx, x, y, poses, escala=0.8, mirar=(0.3, 0.0), excitado=0
             previa = poses[i - 1][1] if i > 0 else pose
             actual, t0 = pose, pp * dur
     mezcla = clamp((u - t0) / 0.3)
-    objeto = actual if actual in ("llave", "carpeta", "portatil", "pistola", "movil") else None
-    if objeto is None and mezcla < 0.5 and previa in ("llave", "carpeta", "portatil", "pistola", "movil"):
+    objeto = actual if actual in ("llave", "carpeta", "portatil", "pistola", "movil", "lupa") else None
+    if objeto is None and mezcla < 0.5 and previa in ("llave", "carpeta", "portatil", "pistola", "movil", "lupa"):
         objeto = previa
     spr, ax, ay = bryan_sprite(t, previa, actual, mezcla, ctx["habla"], mirar, excitado, objeto, salto,
                                escala, gesto)
@@ -778,6 +778,10 @@ def sintetizar_sfx(tipo):
     return np.zeros(1)
 
 
+SFX_SEG = {}  # efectos por escena con tiempo en segundos desde el inicio de la escena
+POST = []  # capas extra que se dibujan sobre cada escena: f(fr, ctx, escena)
+
+
 def eventos_sfx(escenas):
     ev = []
     P = {
@@ -795,6 +799,8 @@ def eventos_sfx(escenas):
             ev.append((e["ini"] - 0.28, "whoosh", 0.7))
         for pp, tipo in P.get(e["tipo"], []):
             ev.append((e["ini"] + pp * e["dur"], tipo, 0.6))
+        for seg, tipo in SFX_SEG.get(e["tipo"], []):
+            ev.append((e["ini"] + seg, tipo, 0.6))
     return ev
 
 
@@ -1005,6 +1011,8 @@ def frame(i):
     ctx = {"t": t, "u": t - e["ini"], "dur": e["dur"], "habla": float(st["env"][min(i, len(st["env"]) - 1)])}
     fr = Image.new("RGB", (W, H))
     ESCENAS[e["tipo"]](fr, ctx)
+    for f in POST:
+        f(fr, ctx, e)
     dibujar_subs(fr, t, st["grupos"])
     for j, e2 in enumerate(escenas[1:], 1):
         q = (t - (e2["ini"] - TRANS / 2)) / TRANS
